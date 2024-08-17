@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+
+  {% block content %}
+    <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+
+    <!-- /.content -->
+  </div>  
+  {% endblock content %}
+
+  {% block scripts %}
+  <!-- <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('generate-report-btn').addEventListener('click', function() {
+        var selectedItems = [];
+        var checkboxes = document.querySelectorAll('.select-checkbox:checked');
+        checkboxes.forEach(function(checkbox) {
+            selectedItems.push(checkbox.dataset.id);
+        });
+        // Здесь можно отправить выбранные элементы на сервер для формирования отчета
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', '/generate_report', true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                // Получаем ответ от сервера
+                var response = JSON.parse(xhr.responseText);
+                if (response.success) {
+                    // Если отчет успешно сгенерирован, обрабатываем ответ
+                    console.log('Report generated successfully:', response.report);
+                    // Здесь можно предпринять дальнейшие действия, например, отобразить отчет пользователю
+                } else {
+                    // Если произошла ошибка при генерации отчета
+                    console.error('Error generating report:', response.error);
+                    // Здесь можно предпринять действия в случае ошибки
+                }
+            }
+        };
+        console.log(selectedItems); // Пример вывода выбранных элементов в консоль
+    });
+});
+  </script> -->
+  {% endblock scripts %}

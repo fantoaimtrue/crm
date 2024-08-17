@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  bot:
+    build:
+      context: .
+      dockerfile: Dockerfile.bot
+    command: sh -c "python main.py"
+    env_file:
+      - .env
+    restart: always
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.django
+    volumes:
+      - ./static:/app/static
+    env_file:
+      - .env
+    network_mode: "host"
+    restart: unless-stopped

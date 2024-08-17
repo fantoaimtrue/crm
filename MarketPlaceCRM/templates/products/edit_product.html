@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+
+  {% block content %}
+    <div class="content-wrapper" style="min-height: 1302.12px;">
+    <!-- Content Header (Page header) -->
+
+    
+
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        
+        <!-- /.row -->
+        <div class="col-md-12">
+            <!-- general form elements -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Изменить карточку товара</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form action="" method="post">
+                {% csrf_token %}
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="exampleInputText">Товар</label>
+                    {{ form.product_name }}
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputText">Цена в юанях</label>
+                    {{ form.product_price }}
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputText">Вес товара (в кг)</label>
+                    {{ form.product_weight }}
+                  </div>
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Внести изменения</button>
+                  <a href="{% url 'products:delete_product' id=data.id %}" class="btn btn-danger">Удалить</a>
+                </div>
+              </form>
+            <!-- /.card -->
+
+
+          </div>
+      </div><!-- /.container-fluid -->
+      
+    </section>
+    <!-- /.content -->
+    </div>
+  {% endblock content %}
+
+

@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+
+  {% block content %}
+  <div class="content-wrapper" style="min-height: 273px;">
+
+    <section class="content-header">
+    <div class="container-fluid">
+    <div class="row mb-2">
+    <div class="col-sm-6">
+    <h1>Добавить товар в БД</h1>
+    </div>
+    <div class="col-sm-6">
+    </div>
+    </div>
+    </div>
+    </section>
+    
+    <section class="content">
+    
+    <div class="card">
+    <div class="card-header">
+    <h3 class="card-title">Выбири способ добавления товара</h3>
+    <div class="card-tools">
+    <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+    <i class="fas fa-minus"></i>
+    </button>
+    <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+    <i class="fas fa-times"></i>
+    </button>
+    </div>
+    </div>
+    <div class="card-body" style="display: block;">
+      <div class="row">
+        <div class="col-md-2">
+          <a href="{% url 'products:add_product_alone' %}" class="btn btn-block btn-primary btn-sm">Добавить один товар</a>
+        </div>
+        <div class="col-md-2">
+          <a href="{% url 'products:add_product_from_csv' %}" class="btn btn-block btn-success btn-sm">Добавить из файла .csv</a>
+        </div>
+      </div>
+    </div>
+    
+    
+    </div>
+    
+    </section>
+    
+    </div>
+  {% endblock content %}
+
+

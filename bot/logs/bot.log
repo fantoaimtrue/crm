@@ -1,0 +1,593 @@
+2024-07-31 20:57:14,397 - aiogram.dispatcher - INFO - Start polling
+2024-07-31 20:57:14,737 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-07-31 20:57:15,721 - aiogram.event - INFO - Update id=104181014 is handled. Duration 812 ms by bot id=7439911780
+2024-07-31 20:57:15,901 - aiogram.event - INFO - Update id=104181015 is handled. Duration 984 ms by bot id=7439911780
+2024-07-31 20:57:20,144 - aiogram.event - INFO - Update id=104181016 is handled. Duration 266 ms by bot id=7439911780
+2024-07-31 20:57:22,359 - aiogram.event - INFO - Update id=104181017 is handled. Duration 438 ms by bot id=7439911780
+2024-07-31 20:59:15,211 - aiogram.event - INFO - Update id=104181018 is handled. Duration 1468 ms by bot id=7439911780
+2024-07-31 20:59:41,139 - aiogram.dispatcher - INFO - Start polling
+2024-07-31 20:59:41,489 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-07-31 20:59:42,974 - aiogram.event - INFO - Update id=104181019 is handled. Duration 1312 ms by bot id=7439911780
+2024-07-31 20:59:45,171 - aiogram.event - INFO - Update id=104181020 is handled. Duration 172 ms by bot id=7439911780
+2024-07-31 20:59:46,660 - aiogram.event - INFO - Update id=104181021 is handled. Duration 296 ms by bot id=7439911780
+2024-07-31 20:59:48,319 - aiogram.event - INFO - Update id=104181022 is handled. Duration 250 ms by bot id=7439911780
+2024-07-31 20:59:49,920 - aiogram.event - INFO - Update id=104181023 is handled. Duration 390 ms by bot id=7439911780
+2024-07-31 20:59:53,946 - aiogram.event - INFO - Update id=104181024 is handled. Duration 2500 ms by bot id=7439911780
+2024-07-31 21:00:43,205 - aiogram.event - INFO - Update id=104181025 is handled. Duration 1343 ms by bot id=7439911780
+2024-07-31 21:01:10,953 - aiogram.dispatcher - INFO - Start polling
+2024-07-31 21:01:11,302 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-07-31 21:09:35,067 - aiogram.dispatcher - INFO - Start polling
+2024-07-31 21:09:35,412 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-07-31 21:09:35,965 - aiogram.event - INFO - Update id=104181026 is handled. Duration 390 ms by bot id=7439911780
+2024-07-31 21:09:35,967 - aiogram.event - INFO - Update id=104181027 is handled. Duration 390 ms by bot id=7439911780
+2024-07-31 21:09:37,816 - aiogram.event - INFO - Update id=104181028 is handled. Duration 358 ms by bot id=7439911780
+2024-07-31 21:09:39,442 - aiogram.event - INFO - Update id=104181029 is handled. Duration 266 ms by bot id=7439911780
+2024-07-31 21:09:41,245 - aiogram.event - INFO - Update id=104181030 is handled. Duration 264 ms by bot id=7439911780
+2024-07-31 21:09:43,396 - logger_config - INFO - brand
+2024-07-31 21:09:45,350 - aiogram.event - INFO - Update id=104181031 is handled. Duration 1953 ms by bot id=7439911780
+2024-07-31 21:10:12,798 - aiogram.dispatcher - INFO - Start polling
+2024-07-31 21:10:13,130 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-07-31 21:10:19,661 - aiogram.event - INFO - Update id=104181032 is handled. Duration 375 ms by bot id=7439911780
+2024-07-31 21:10:21,752 - aiogram.event - INFO - Update id=104181033 is handled. Duration 342 ms by bot id=7439911780
+2024-07-31 21:10:23,226 - aiogram.event - INFO - Update id=104181034 is handled. Duration 250 ms by bot id=7439911780
+2024-07-31 21:10:24,680 - aiogram.event - INFO - Update id=104181035 is handled. Duration 233 ms by bot id=7439911780
+2024-07-31 21:10:26,120 - logger_config - INFO - cscgaming
+2024-07-31 21:10:26,795 - aiogram.event - INFO - Update id=104181036 is handled. Duration 686 ms by bot id=7439911780
+2024-07-31 21:12:23,432 - aiogram.dispatcher - INFO - Start polling
+2024-07-31 21:12:23,759 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-07-31 21:12:27,531 - aiogram.event - INFO - Update id=104181037 is handled. Duration 500 ms by bot id=7439911780
+2024-07-31 21:12:29,260 - aiogram.event - INFO - Update id=104181038 is handled. Duration 296 ms by bot id=7439911780
+2024-07-31 21:12:30,378 - aiogram.event - INFO - Update id=104181039 is handled. Duration 264 ms by bot id=7439911780
+2024-07-31 21:12:31,981 - aiogram.event - INFO - Update id=104181040 is handled. Duration 250 ms by bot id=7439911780
+2024-07-31 21:12:33,203 - logger_config - INFO - cscgaming
+2024-07-31 21:12:35,767 - aiogram.event - INFO - Update id=104181041 is handled. Duration 2561 ms by bot id=7439911780
+2024-07-31 21:29:07,550 - aiogram.dispatcher - INFO - Start polling
+2024-07-31 21:29:07,898 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-07-31 21:29:08,742 - aiogram.event - INFO - Update id=104181042 is handled. Duration 391 ms by bot id=7439911780
+2024-07-31 21:29:10,927 - aiogram.event - INFO - Update id=104181043 is handled. Duration 311 ms by bot id=7439911780
+2024-07-31 21:29:12,118 - aiogram.event - INFO - Update id=104181044 is handled. Duration 327 ms by bot id=7439911780
+2024-07-31 21:29:13,753 - aiogram.event - INFO - Update id=104181045 is handled. Duration 311 ms by bot id=7439911780
+2024-07-31 21:29:14,832 - logger_config - INFO - cscgaming
+2024-07-31 21:29:17,880 - aiogram.event - INFO - Update id=104181046 is handled. Duration 3045 ms by bot id=7439911780
+2024-07-31 21:29:28,061 - aiogram.event - INFO - Update id=104181047 is handled. Duration 172 ms by bot id=7439911780
+2024-07-31 21:29:30,004 - aiogram.event - INFO - Update id=104181048 is handled. Duration 389 ms by bot id=7439911780
+2024-07-31 21:29:31,446 - aiogram.event - INFO - Update id=104181049 is handled. Duration 266 ms by bot id=7439911780
+2024-07-31 21:29:33,194 - aiogram.event - INFO - Update id=104181050 is handled. Duration 250 ms by bot id=7439911780
+2024-07-31 21:29:35,340 - logger_config - INFO - cscgaming
+2024-07-31 21:29:37,002 - aiogram.event - INFO - Update id=104181051 is handled. Duration 1670 ms by bot id=7439911780
+2024-07-31 21:49:46,864 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2024-07-31 21:49:46,887 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7439911780)
+2024-07-31 21:49:58,232 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 7439911780)
+2024-07-31 21:50:01,270 - aiogram.event - INFO - Update id=104181052 is handled. Duration 421 ms by bot id=7439911780
+2024-07-31 21:50:02,940 - aiogram.event - INFO - Update id=104181053 is handled. Duration 266 ms by bot id=7439911780
+2024-07-31 21:50:08,399 - aiogram.event - INFO - Update id=104181054 is handled. Duration 500 ms by bot id=7439911780
+2024-07-31 21:50:10,335 - aiogram.event - INFO - Update id=104181055 is handled. Duration 343 ms by bot id=7439911780
+2024-07-31 21:50:11,471 - logger_config - INFO - cscgaming
+2024-07-31 21:50:12,129 - logger_config - INFO - For some reason, the bot cannot generate a report. CODE ERROR : 400 Client Error: Bad Request for url: https://api-seller.ozon.ru/v1/finance/realization
+2024-07-31 21:50:12,130 - aiogram.event - INFO - Update id=104181056 is handled. Duration 655 ms by bot id=7439911780
+2024-07-31 21:51:15,384 - aiogram.dispatcher - INFO - Start polling
+2024-07-31 21:51:15,734 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-07-31 21:51:16,424 - aiogram.event - INFO - Update id=104181057 is handled. Duration 500 ms by bot id=7439911780
+2024-07-31 21:51:30,214 - aiogram.event - INFO - Update id=104181058 is handled. Duration 406 ms by bot id=7439911780
+2024-07-31 21:51:31,673 - aiogram.event - INFO - Update id=104181059 is handled. Duration 250 ms by bot id=7439911780
+2024-07-31 21:51:33,597 - aiogram.event - INFO - Update id=104181060 is handled. Duration 250 ms by bot id=7439911780
+2024-07-31 21:51:35,599 - logger_config - INFO - cscgaming
+2024-07-31 21:51:37,837 - aiogram.event - INFO - Update id=104181061 is handled. Duration 2234 ms by bot id=7439911780
+2024-07-31 21:55:02,028 - aiogram.event - INFO - Update id=104181062 is handled. Duration 375 ms by bot id=7439911780
+2024-07-31 21:55:04,030 - aiogram.event - INFO - Update id=104181063 is handled. Duration 327 ms by bot id=7439911780
+2024-07-31 21:55:07,289 - aiogram.event - INFO - Update id=104181064 is handled. Duration 327 ms by bot id=7439911780
+2024-07-31 21:55:08,852 - aiogram.event - INFO - Update id=104181065 is handled. Duration 281 ms by bot id=7439911780
+2024-07-31 21:55:11,680 - logger_config - INFO - sec_of_chameleon
+2024-07-31 21:55:12,323 - logger_config - INFO - For some reason, the bot cannot generate a report. CODE ERROR : 400 Client Error: Bad Request for url: https://api-seller.ozon.ru/v1/finance/realization
+2024-07-31 21:55:12,325 - aiogram.event - INFO - Update id=104181066 is handled. Duration 657 ms by bot id=7439911780
+2024-07-31 21:55:25,903 - logger_config - INFO - sec_of_chameleon
+2024-07-31 21:55:27,978 - aiogram.event - INFO - Update id=104181067 is handled. Duration 2094 ms by bot id=7439911780
+2024-08-05 22:19:11,139 - aiogram.dispatcher - INFO - Start polling
+2024-08-05 22:19:11,759 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-05 22:20:31,756 - aiogram.event - INFO - Update id=104181070 is handled. Duration 375 ms by bot id=7439911780
+2024-08-05 22:20:33,628 - aiogram.event - INFO - Update id=104181071 is handled. Duration 375 ms by bot id=7439911780
+2024-08-05 22:20:35,147 - aiogram.event - INFO - Update id=104181072 is handled. Duration 359 ms by bot id=7439911780
+2024-08-05 22:20:36,544 - aiogram.event - INFO - Update id=104181073 is handled. Duration 280 ms by bot id=7439911780
+2024-08-05 22:20:39,111 - logger_config - INFO - cscgaming
+2024-08-05 22:20:47,762 - aiogram.event - INFO - Update id=104181074 is handled. Duration 8656 ms by bot id=7439911780
+2024-08-05 22:22:10,633 - aiogram.event - INFO - Update id=104181075 is handled. Duration 358 ms by bot id=7439911780
+2024-08-05 22:22:12,348 - aiogram.event - INFO - Update id=104181076 is handled. Duration 405 ms by bot id=7439911780
+2024-08-05 22:22:13,952 - aiogram.event - INFO - Update id=104181077 is handled. Duration 297 ms by bot id=7439911780
+2024-08-05 22:22:15,847 - aiogram.event - INFO - Update id=104181078 is handled. Duration 422 ms by bot id=7439911780
+2024-08-05 22:22:16,876 - logger_config - INFO - sec_of_chameleon
+2024-08-05 22:22:17,064 - aiogram.event - INFO - Update id=104181079 is handled. Duration 188 ms by bot id=7439911780
+2024-08-05 22:22:50,879 - aiogram.event - INFO - Update id=104181080 is handled. Duration 452 ms by bot id=7439911780
+2024-08-05 22:22:53,802 - aiogram.event - INFO - Update id=104181081 is handled. Duration 217 ms by bot id=7439911780
+2024-08-05 22:22:55,570 - aiogram.event - INFO - Update id=104181082 is handled. Duration 328 ms by bot id=7439911780
+2024-08-05 22:22:57,372 - aiogram.event - INFO - Update id=104181083 is handled. Duration 233 ms by bot id=7439911780
+2024-08-05 22:22:59,113 - aiogram.event - INFO - Update id=104181084 is handled. Duration 250 ms by bot id=7439911780
+2024-08-05 22:23:00,629 - logger_config - INFO - sec_of_chameleon
+2024-08-05 22:23:00,768 - aiogram.event - INFO - Update id=104181085 is handled. Duration 141 ms by bot id=7439911780
+2024-08-05 22:23:38,994 - aiogram.event - INFO - Update id=104181086 is handled. Duration 375 ms by bot id=7439911780
+2024-08-05 22:23:40,668 - aiogram.event - INFO - Update id=104181087 is handled. Duration 297 ms by bot id=7439911780
+2024-08-05 22:23:42,091 - aiogram.event - INFO - Update id=104181088 is handled. Duration 375 ms by bot id=7439911780
+2024-08-05 22:23:43,695 - aiogram.event - INFO - Update id=104181089 is handled. Duration 344 ms by bot id=7439911780
+2024-08-05 22:23:44,983 - logger_config - INFO - sec_of_chameleon
+2024-08-05 22:23:45,199 - aiogram.event - INFO - Update id=104181090 is handled. Duration 219 ms by bot id=7439911780
+2024-08-05 22:24:33,446 - aiogram.event - INFO - Update id=104181091 is handled. Duration 469 ms by bot id=7439911780
+2024-08-05 22:24:34,907 - aiogram.event - INFO - Update id=104181092 is handled. Duration 327 ms by bot id=7439911780
+2024-08-05 22:27:36,526 - aiogram.dispatcher - INFO - Start polling
+2024-08-05 22:27:36,868 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-05 22:27:39,464 - aiogram.event - INFO - Update id=104181093 is handled. Duration 1047 ms by bot id=7439911780
+2024-08-05 22:27:42,253 - aiogram.event - INFO - Update id=104181094 is handled. Duration 217 ms by bot id=7439911780
+2024-08-05 22:27:44,515 - aiogram.event - INFO - Update id=104181095 is handled. Duration 577 ms by bot id=7439911780
+2024-08-05 22:27:45,779 - aiogram.event - INFO - Update id=104181096 is handled. Duration 327 ms by bot id=7439911780
+2024-08-05 22:27:47,558 - aiogram.event - INFO - Update id=104181097 is handled. Duration 625 ms by bot id=7439911780
+2024-08-05 22:27:49,206 - logger_config - INFO - sec_of_chameleon
+2024-08-05 22:27:49,528 - aiogram.event - INFO - Update id=104181098 is handled. Duration 327 ms by bot id=7439911780
+2024-08-05 22:29:25,542 - aiogram.dispatcher - INFO - Start polling
+2024-08-05 22:29:25,876 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-05 22:29:31,547 - aiogram.event - INFO - Update id=104181099 is handled. Duration 592 ms by bot id=7439911780
+2024-08-05 22:29:33,200 - aiogram.event - INFO - Update id=104181100 is handled. Duration 532 ms by bot id=7439911780
+2024-08-05 22:29:34,659 - aiogram.event - INFO - Update id=104181101 is handled. Duration 437 ms by bot id=7439911780
+2024-08-05 22:29:35,987 - aiogram.event - INFO - Update id=104181102 is handled. Duration 265 ms by bot id=7439911780
+2024-08-05 22:29:37,394 - aiogram.event - INFO - Update id=104181103 is handled. Duration 281 ms by bot id=7439911780
+2024-08-05 22:29:40,852 - aiogram.event - INFO - Update id=104181104 is handled. Duration 359 ms by bot id=7439911780
+2024-08-05 22:29:43,180 - logger_config - INFO - sec_of_chameleon
+2024-08-05 22:29:43,401 - aiogram.event - INFO - Update id=104181105 is handled. Duration 234 ms by bot id=7439911780
+2024-08-05 22:30:22,914 - aiogram.dispatcher - INFO - Start polling
+2024-08-05 22:30:23,242 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-05 22:30:23,863 - aiogram.event - INFO - Update id=104181106 is handled. Duration 405 ms by bot id=7439911780
+2024-08-05 22:30:30,075 - aiogram.event - INFO - Update id=104181107 is handled. Duration 532 ms by bot id=7439911780
+2024-08-05 22:30:31,326 - aiogram.event - INFO - Update id=104181108 is handled. Duration 265 ms by bot id=7439911780
+2024-08-05 22:30:32,892 - aiogram.event - INFO - Update id=104181109 is handled. Duration 312 ms by bot id=7439911780
+2024-08-05 22:30:34,478 - logger_config - INFO - sec_of_chameleon
+2024-08-05 22:31:49,308 - aiogram.dispatcher - INFO - Start polling
+2024-08-05 22:31:49,658 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-05 22:31:50,217 - aiogram.event - INFO - Update id=104181111 is handled. Duration 390 ms by bot id=7439911780
+2024-08-05 22:31:55,088 - aiogram.event - INFO - Update id=104181112 is handled. Duration 437 ms by bot id=7439911780
+2024-08-05 22:31:56,264 - aiogram.event - INFO - Update id=104181113 is handled. Duration 250 ms by bot id=7439911780
+2024-08-05 22:31:58,004 - aiogram.event - INFO - Update id=104181114 is handled. Duration 452 ms by bot id=7439911780
+2024-08-05 22:31:59,005 - logger_config - INFO - sec_of_chameleon
+2024-08-05 22:32:39,383 - aiogram.dispatcher - INFO - Start polling
+2024-08-05 22:32:39,736 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-05 22:32:40,383 - aiogram.event - INFO - Update id=104181116 is handled. Duration 420 ms by bot id=7439911780
+2024-08-05 22:32:43,454 - aiogram.event - INFO - Update id=104181117 is handled. Duration 609 ms by bot id=7439911780
+2024-08-05 22:32:44,935 - aiogram.event - INFO - Update id=104181118 is handled. Duration 453 ms by bot id=7439911780
+2024-08-05 22:32:46,376 - aiogram.event - INFO - Update id=104181119 is handled. Duration 342 ms by bot id=7439911780
+2024-08-05 22:32:47,702 - logger_config - INFO - sec_of_chameleon
+2024-08-05 22:32:47,916 - aiogram.event - INFO - Update id=104181120 is handled. Duration 233 ms by bot id=7439911780
+2024-08-05 22:33:58,147 - aiogram.dispatcher - INFO - Start polling
+2024-08-05 22:33:58,483 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-05 22:34:04,364 - aiogram.event - INFO - Update id=104181121 is handled. Duration 390 ms by bot id=7439911780
+2024-08-05 22:34:06,322 - aiogram.event - INFO - Update id=104181122 is handled. Duration 500 ms by bot id=7439911780
+2024-08-05 22:34:07,754 - aiogram.event - INFO - Update id=104181123 is handled. Duration 280 ms by bot id=7439911780
+2024-08-05 22:34:09,287 - aiogram.event - INFO - Update id=104181124 is handled. Duration 375 ms by bot id=7439911780
+2024-08-05 22:34:10,812 - logger_config - INFO - sec_of_chameleon
+2024-08-05 22:34:11,059 - aiogram.event - INFO - Update id=104181125 is handled. Duration 250 ms by bot id=7439911780
+2024-08-05 22:34:57,831 - aiogram.dispatcher - INFO - Start polling
+2024-08-05 22:34:58,211 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-05 22:34:58,847 - aiogram.event - INFO - Update id=104181126 is handled. Duration 437 ms by bot id=7439911780
+2024-08-05 22:34:59,169 - aiogram.event - INFO - Update id=104181127 is handled. Duration 202 ms by bot id=7439911780
+2024-08-05 22:35:01,170 - aiogram.event - INFO - Update id=104181128 is handled. Duration 547 ms by bot id=7439911780
+2024-08-05 22:35:02,347 - aiogram.event - INFO - Update id=104181129 is handled. Duration 265 ms by bot id=7439911780
+2024-08-05 22:35:03,764 - aiogram.event - INFO - Update id=104181130 is handled. Duration 281 ms by bot id=7439911780
+2024-08-05 22:35:04,791 - logger_config - INFO - sec_of_chameleon
+2024-08-05 22:35:05,309 - logger_config - ERROR - Не удалось получить данные с https://statistics-api.wildberries.ru/api/v1/supplier/sales. Код состояния: 400
+2024-08-05 22:35:05,310 - logger_config - ERROR - Error: [Errno 2] No such file or directory: 'parser/reports/wb/aqua/wb_sec_of_chameleon_2024-05.xlsx'
+2024-08-05 22:35:05,615 - aiogram.event - INFO - Update id=104181131 is handled. Duration 827 ms by bot id=7439911780
+2024-08-05 22:37:13,449 - aiogram.dispatcher - INFO - Start polling
+2024-08-05 22:37:13,796 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-05 22:37:14,440 - aiogram.event - INFO - Update id=104181132 is handled. Duration 438 ms by bot id=7439911780
+2024-08-05 22:37:17,050 - aiogram.event - INFO - Update id=104181133 is handled. Duration 717 ms by bot id=7439911780
+2024-08-05 22:37:24,933 - aiogram.event - INFO - Update id=104181134 is handled. Duration 313 ms by bot id=7439911780
+2024-08-05 22:37:26,485 - aiogram.event - INFO - Update id=104181135 is handled. Duration 296 ms by bot id=7439911780
+2024-08-05 22:37:28,176 - logger_config - INFO - sec_of_chameleon
+2024-08-05 22:37:28,898 - logger_config - ERROR - Не удалось получить данные с https://statistics-api.wildberries.ru/api/v1/supplier/sales. Код состояния: 400
+2024-08-05 22:37:28,900 - logger_config - ERROR - Error: [Errno 2] No such file or directory: 'parser/reports/wb/aqua/wb_sec_of_chameleon_2024-06.xlsx'
+2024-08-05 22:37:29,441 - aiogram.event - INFO - Update id=104181136 is handled. Duration 1266 ms by bot id=7439911780
+2024-08-05 22:44:12,228 - aiogram.dispatcher - INFO - Start polling
+2024-08-05 22:44:12,583 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-05 22:44:18,007 - aiogram.event - INFO - Update id=104181137 is handled. Duration 420 ms by bot id=7439911780
+2024-08-05 22:44:19,701 - aiogram.event - INFO - Update id=104181138 is handled. Duration 500 ms by bot id=7439911780
+2024-08-05 22:44:20,706 - aiogram.event - INFO - Update id=104181139 is handled. Duration 265 ms by bot id=7439911780
+2024-08-05 22:44:22,623 - aiogram.event - INFO - Update id=104181140 is handled. Duration 265 ms by bot id=7439911780
+2024-08-05 22:44:23,734 - logger_config - INFO - sec_of_chameleon
+2024-08-05 22:44:24,291 - logger_config - ERROR - Error: name 'logger' is not defined
+2024-08-05 22:44:24,742 - aiogram.event - INFO - Update id=104181141 is handled. Duration 1000 ms by bot id=7439911780
+2024-08-05 22:45:29,717 - aiogram.dispatcher - INFO - Start polling
+2024-08-05 22:45:30,064 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-05 22:45:35,986 - aiogram.event - INFO - Update id=104181142 is handled. Duration 484 ms by bot id=7439911780
+2024-08-05 22:45:38,173 - aiogram.event - INFO - Update id=104181143 is handled. Duration 547 ms by bot id=7439911780
+2024-08-05 22:45:39,431 - aiogram.event - INFO - Update id=104181144 is handled. Duration 484 ms by bot id=7439911780
+2024-08-05 22:45:41,132 - aiogram.event - INFO - Update id=104181145 is handled. Duration 295 ms by bot id=7439911780
+2024-08-05 22:45:42,115 - logger_config - INFO - sec_of_chameleon
+2024-08-05 22:45:43,094 - logger_config - ERROR - Error: [Errno 2] No such file or directory: 'parser/reports/wb/aqua/wb_sec_of_chameleon_2024-05.xlsx'
+2024-08-05 22:45:43,379 - aiogram.event - INFO - Update id=104181146 is handled. Duration 1265 ms by bot id=7439911780
+2024-08-05 22:46:26,202 - aiogram.dispatcher - INFO - Start polling
+2024-08-05 22:46:26,544 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-05 22:46:37,715 - aiogram.dispatcher - INFO - Start polling
+2024-08-05 22:46:38,067 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-05 22:46:38,718 - aiogram.event - INFO - Update id=104181147 is handled. Duration 437 ms by bot id=7439911780
+2024-08-05 22:46:46,157 - aiogram.event - INFO - Update id=104181148 is handled. Duration 532 ms by bot id=7439911780
+2024-08-05 22:46:50,009 - aiogram.event - INFO - Update id=104181149 is handled. Duration 531 ms by bot id=7439911780
+2024-08-05 22:46:51,521 - aiogram.event - INFO - Update id=104181150 is handled. Duration 266 ms by bot id=7439911780
+2024-08-05 22:46:52,568 - logger_config - INFO - sec_of_chameleon
+2024-08-05 22:46:53,116 - logger_config - ERROR - Error: [Errno 2] No such file or directory: 'parser/reports/wb/aqua/wb_sec_of_chameleon_2024-05.xlsx'
+2024-08-05 22:46:53,455 - aiogram.event - INFO - Update id=104181151 is handled. Duration 890 ms by bot id=7439911780
+2024-08-05 22:50:17,729 - aiogram.dispatcher - INFO - Start polling
+2024-08-05 22:50:18,083 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-05 22:50:20,521 - aiogram.event - INFO - Update id=104181152 is handled. Duration 406 ms by bot id=7439911780
+2024-08-05 22:50:22,314 - aiogram.event - INFO - Update id=104181153 is handled. Duration 563 ms by bot id=7439911780
+2024-08-05 22:50:23,483 - aiogram.event - INFO - Update id=104181154 is handled. Duration 265 ms by bot id=7439911780
+2024-08-05 22:50:25,118 - aiogram.event - INFO - Update id=104181155 is handled. Duration 562 ms by bot id=7439911780
+2024-08-05 22:50:25,936 - logger_config - INFO - sec_of_chameleon
+2024-08-05 22:50:26,484 - logger_config - ERROR - Error: [Errno 2] No such file or directory: 'parser/reports/wb/aqua/wb_sec_of_chameleon_2024-05.xlsx'
+2024-08-05 22:50:26,825 - aiogram.event - INFO - Update id=104181156 is handled. Duration 890 ms by bot id=7439911780
+2024-08-05 23:01:22,957 - aiogram.dispatcher - INFO - Start polling
+2024-08-05 23:01:23,306 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-05 23:01:23,508 - aiogram.event - INFO - Update id=104181157 is not handled. Duration 0 ms by bot id=7439911780
+2024-08-05 23:01:23,937 - aiogram.event - INFO - Update id=104181158 is handled. Duration 438 ms by bot id=7439911780
+2024-08-05 23:01:24,304 - aiogram.event - INFO - Update id=104181159 is handled. Duration 140 ms by bot id=7439911780
+2024-08-05 23:01:26,161 - aiogram.event - INFO - Update id=104181160 is handled. Duration 484 ms by bot id=7439911780
+2024-08-05 23:01:27,421 - aiogram.event - INFO - Update id=104181161 is handled. Duration 375 ms by bot id=7439911780
+2024-08-05 23:01:29,309 - aiogram.event - INFO - Update id=104181162 is handled. Duration 313 ms by bot id=7439911780
+2024-08-05 23:01:30,414 - logger_config - INFO - sec_of_chameleon
+2024-08-05 23:01:31,657 - logger_config - ERROR - Error: 2 validation errors for SendDocument
+document.is-instance[InputFile]
+  Input should be an instance of InputFile [type=is_instance_of, input_value=<_io.BufferedReader name=...chameleon_2024-05.xlsx'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.7/v/is_instance_of
+document.str
+  Input should be a valid string [type=string_type, input_value=<_io.BufferedReader name=...chameleon_2024-05.xlsx'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.7/v/string_type
+2024-08-05 23:01:32,006 - aiogram.event - INFO - Update id=104181163 is handled. Duration 1592 ms by bot id=7439911780
+2024-08-05 23:05:27,371 - aiogram.dispatcher - INFO - Start polling
+2024-08-05 23:05:27,731 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-05 23:05:28,364 - aiogram.event - INFO - Update id=104181164 is handled. Duration 421 ms by bot id=7439911780
+2024-08-05 23:05:31,240 - aiogram.event - INFO - Update id=104181165 is handled. Duration 671 ms by bot id=7439911780
+2024-08-05 23:05:32,378 - aiogram.event - INFO - Update id=104181166 is handled. Duration 483 ms by bot id=7439911780
+2024-08-05 23:05:33,859 - aiogram.event - INFO - Update id=104181167 is handled. Duration 484 ms by bot id=7439911780
+2024-08-05 23:05:34,912 - logger_config - INFO - sec_of_chameleon
+2024-08-05 23:05:37,131 - aiogram.event - INFO - Update id=104181168 is handled. Duration 2217 ms by bot id=7439911780
+2024-08-05 23:06:31,997 - aiogram.dispatcher - INFO - Start polling
+2024-08-05 23:06:32,352 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-05 23:06:33,091 - aiogram.event - INFO - Update id=104181169 is handled. Duration 500 ms by bot id=7439911780
+2024-08-05 23:06:36,202 - aiogram.event - INFO - Update id=104181170 is handled. Duration 640 ms by bot id=7439911780
+2024-08-05 23:06:38,065 - aiogram.event - INFO - Update id=104181171 is handled. Duration 438 ms by bot id=7439911780
+2024-08-05 23:06:39,485 - aiogram.event - INFO - Update id=104181172 is handled. Duration 405 ms by bot id=7439911780
+2024-08-05 23:06:40,470 - logger_config - INFO - sec_of_chameleon
+2024-08-05 23:06:46,123 - aiogram.event - INFO - Update id=104181173 is handled. Duration 5655 ms by bot id=7439911780
+2024-08-05 23:07:32,554 - aiogram.dispatcher - INFO - Start polling
+2024-08-05 23:07:32,901 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-05 23:07:39,078 - aiogram.event - INFO - Update id=104181174 is handled. Duration 454 ms by bot id=7439911780
+2024-08-05 23:07:40,972 - aiogram.event - INFO - Update id=104181175 is handled. Duration 577 ms by bot id=7439911780
+2024-08-05 23:07:42,285 - aiogram.event - INFO - Update id=104181176 is handled. Duration 343 ms by bot id=7439911780
+2024-08-05 23:07:43,752 - aiogram.event - INFO - Update id=104181177 is handled. Duration 500 ms by bot id=7439911780
+2024-08-05 23:07:44,618 - logger_config - INFO - sec_of_chameleon
+2024-08-05 23:07:46,517 - aiogram.event - INFO - Update id=104181178 is handled. Duration 1906 ms by bot id=7439911780
+2024-08-05 23:13:17,294 - aiogram.dispatcher - INFO - Start polling
+2024-08-05 23:13:17,649 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-05 23:13:18,440 - aiogram.event - INFO - Update id=104181179 is handled. Duration 578 ms by bot id=7439911780
+2024-08-05 23:13:18,681 - aiogram.event - INFO - Update id=104181180 is handled. Duration 500 ms by bot id=7439911780
+2024-08-05 23:13:20,529 - aiogram.event - INFO - Update id=104181181 is handled. Duration 547 ms by bot id=7439911780
+2024-08-05 23:13:21,712 - aiogram.event - INFO - Update id=104181182 is handled. Duration 280 ms by bot id=7439911780
+2024-08-05 23:13:23,398 - aiogram.event - INFO - Update id=104181183 is handled. Duration 250 ms by bot id=7439911780
+2024-08-05 23:13:24,356 - logger_config - INFO - sec_of_chameleon
+2024-08-05 23:13:26,362 - aiogram.event - INFO - Update id=104181184 is handled. Duration 2015 ms by bot id=7439911780
+2024-08-05 23:28:59,158 - aiogram.dispatcher - INFO - Start polling
+2024-08-05 23:28:59,502 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-05 23:29:00,155 - aiogram.event - INFO - Update id=104181185 is handled. Duration 437 ms by bot id=7439911780
+2024-08-05 23:29:00,335 - aiogram.event - INFO - Update id=104181186 is handled. Duration 437 ms by bot id=7439911780
+2024-08-05 23:29:02,217 - aiogram.event - INFO - Update id=104181187 is handled. Duration 484 ms by bot id=7439911780
+2024-08-05 23:29:03,396 - aiogram.event - INFO - Update id=104181188 is handled. Duration 344 ms by bot id=7439911780
+2024-08-05 23:29:04,640 - aiogram.event - INFO - Update id=104181189 is handled. Duration 266 ms by bot id=7439911780
+2024-08-05 23:29:05,772 - logger_config - INFO - sec_of_chameleon
+2024-08-05 23:29:18,091 - aiogram.event - INFO - Update id=104181190 is handled. Duration 12327 ms by bot id=7439911780
+2024-08-05 23:30:08,858 - aiogram.event - INFO - Update id=104181191 is handled. Duration 359 ms by bot id=7439911780
+2024-08-05 23:30:13,156 - aiogram.event - INFO - Update id=104181192 is handled. Duration 407 ms by bot id=7439911780
+2024-08-05 23:30:15,080 - aiogram.event - INFO - Update id=104181193 is handled. Duration 422 ms by bot id=7439911780
+2024-08-05 23:30:16,992 - aiogram.event - INFO - Update id=104181194 is handled. Duration 530 ms by bot id=7439911780
+2024-08-05 23:30:19,021 - logger_config - INFO - sec_of_chameleon
+2024-08-05 23:30:19,826 - aiogram.event - INFO - Update id=104181195 is handled. Duration 812 ms by bot id=7439911780
+2024-08-05 23:32:08,829 - aiogram.dispatcher - INFO - Start polling
+2024-08-05 23:32:09,175 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-05 23:32:11,282 - aiogram.event - INFO - Update id=104181196 is handled. Duration 437 ms by bot id=7439911780
+2024-08-05 23:32:13,876 - aiogram.event - INFO - Update id=104181197 is handled. Duration 500 ms by bot id=7439911780
+2024-08-05 23:32:15,257 - aiogram.event - INFO - Update id=104181198 is handled. Duration 467 ms by bot id=7439911780
+2024-08-05 23:32:16,592 - aiogram.event - INFO - Update id=104181199 is handled. Duration 359 ms by bot id=7439911780
+2024-08-05 23:32:17,534 - logger_config - INFO - sec_of_chameleon
+2024-08-05 23:32:19,575 - aiogram.event - INFO - Update id=104181200 is handled. Duration 2047 ms by bot id=7439911780
+2024-08-05 23:36:12,633 - aiogram.dispatcher - INFO - Start polling
+2024-08-05 23:36:12,992 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-05 23:36:13,636 - aiogram.event - INFO - Update id=104181201 is handled. Duration 469 ms by bot id=7439911780
+2024-08-05 23:36:15,578 - aiogram.event - INFO - Update id=104181202 is handled. Duration 500 ms by bot id=7439911780
+2024-08-05 23:36:17,648 - aiogram.event - INFO - Update id=104181203 is handled. Duration 452 ms by bot id=7439911780
+2024-08-05 23:36:19,456 - aiogram.event - INFO - Update id=104181204 is handled. Duration 484 ms by bot id=7439911780
+2024-08-05 23:36:21,021 - logger_config - INFO - sec_of_chameleon
+2024-08-05 23:36:27,799 - aiogram.event - INFO - Update id=104181205 is handled. Duration 6780 ms by bot id=7439911780
+2024-08-05 23:38:53,837 - aiogram.dispatcher - INFO - Polling stopped
+2024-08-05 23:38:53,839 - aiogram.dispatcher - INFO - Polling stopped for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-05 23:38:55,348 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000199A4657C10>
+2024-08-05 23:43:57,028 - aiogram.dispatcher - INFO - Start polling
+2024-08-05 23:43:57,393 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-05 23:43:58,044 - aiogram.event - INFO - Update id=104181206 is handled. Duration 452 ms by bot id=7439911780
+2024-08-05 23:43:58,046 - aiogram.event - INFO - Update id=104181207 is handled. Duration 452 ms by bot id=7439911780
+2024-08-05 23:44:01,334 - aiogram.event - INFO - Update id=104181208 is handled. Duration 562 ms by bot id=7439911780
+2024-08-05 23:44:02,794 - aiogram.event - INFO - Update id=104181209 is handled. Duration 375 ms by bot id=7439911780
+2024-08-05 23:44:04,159 - aiogram.event - INFO - Update id=104181210 is handled. Duration 390 ms by bot id=7439911780
+2024-08-05 23:44:05,138 - logger_config - INFO - sec_of_chameleon
+2024-08-05 23:44:12,291 - aiogram.event - INFO - Update id=104181211 is handled. Duration 7172 ms by bot id=7439911780
+2024-08-05 23:44:20,797 - aiogram.event - INFO - Update id=104181212 is handled. Duration 140 ms by bot id=7439911780
+2024-08-05 23:44:22,958 - aiogram.event - INFO - Update id=104181213 is handled. Duration 312 ms by bot id=7439911780
+2024-08-05 23:44:24,143 - aiogram.event - INFO - Update id=104181214 is handled. Duration 266 ms by bot id=7439911780
+2024-08-05 23:44:27,377 - aiogram.event - INFO - Update id=104181215 is handled. Duration 545 ms by bot id=7439911780
+2024-08-05 23:44:28,848 - logger_config - INFO - cscgaming
+2024-08-05 23:44:36,319 - logger_config - ERROR - Error: 2 validation errors for SendDocument
+document.is-instance[InputFile]
+  Input should be an instance of InputFile [type=is_instance_of, input_value=<_io.BufferedReader name=...cscgaming_2024-06.xlsx'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.7/v/is_instance_of
+document.str
+  Input should be a valid string [type=string_type, input_value=<_io.BufferedReader name=...cscgaming_2024-06.xlsx'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.7/v/string_type
+2024-08-05 23:44:36,655 - aiogram.event - INFO - Update id=104181216 is handled. Duration 7812 ms by bot id=7439911780
+2024-08-05 23:56:21,484 - aiogram.dispatcher - INFO - Start polling
+2024-08-05 23:56:21,869 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-05 23:56:22,507 - aiogram.event - INFO - Update id=104181217 is handled. Duration 436 ms by bot id=7439911780
+2024-08-05 23:56:27,603 - aiogram.event - INFO - Update id=104181218 is handled. Duration 140 ms by bot id=7439911780
+2024-08-05 23:56:30,622 - aiogram.event - INFO - Update id=104181219 is handled. Duration 155 ms by bot id=7439911780
+2024-08-06 00:08:11,265 - aiogram.dispatcher - INFO - Start polling
+2024-08-06 00:08:11,618 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-06 00:08:12,262 - aiogram.event - INFO - Update id=104181220 is handled. Duration 452 ms by bot id=7439911780
+2024-08-06 00:08:15,161 - aiogram.event - INFO - Update id=104181221 is handled. Duration 657 ms by bot id=7439911780
+2024-08-06 00:08:21,940 - aiogram.event - INFO - Update id=104181222 is handled. Duration 266 ms by bot id=7439911780
+2024-08-06 00:08:37,721 - aiogram.dispatcher - INFO - Start polling
+2024-08-06 00:08:38,062 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-06 00:08:45,610 - aiogram.event - INFO - Update id=104181223 is handled. Duration 500 ms by bot id=7439911780
+2024-08-06 00:08:51,028 - aiogram.event - INFO - Update id=104181224 is handled. Duration 1015 ms by bot id=7439911780
+2024-08-06 00:08:53,634 - aiogram.event - INFO - Update id=104181225 is handled. Duration 155 ms by bot id=7439911780
+2024-08-06 00:11:52,066 - aiogram.dispatcher - INFO - Start polling
+2024-08-06 00:11:52,422 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-06 00:11:56,281 - aiogram.event - INFO - Update id=104181226 is handled. Duration 375 ms by bot id=7439911780
+2024-08-06 00:12:53,795 - aiogram.dispatcher - INFO - Start polling
+2024-08-06 00:12:54,148 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-06 00:12:57,534 - aiogram.event - INFO - Update id=104181227 is handled. Duration 437 ms by bot id=7439911780
+2024-08-06 00:13:40,153 - aiogram.dispatcher - INFO - Start polling
+2024-08-06 00:13:40,498 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-06 00:13:46,913 - aiogram.event - INFO - Update id=104181228 is handled. Duration 452 ms by bot id=7439911780
+2024-08-06 00:14:42,996 - aiogram.dispatcher - INFO - Start polling
+2024-08-06 00:14:43,348 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-06 00:14:43,973 - aiogram.event - INFO - Update id=104181229 is handled. Duration 422 ms by bot id=7439911780
+2024-08-06 00:14:44,128 - aiogram.event - INFO - Update id=104181230 is handled. Duration 327 ms by bot id=7439911780
+2024-08-06 00:16:01,202 - aiogram.dispatcher - INFO - Start polling
+2024-08-06 00:16:01,568 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-06 00:16:02,246 - aiogram.event - INFO - Update id=104181231 is handled. Duration 483 ms by bot id=7439911780
+2024-08-06 00:16:02,493 - aiogram.event - INFO - Update id=104181232 is handled. Duration 187 ms by bot id=7439911780
+2024-08-06 00:16:05,231 - aiogram.event - INFO - Update id=104181233 is handled. Duration 296 ms by bot id=7439911780
+2024-08-06 00:17:36,580 - aiogram.dispatcher - INFO - Start polling
+2024-08-06 00:17:36,957 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-06 00:17:37,776 - aiogram.event - INFO - Update id=104181234 is handled. Duration 625 ms by bot id=7439911780
+2024-08-06 00:17:38,079 - aiogram.event - INFO - Update id=104181235 is handled. Duration 297 ms by bot id=7439911780
+2024-08-06 00:18:08,653 - aiogram.event - INFO - Update id=104181236 is handled. Duration 827 ms by bot id=7439911780
+2024-08-06 00:18:10,433 - aiogram.event - INFO - Update id=104181237 is handled. Duration 297 ms by bot id=7439911780
+2024-08-06 00:18:11,995 - aiogram.event - INFO - Update id=104181238 is handled. Duration 327 ms by bot id=7439911780
+2024-08-06 00:18:13,364 - logger_config - INFO - cscgaming
+2024-08-06 00:18:24,143 - logger_config - ERROR - Error: 2 validation errors for SendDocument
+document.is-instance[InputFile]
+  Input should be an instance of InputFile [type=is_instance_of, input_value=<_io.BufferedReader name=...cscgaming_2024-05.xlsx'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.7/v/is_instance_of
+document.str
+  Input should be a valid string [type=string_type, input_value=<_io.BufferedReader name=...cscgaming_2024-05.xlsx'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.7/v/string_type
+2024-08-06 00:18:24,399 - aiogram.event - INFO - Update id=104181239 is handled. Duration 11031 ms by bot id=7439911780
+2024-08-06 00:18:24,640 - aiogram.event - INFO - Update id=104181240 is handled. Duration 391 ms by bot id=7439911780
+2024-08-06 00:18:26,773 - aiogram.event - INFO - Update id=104181241 is handled. Duration 422 ms by bot id=7439911780
+2024-08-06 00:18:28,347 - aiogram.event - INFO - Update id=104181242 is handled. Duration 250 ms by bot id=7439911780
+2024-08-06 00:18:29,854 - aiogram.event - INFO - Update id=104181243 is handled. Duration 280 ms by bot id=7439911780
+2024-08-06 00:18:31,231 - logger_config - INFO - sec_of_chameleon
+2024-08-06 00:18:38,632 - aiogram.event - INFO - Update id=104181244 is handled. Duration 7405 ms by bot id=7439911780
+2024-08-06 00:18:42,098 - aiogram.event - INFO - Update id=104181245 is handled. Duration 140 ms by bot id=7439911780
+2024-08-06 00:18:43,839 - aiogram.event - INFO - Update id=104181246 is handled. Duration 297 ms by bot id=7439911780
+2024-08-06 00:18:45,362 - aiogram.event - INFO - Update id=104181247 is handled. Duration 265 ms by bot id=7439911780
+2024-08-06 00:18:47,520 - aiogram.event - INFO - Update id=104181248 is handled. Duration 297 ms by bot id=7439911780
+2024-08-06 00:18:48,547 - logger_config - INFO - cscgaming
+2024-08-06 00:19:02,672 - logger_config - ERROR - Error: 2 validation errors for SendDocument
+document.is-instance[InputFile]
+  Input should be an instance of InputFile [type=is_instance_of, input_value=<_io.BufferedReader name=...cscgaming_2024-05.xlsx'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.7/v/is_instance_of
+document.str
+  Input should be a valid string [type=string_type, input_value=<_io.BufferedReader name=...cscgaming_2024-05.xlsx'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.7/v/string_type
+2024-08-06 00:19:02,974 - aiogram.event - INFO - Update id=104181249 is handled. Duration 14422 ms by bot id=7439911780
+2024-08-06 00:19:50,337 - aiogram.dispatcher - INFO - Start polling
+2024-08-06 00:19:50,683 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-06 00:19:54,603 - aiogram.event - INFO - Update id=104181250 is handled. Duration 452 ms by bot id=7439911780
+2024-08-06 00:19:56,600 - aiogram.event - INFO - Update id=104181251 is handled. Duration 655 ms by bot id=7439911780
+2024-08-06 00:19:57,815 - aiogram.event - INFO - Update id=104181252 is handled. Duration 484 ms by bot id=7439911780
+2024-08-06 00:20:00,677 - aiogram.event - INFO - Update id=104181253 is handled. Duration 405 ms by bot id=7439911780
+2024-08-06 00:20:01,787 - logger_config - INFO - sec_of_chameleon
+2024-08-06 00:20:08,653 - aiogram.event - INFO - Update id=104181254 is handled. Duration 6875 ms by bot id=7439911780
+2024-08-06 00:20:16,938 - aiogram.event - INFO - Update id=104181255 is handled. Duration 172 ms by bot id=7439911780
+2024-08-06 00:20:18,775 - aiogram.event - INFO - Update id=104181256 is handled. Duration 452 ms by bot id=7439911780
+2024-08-06 00:20:20,551 - aiogram.event - INFO - Update id=104181257 is handled. Duration 422 ms by bot id=7439911780
+2024-08-06 00:20:22,773 - aiogram.event - INFO - Update id=104181258 is handled. Duration 375 ms by bot id=7439911780
+2024-08-06 00:20:25,065 - logger_config - INFO - cscgaming
+2024-08-06 00:20:36,145 - logger_config - ERROR - Error: 2 validation errors for SendDocument
+document.is-instance[InputFile]
+  Input should be an instance of InputFile [type=is_instance_of, input_value=<_io.BufferedReader name=...cscgaming_2024-06.xlsx'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.7/v/is_instance_of
+document.str
+  Input should be a valid string [type=string_type, input_value=<_io.BufferedReader name=...cscgaming_2024-06.xlsx'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.7/v/string_type
+2024-08-06 00:20:36,498 - aiogram.event - INFO - Update id=104181259 is handled. Duration 11436 ms by bot id=7439911780
+2024-08-06 00:21:41,404 - aiogram.event - INFO - Update id=104181260 is handled. Duration 407 ms by bot id=7439911780
+2024-08-06 00:21:43,078 - aiogram.event - INFO - Update id=104181261 is handled. Duration 250 ms by bot id=7439911780
+2024-08-06 00:21:45,170 - aiogram.event - INFO - Update id=104181262 is handled. Duration 562 ms by bot id=7439911780
+2024-08-06 00:21:46,684 - aiogram.event - INFO - Update id=104181263 is handled. Duration 266 ms by bot id=7439911780
+2024-08-06 00:21:48,585 - logger_config - INFO - cscgaming
+2024-08-06 00:21:49,105 - logger_config - INFO - For some reason, the bot cannot generate a report. CODE ERROR : 400 Client Error: Bad Request for url: https://api-seller.ozon.ru/v1/finance/realization
+2024-08-06 00:21:51,220 - logger_config - ERROR - Error: 2 validation errors for SendDocument
+document.is-instance[InputFile]
+  Input should be an instance of InputFile [type=is_instance_of, input_value=<_io.BufferedReader name=...cscgaming_2024-08.xlsx'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.7/v/is_instance_of
+document.str
+  Input should be a valid string [type=string_type, input_value=<_io.BufferedReader name=...cscgaming_2024-08.xlsx'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.7/v/string_type
+2024-08-06 00:21:51,514 - aiogram.event - INFO - Update id=104181264 is handled. Duration 2937 ms by bot id=7439911780
+2024-08-06 00:21:55,512 - aiogram.event - INFO - Update id=104181265 is handled. Duration 141 ms by bot id=7439911780
+2024-08-06 00:21:57,636 - aiogram.event - INFO - Update id=104181266 is handled. Duration 452 ms by bot id=7439911780
+2024-08-06 00:21:59,500 - aiogram.event - INFO - Update id=104181267 is handled. Duration 342 ms by bot id=7439911780
+2024-08-06 00:22:00,835 - aiogram.event - INFO - Update id=104181268 is handled. Duration 375 ms by bot id=7439911780
+2024-08-06 00:22:02,616 - logger_config - INFO - cscgaming
+2024-08-06 00:22:12,453 - logger_config - ERROR - Error: 2 validation errors for SendDocument
+document.is-instance[InputFile]
+  Input should be an instance of InputFile [type=is_instance_of, input_value=<_io.BufferedReader name=...cscgaming_2024-06.xlsx'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.7/v/is_instance_of
+document.str
+  Input should be a valid string [type=string_type, input_value=<_io.BufferedReader name=...cscgaming_2024-06.xlsx'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.7/v/string_type
+2024-08-06 00:22:12,832 - aiogram.event - INFO - Update id=104181269 is handled. Duration 10219 ms by bot id=7439911780
+2024-08-06 00:22:51,798 - aiogram.event - INFO - Update id=104181270 is handled. Duration 437 ms by bot id=7439911780
+2024-08-06 00:22:53,437 - aiogram.event - INFO - Update id=104181271 is handled. Duration 422 ms by bot id=7439911780
+2024-08-06 00:22:54,719 - aiogram.event - INFO - Update id=104181272 is handled. Duration 405 ms by bot id=7439911780
+2024-08-06 00:22:56,390 - aiogram.event - INFO - Update id=104181273 is handled. Duration 452 ms by bot id=7439911780
+2024-08-06 00:22:58,230 - logger_config - INFO - cscgaming
+2024-08-06 00:23:09,518 - logger_config - ERROR - Error: 2 validation errors for SendDocument
+document.is-instance[InputFile]
+  Input should be an instance of InputFile [type=is_instance_of, input_value=<_io.BufferedReader name=...cscgaming_2024-05.xlsx'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.7/v/is_instance_of
+document.str
+  Input should be a valid string [type=string_type, input_value=<_io.BufferedReader name=...cscgaming_2024-05.xlsx'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.7/v/string_type
+2024-08-06 00:23:09,974 - aiogram.event - INFO - Update id=104181274 is handled. Duration 11750 ms by bot id=7439911780
+2024-08-06 00:24:09,056 - aiogram.event - INFO - Update id=104181275 is handled. Duration 438 ms by bot id=7439911780
+2024-08-06 00:24:10,762 - aiogram.event - INFO - Update id=104181276 is handled. Duration 452 ms by bot id=7439911780
+2024-08-06 00:24:12,250 - aiogram.event - INFO - Update id=104181277 is handled. Duration 342 ms by bot id=7439911780
+2024-08-06 00:24:14,392 - aiogram.event - INFO - Update id=104181278 is handled. Duration 375 ms by bot id=7439911780
+2024-08-06 00:24:15,621 - logger_config - INFO - cscgaming
+2024-08-06 00:24:25,665 - logger_config - ERROR - Error: 2 validation errors for SendDocument
+document.is-instance[InputFile]
+  Input should be an instance of InputFile [type=is_instance_of, input_value=<_io.BufferedReader name=...cscgaming_2024-05.xlsx'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.7/v/is_instance_of
+document.str
+  Input should be a valid string [type=string_type, input_value=<_io.BufferedReader name=...cscgaming_2024-05.xlsx'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.7/v/string_type
+2024-08-06 00:24:25,989 - aiogram.event - INFO - Update id=104181279 is handled. Duration 10375 ms by bot id=7439911780
+2024-08-06 00:26:24,274 - aiogram.dispatcher - INFO - Start polling
+2024-08-06 00:26:24,652 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-06 00:26:25,324 - aiogram.event - INFO - Update id=104181281 is handled. Duration 469 ms by bot id=7439911780
+2024-08-06 00:26:25,326 - aiogram.event - INFO - Update id=104181282 is handled. Duration 454 ms by bot id=7439911780
+2024-08-06 00:26:25,328 - aiogram.event - INFO - Update id=104181280 is handled. Duration 469 ms by bot id=7439911780
+2024-08-06 00:26:27,364 - aiogram.event - INFO - Update id=104181283 is handled. Duration 562 ms by bot id=7439911780
+2024-08-06 00:26:28,822 - aiogram.event - INFO - Update id=104181284 is handled. Duration 484 ms by bot id=7439911780
+2024-08-06 00:26:30,206 - aiogram.event - INFO - Update id=104181285 is handled. Duration 390 ms by bot id=7439911780
+2024-08-06 00:26:31,329 - logger_config - INFO - cscgaming
+2024-08-06 00:26:39,849 - logger_config - ERROR - Error: 2 validation errors for SendDocument
+document.is-instance[InputFile]
+  Input should be an instance of InputFile [type=is_instance_of, input_value=<_io.BufferedReader name=...cscgaming_2024-06.xlsx'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.7/v/is_instance_of
+document.str
+  Input should be a valid string [type=string_type, input_value=<_io.BufferedReader name=...cscgaming_2024-06.xlsx'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.7/v/string_type
+2024-08-06 00:26:40,294 - aiogram.event - INFO - Update id=104181286 is handled. Duration 8967 ms by bot id=7439911780
+2024-08-06 00:34:56,982 - aiogram.dispatcher - INFO - Start polling
+2024-08-06 00:34:57,351 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-06 00:35:03,915 - aiogram.event - INFO - Update id=104181287 is handled. Duration 437 ms by bot id=7439911780
+2024-08-06 00:35:05,623 - aiogram.event - INFO - Update id=104181288 is handled. Duration 608 ms by bot id=7439911780
+2024-08-06 00:35:06,918 - aiogram.event - INFO - Update id=104181289 is handled. Duration 265 ms by bot id=7439911780
+2024-08-06 00:35:08,731 - aiogram.event - INFO - Update id=104181290 is handled. Duration 655 ms by bot id=7439911780
+2024-08-06 00:35:09,457 - logger_config - INFO - cscgaming
+2024-08-06 00:35:16,553 - logger_config - ERROR - Ошибка: Can't instantiate abstract class InputFile with abstract method read
+2024-08-06 00:35:16,878 - aiogram.event - INFO - Update id=104181291 is handled. Duration 7420 ms by bot id=7439911780
+2024-08-06 00:36:42,488 - aiogram.dispatcher - INFO - Start polling
+2024-08-06 00:36:42,832 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-06 00:36:43,469 - aiogram.event - INFO - Update id=104181292 is handled. Duration 437 ms by bot id=7439911780
+2024-08-06 00:36:49,083 - aiogram.event - INFO - Update id=104181293 is handled. Duration 204 ms by bot id=7439911780
+2024-08-06 00:36:51,389 - aiogram.event - INFO - Update id=104181294 is handled. Duration 859 ms by bot id=7439911780
+2024-08-06 00:36:52,664 - aiogram.event - INFO - Update id=104181295 is handled. Duration 359 ms by bot id=7439911780
+2024-08-06 00:36:54,255 - aiogram.event - INFO - Update id=104181296 is handled. Duration 375 ms by bot id=7439911780
+2024-08-06 00:36:55,214 - logger_config - INFO - sec_of_chameleon
+2024-08-06 00:37:03,560 - aiogram.event - INFO - Update id=104181297 is handled. Duration 8359 ms by bot id=7439911780
+2024-08-06 00:37:14,765 - aiogram.event - INFO - Update id=104181298 is handled. Duration 452 ms by bot id=7439911780
+2024-08-06 00:37:16,534 - aiogram.event - INFO - Update id=104181299 is handled. Duration 407 ms by bot id=7439911780
+2024-08-06 00:37:17,952 - aiogram.event - INFO - Update id=104181300 is handled. Duration 469 ms by bot id=7439911780
+2024-08-06 00:37:19,230 - aiogram.event - INFO - Update id=104181301 is handled. Duration 280 ms by bot id=7439911780
+2024-08-06 00:37:20,552 - logger_config - INFO - sec_of_chameleon
+2024-08-06 00:37:28,230 - aiogram.event - INFO - Update id=104181302 is handled. Duration 7687 ms by bot id=7439911780
+2024-08-06 00:38:18,362 - aiogram.dispatcher - INFO - Start polling
+2024-08-06 00:38:18,730 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-06 00:38:19,368 - aiogram.event - INFO - Update id=104181303 is handled. Duration 452 ms by bot id=7439911780
+2024-08-06 00:38:27,787 - aiogram.event - INFO - Update id=104181304 is handled. Duration 218 ms by bot id=7439911780
+2024-08-06 00:38:29,918 - aiogram.event - INFO - Update id=104181305 is handled. Duration 750 ms by bot id=7439911780
+2024-08-06 00:38:31,428 - aiogram.event - INFO - Update id=104181306 is handled. Duration 280 ms by bot id=7439911780
+2024-08-06 00:38:32,824 - aiogram.event - INFO - Update id=104181307 is handled. Duration 282 ms by bot id=7439911780
+2024-08-06 00:38:34,276 - logger_config - INFO - cscgaming
+2024-08-06 00:38:38,461 - logger_config - ERROR - Error: 2 validation errors for SendDocument
+document.is-instance[InputFile]
+  Input should be an instance of InputFile [type=is_instance_of, input_value=<_io.BufferedReader name=...cscgaming_2024-06.xlsx'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.7/v/is_instance_of
+document.str
+  Input should be a valid string [type=string_type, input_value=<_io.BufferedReader name=...cscgaming_2024-06.xlsx'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.7/v/string_type
+2024-08-06 00:38:39,035 - aiogram.event - INFO - Update id=104181308 is handled. Duration 4765 ms by bot id=7439911780
+2024-08-06 00:38:49,045 - aiogram.event - INFO - Update id=104181309 is handled. Duration 140 ms by bot id=7439911780
+2024-08-06 00:38:50,711 - aiogram.event - INFO - Update id=104181310 is handled. Duration 359 ms by bot id=7439911780
+2024-08-06 00:38:52,375 - aiogram.event - INFO - Update id=104181311 is handled. Duration 295 ms by bot id=7439911780
+2024-08-06 00:38:53,918 - aiogram.event - INFO - Update id=104181312 is handled. Duration 265 ms by bot id=7439911780
+2024-08-06 00:38:55,302 - aiogram.event - INFO - Update id=104181313 is handled. Duration 375 ms by bot id=7439911780
+2024-08-06 00:38:57,102 - aiogram.event - INFO - Update id=104181314 is handled. Duration 280 ms by bot id=7439911780
+2024-08-06 00:38:58,127 - logger_config - INFO - sec_of_chameleon
+2024-08-06 00:39:05,707 - aiogram.event - INFO - Update id=104181315 is handled. Duration 7579 ms by bot id=7439911780
+2024-08-06 00:39:15,106 - aiogram.event - INFO - Update id=104181316 is handled. Duration 155 ms by bot id=7439911780
+2024-08-06 00:39:16,777 - aiogram.event - INFO - Update id=104181317 is handled. Duration 282 ms by bot id=7439911780
+2024-08-06 00:39:18,642 - aiogram.event - INFO - Update id=104181318 is handled. Duration 469 ms by bot id=7439911780
+2024-08-06 00:39:20,415 - aiogram.event - INFO - Update id=104181319 is handled. Duration 265 ms by bot id=7439911780
+2024-08-06 00:39:22,406 - logger_config - INFO - cscgaming
+2024-08-06 00:39:24,769 - logger_config - ERROR - Error: 2 validation errors for SendDocument
+document.is-instance[InputFile]
+  Input should be an instance of InputFile [type=is_instance_of, input_value=<_io.BufferedReader name=...cscgaming_2024-07.xlsx'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.7/v/is_instance_of
+document.str
+  Input should be a valid string [type=string_type, input_value=<_io.BufferedReader name=...cscgaming_2024-07.xlsx'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.7/v/string_type
+2024-08-06 00:39:25,067 - aiogram.event - INFO - Update id=104181320 is handled. Duration 2672 ms by bot id=7439911780
+2024-08-06 00:40:54,466 - aiogram.dispatcher - INFO - Start polling
+2024-08-06 00:40:54,826 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-06 00:40:59,408 - aiogram.event - INFO - Update id=104181321 is handled. Duration 593 ms by bot id=7439911780
+2024-08-06 00:41:01,322 - aiogram.event - INFO - Update id=104181322 is handled. Duration 640 ms by bot id=7439911780
+2024-08-06 00:41:02,800 - aiogram.event - INFO - Update id=104181323 is handled. Duration 265 ms by bot id=7439911780
+2024-08-06 00:41:04,475 - aiogram.event - INFO - Update id=104181324 is handled. Duration 265 ms by bot id=7439911780
+2024-08-06 00:41:05,519 - logger_config - INFO - cscgaming
+2024-08-06 00:41:10,330 - logger_config - ERROR - Error: 2 validation errors for SendDocument
+document.is-instance[InputFile]
+  Input should be an instance of InputFile [type=is_instance_of, input_value=<_io.BufferedReader name=...cscgaming_2024-06.xlsx'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.7/v/is_instance_of
+document.str
+  Input should be a valid string [type=string_type, input_value=<_io.BufferedReader name=...cscgaming_2024-06.xlsx'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.7/v/string_type
+2024-08-06 00:41:10,781 - aiogram.event - INFO - Update id=104181325 is handled. Duration 5265 ms by bot id=7439911780
+2024-08-06 00:42:24,636 - aiogram.dispatcher - INFO - Start polling
+2024-08-06 00:42:25,027 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-08-06 00:42:25,673 - aiogram.event - INFO - Update id=104181326 is handled. Duration 437 ms by bot id=7439911780
+2024-08-06 00:42:27,949 - aiogram.event - INFO - Update id=104181327 is handled. Duration 812 ms by bot id=7439911780
+2024-08-06 00:42:28,912 - aiogram.event - INFO - Update id=104181328 is handled. Duration 327 ms by bot id=7439911780
+2024-08-06 00:42:30,344 - aiogram.event - INFO - Update id=104181329 is handled. Duration 297 ms by bot id=7439911780
+2024-08-06 00:42:31,229 - logger_config - INFO - sec_of_chameleon
+2024-08-06 00:42:39,225 - aiogram.event - INFO - Update id=104181330 is handled. Duration 8000 ms by bot id=7439911780
+2024-08-06 00:42:42,870 - aiogram.event - INFO - Update id=104181331 is handled. Duration 140 ms by bot id=7439911780
+2024-08-06 00:42:44,429 - aiogram.event - INFO - Update id=104181332 is handled. Duration 280 ms by bot id=7439911780
+2024-08-06 00:42:45,632 - aiogram.event - INFO - Update id=104181333 is handled. Duration 265 ms by bot id=7439911780
+2024-08-06 00:42:47,291 - aiogram.event - INFO - Update id=104181334 is handled. Duration 467 ms by bot id=7439911780
+2024-08-06 00:42:48,290 - logger_config - INFO - sec_of_chameleon
+2024-08-06 00:42:53,806 - aiogram.event - INFO - Update id=104181335 is handled. Duration 5531 ms by bot id=7439911780
+2024-08-06 00:42:57,412 - aiogram.event - INFO - Update id=104181336 is handled. Duration 157 ms by bot id=7439911780
+2024-08-06 00:42:59,770 - aiogram.event - INFO - Update id=104181337 is handled. Duration 312 ms by bot id=7439911780
+2024-08-06 00:43:01,170 - aiogram.event - INFO - Update id=104181338 is handled. Duration 280 ms by bot id=7439911780
+2024-08-06 00:43:03,372 - aiogram.event - INFO - Update id=104181339 is handled. Duration 592 ms by bot id=7439911780
+2024-08-06 00:43:05,285 - aiogram.event - INFO - Update id=104181340 is handled. Duration 282 ms by bot id=7439911780
+2024-08-06 00:43:06,486 - aiogram.event - INFO - Update id=104181341 is handled. Duration 280 ms by bot id=7439911780
+2024-08-06 00:43:08,086 - aiogram.event - INFO - Update id=104181342 is handled. Duration 390 ms by bot id=7439911780
+2024-08-06 00:43:09,522 - aiogram.event - INFO - Update id=104181343 is handled. Duration 281 ms by bot id=7439911780
+2024-08-06 00:43:10,679 - logger_config - INFO - cscgaming
+2024-08-06 00:43:14,526 - aiogram.event - INFO - Update id=104181344 is handled. Duration 3859 ms by bot id=7439911780
+2024-08-06 00:43:19,717 - aiogram.event - INFO - Update id=104181345 is handled. Duration 187 ms by bot id=7439911780
+2024-08-06 00:43:21,477 - aiogram.event - INFO - Update id=104181346 is handled. Duration 312 ms by bot id=7439911780
+2024-08-06 00:43:22,998 - aiogram.event - INFO - Update id=104181347 is handled. Duration 358 ms by bot id=7439911780
+2024-08-06 00:43:24,683 - aiogram.event - INFO - Update id=104181348 is handled. Duration 484 ms by bot id=7439911780
+2024-08-06 00:43:25,609 - logger_config - INFO - sec_of_chameleon
+2024-08-06 00:43:32,483 - aiogram.event - INFO - Update id=104181349 is handled. Duration 6875 ms by bot id=7439911780

@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="content-wrapper" style="min-height: 2646.62px;">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Отчеты</h1>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+        <!-- Default box -->
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title mb-2">Расчет за единицу</h3>
+            </div>
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body table-responsive p-0">
+                        <form method="post">
+                            {% csrf_token %}
+                            {{ formset.management_form }}
+                            <table class="table table-hover text-nowrap">
+                                <thead>
+                                    <tr>
+                                        {% for title in titles %}
+                                            <th> {{ title }} </th>
+                                        {% endfor %}
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    {% for form in formset %}
+                                        <tr>
+                                            {% for field in form %}
+                                                <td>{{ field }}</td>
+                                            {% endfor %}
+                                        </tr>
+                                    {% endfor %}
+
+
+                                </tbody>
+                            </table>
+                            <button class="btn btn-primary ml-2" type="submit">Обновить данные в БД</button>
+                        </form>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="p-3 mb-2 text-white">
+                                <form action="{% url 'reports:delete_report' report_id=report_instance.id %}" method="post"
+                                    style="display:inline;">
+                                    {% csrf_token %}
+                                    <button class="btn btn-block btn-danger btn-lg" type="submit">Удалить отчет</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="p-3 mb-2 text-white">
+                                <a class="btn btn-block btn-success btn-lg"
+                                    href="{% url 'reports:download_report' report_id=report_instance.id %}">
+                                    <i class="fas fa-download"></i> Скачать отчет
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+        </div>
+        <!-- /.card-body -->
+
+        <!-- /.card -->
+
+    </section>
+    <!-- /.content -->
+</div>
+{% endblock %}

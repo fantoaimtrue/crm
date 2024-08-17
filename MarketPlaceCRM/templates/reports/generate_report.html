@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+
+{% block content %}
+
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Отчет по выбранным товарам</h1>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Детали отчета</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body p-0">
+                            <!-- TITLE -->
+                            <div class="row hide-on-small text-sm-center">
+                                <div class="col-md-2 d-flex align-items-center">
+                                    <label class="w-100 text-center">Название товара</label>
+                                </div>
+                                <div class="col-md-2 d-flex align-items-center">
+                                    <label class="w-100 text-center">Цена товара</label>
+                                </div>
+                                <div class="col-md-2 d-flex align-items-center">
+                                    <label class="w-100 text-center">Вес товара</label>
+                                </div>
+                                <div class="col-md-2 d-flex align-items-center">
+                                    <label class="w-100 text-center">Количество товара</label>
+                                </div>
+                                <div class="col-md-2 d-flex align-items-center">
+                                    <label class="w-100 text-center">Доставка по Китаю</label>
+                                </div>
+                                <div class="col-md-2 d-flex align-items-center">
+                                    <label class="w-100 text-center"></label>
+                                </div>
+                            </div>
+                            <form action="{% url 'reports:save_report' %}" method="post">
+                            {% csrf_token %}
+                            {% for item in objects %}
+                                <div class="row m-1">
+                                    <div class="col-md-2">
+                                        <div class="input-group mb-2">
+                                            <input type="text" class="form-control" name="product_name_{{ item.id }}" value="{{ item.product_name }}" placeholder="Название">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="input-group mb-2">
+                                            <input type="text" class="form-control" name="product_price_{{ item.id }}" value="{{ item.product_price }}" placeholder="Цена ₽">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="input-group mb-2">
+                                            <input type="text" class="form-control" name="product_weight_{{ item.id }}" value="{{ item.product_weight }}" placeholder="Вес (в кг.)">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="input-group mb-2">
+                                            <input type="text" class="form-control" name="product_quantity_{{ item.id }}" value="{{ item.product_quantity }}" placeholder="Количество">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="input-group mb-2">
+                                            <input type="text" class="form-control" name="delivery_in_china_{{ item.id }}" value="{{ item.delivery_in_china }}" placeholder="Доставка по Китаю">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="input-group mb-2"></div>
+                                    </div>
+                                </div>
+
+                            {% endfor %}
+                                <div class="row m-1">
+                                    <div class="col-md-4">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">$</span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Доставка до МСК" name="delivery_to_moscow">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">%</span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Комиссия" value="3" name="commission">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row m-1">
+                                    <div class="col-md-4">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">₽</span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Доставка до офиса" name="delivery_to_office">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">%</span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Страховка" value="1" name="last_insurance">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row m-1">
+                                    <div class="col-md-4">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">¥</span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Курс Юаня" value="12" name="price_uan">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">$</span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Курс Доллара" value="85" name="price_dollar">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="m-3">
+                                    <button type="submit" class="btn btn-primary">Сохранить отчет</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock content %}
