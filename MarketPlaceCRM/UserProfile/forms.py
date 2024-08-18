@@ -11,7 +11,7 @@ class ProfileForm(forms.ModelForm):
 
     class Meta:
         model = Profile
-        fields = ['email', 'wb_token', 'ozon_token', 'telegram_id']
+        fields = ['email', 'wb_token', 'ozon_token', 'tg_username']
         widgets = {
             'email': forms.EmailInput(
                 attrs={'class': 'form-control', 'placeholder': 'Введите свой email адрес'}
@@ -22,8 +22,8 @@ class ProfileForm(forms.ModelForm):
             'ozon_token': forms.TextInput(
                 attrs={'class': 'form-control', 'placeholder': 'Введите токен ozon'}
             ),
-            'telegram_id': forms.NumberInput(
-                attrs={'class': 'form-control', 'placeholder': 'Введите telegram-id'}
+            'tg_username': forms.TextInput(
+                attrs={'class': 'form-control', 'placeholder': 'Введите свое имя в Telegram в формате "@username"'}
             ),
         }
     

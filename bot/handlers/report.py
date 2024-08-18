@@ -11,6 +11,10 @@ from parser.wb import all_sales
 from main import bot
 from config.set import admins
 
+from sqlalchemy.future import select
+from Data.models import Profile
+from Data.db import get_session
+
 from keyboards.inline import kb_change_market_place, brand_inline, years_inline, month_inline
 
 router = Router()
@@ -24,12 +28,28 @@ async def is_group_admin(chat_id: int, user_id: int) -> bool:
     member = await bot.get_chat_member(chat_id, user_id)
     return member.status in [ChatMember.ADMINISTRATOR, ChatMember.CREATOR]
 
+
 @router.message(Command(commands=["report"]))
 async def cmd_start(message: Message):
-    if not await is_admin(message.from_user.id):
-        await message.answer("У вас нет доступа к этой команде.")
-        return
-    await message.answer("Выберите маркетплейс 🛍", reply_markup=kb_change_market_place().as_markup())
+    session = get_session()
+    try:
+        tg_user = f'@{message.from_user.username}'
+        result = await session.execute(select(Profile).where(Profile.tg_username == tg_user))
+        profile = result.scalars().first()
+        if profile:
+            await message.answer("Выберите маркетплейс 🛍", reply_markup=kb_change_market_place().as_markup())
+        else:
+            await message.answer("Профиль не найден.")
+            if not await is_admin(message.from_user.id):
+                await message.answer("У вас нет доступа к этой команде.")
+                return
+            await message.answer("Выберите маркетплейс 🛍", reply_markup=kb_change_market_place().as_markup())
+    except Exception as e:
+        await message.answer(f"Произошла ошибка: {str(e)}")
+    finally:
+        await session.close()
+    
+
 
 @router.callback_query(F.data.startswith('mp_'))
 async def change_brand(callback: CallbackQuery, state: FSMContext):
