@@ -14,36 +14,39 @@ wb_aqua_api_key = str(os.getenv('WB_AQUA_API_KEY'))
 #test branch
 
 
-headers = {
-    'Authorization': wb_aqua_api_key,
-}
+
 
 current_datetime = datetime.now()
 formatted_datetime = current_datetime.strftime("%Y-%m-%d")
 
 
 
-# Функция для получения всех данных статистики и сохранения их в JSON файлы
-def get_all_statics(date):
-    urls = {
-        'sales': 'https://statistics-api.wildberries.ru/api/v1/supplier/sales',
-    }
-    data = {}
-    for url_key, link in urls.items():
-        response = requests.get(url=link, headers=headers, params={
-            'dateFrom': date,
-        })
-        if response.status_code == 200:
-            data[url_key] = response.json()
-            with open(f'parser/reports/wb/{url_key}.json', 'w', encoding='utf-8') as f:
-                json.dump(data[url_key], f, ensure_ascii=False, indent=4)
-        else:
-            pprint(f'Не удалось получить данные с {link}. Код состояния: {response.status_code}')
-    return data
+# # Функция для получения всех данных статистики и сохранения их в JSON файлы
+# def get_all_statics(date):
+#     urls = {
+#         'sales': 'https://statistics-api.wildberries.ru/api/v1/supplier/sales',
+#     }
+#     data = {}
+#     for url_key, link in urls.items():
+#         response = requests.get(url=link, headers=headers, params={
+#             'dateFrom': date,
+#         })
+#         if response.status_code == 200:
+#             data[url_key] = response.json()
+#         else:
+#             pprint(f'Не удалось получить данные с {link}. Код состояния: {response.status_code}')
+#     return data
+#     print(data)
 
 # Функция для сбора всех продаж за указанный месяц и год
 def all_sales(sales_year, sales_month, label, brand, date):
-    data = get_all_statics(date).get('sales', [])
+    headers = {
+        'Authorization': wb_aqua_api_key,
+    }
+    response = requests.get(url='https://statistics-api.wildberries.ru/api/v1/supplier/sales', headers=headers, params={
+            'dateFrom': date,
+        }).json()
+    data = response.get('sales', [])
     if not data:
         print("No data found")
         return
