@@ -77,8 +77,7 @@ def report(month, year, config):
     for r in res['result']['rows']:
         item_name = r['item']['offer_id']
         item_price = r['seller_price_per_instance']
-        commission_ratio = r['commission_ratio']
-        item_qty = 1  
+        commission_ratio = r['commission_ratio'] 
         if r['delivery_commission'] is not None:
             item_qty = r['delivery_commission']['quantity']
 
@@ -88,7 +87,7 @@ def report(month, year, config):
                 arr[item_name] = {
                     'Количество товара': item_qty,
                     'Средняя цена продажи': item_price,
-                    'Общая сумма продажи': item_price,  # Первоначальное значение - цена первой продажи
+                    'Общая сумма продажи': item_price * item_qty,  # Первоначальное значение - цена первой продажи
                     'Комиссия за продажу': commission_ratio * item_price
                 }
             else:
@@ -175,8 +174,8 @@ def get_full(date, config):
 
 
 def main():
-    report(month=5, year=2024, config='sec_of_chameleon')
-    # report_v2(month=5, year=2024, config='sec_of_chameleon')
+    report(month=8, year=2024, config='sec_of_chameleon')
+    report_v2(month=8, year=2024, config='sec_of_chameleon')
 
 
 if __name__ == '__main__':

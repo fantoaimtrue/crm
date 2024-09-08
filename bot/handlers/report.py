@@ -6,6 +6,7 @@ from aiogram.types import InputFile
 from aiogram.types import ChatMember, Message, CallbackQuery, BufferedInputFile
 from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
+from aiogram.types import FSInputFile
 from pprint import pprint
 from parser.ozon import report
 from parser.wb import all_sales
@@ -128,35 +129,20 @@ async def change_finish(callback: CallbackQuery, state: FSMContext):
     date = f'{years}-{month}'
     await callback.message.answer('Ожидайте ⌛️')
     if mp == 'mp_ozon':
-        file_path = None
         
         if brand == 'sec_of_chameleon':
-            file_path = os.path.join('parser', 'reports', 'ozon', 'aqua', f'ozon_{brand}_{month}_{years}.xlsx')
+            file_path = os.path.join('bot', 'parser', 'reports', 'ozon', 'aqua', f'ozon_{brand}_{month}_{years}.xlsx')
+            document = FSInputFile(file_path)
+            # Отправляем файл пользователю
+            await bot.send_document(callback.message.chat.id, document)
         
         elif brand == 'cscgaming':
-            file_path = os.path.join('parser', 'reports', 'ozon', 'csc', f'ozon_{brand}_{month}_{years}.xlsx')
+            file_path = os.path.join('bot', 'parser', 'reports', 'ozon', 'csc', f'ozon_{brand}_{month}_{years}.xlsx')
+            document = FSInputFile(file_path)
+            # Отправляем файл пользователю
+            await bot.send_document(callback.message.chat.id, document)
         
-        try:
-            # Генерация отчета
-            logger.info(f'Генерация отчета для {brand} за {month}/{years}')
-            report(month=int(month), year=int(years), config=brand)
-            await asyncio.sleep(2)
-            
-            # Проверка, что файл существует
-            if file_path and os.path.exists(file_path):
-                logger.info(f'Файл найден: {file_path}')
-                with open(file_path, 'rb') as file:
-                    document = InputFile(file, filename=f'ozon_{brand}_{month}_{years}.xlsx')
-                    await bot.send_document(chat_id=callback.from_user.id, document=document)
-            else:
-                await callback.message.answer('Файл отчета не найден.')
-                logger.warning(f'Файл не найден: {file_path}')
         
-        except Exception as ex:
-            # Обработка ошибок
-            logger.error(f'Ошибка при создании или отправке отчета: {ex}')
-            await callback.message.answer('По каким-то причинам бот не может сформировать отчет.')
-            logger.info(f'Ошибка при генерации отчета. CODE ERROR: {ex}')
 
     if mp == 'mp_wildberries':
         pprint('Скоро будет')
