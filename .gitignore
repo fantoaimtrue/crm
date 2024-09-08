@@ -10,3 +10,5 @@ __pycache__/
 # Игнорирование файлов .swp
 *.swp
 .vscode/launch.json
+logs/bot.log
+migrations/

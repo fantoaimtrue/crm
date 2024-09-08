@@ -591,3 +591,142 @@ document.str
 2024-08-06 00:43:24,683 - aiogram.event - INFO - Update id=104181348 is handled. Duration 484 ms by bot id=7439911780
 2024-08-06 00:43:25,609 - logger_config - INFO - sec_of_chameleon
 2024-08-06 00:43:32,483 - aiogram.event - INFO - Update id=104181349 is handled. Duration 6875 ms by bot id=7439911780
+2024-09-07 00:26:30,503 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-09-07 00:26:30,503 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-09-07 00:26:30,507 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-09-07 00:26:30,507 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-09-07 00:26:30,509 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-09-07 00:26:30,510 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-09-07 00:26:30,511 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-09-07 00:26:30,511 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-09-07 00:26:30,512 - aiogram.dispatcher - INFO - Start polling
+2024-09-07 00:26:32,682 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-09-07 00:26:41,681 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-09-07 00:26:41,684 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-09-07 00:26:41,684 - sqlalchemy.engine.Engine - INFO - [generated in 0.00089s] ('@Andreyanov_A_A',)
+2024-09-07 00:26:42,505 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-09-07 00:26:42,505 - aiogram.event - INFO - Update id=104181553 is handled. Duration 812 ms by bot id=7439911780
+2024-09-07 00:26:44,650 - aiogram.event - INFO - Update id=104181554 is handled. Duration 422 ms by bot id=7439911780
+2024-09-07 00:26:46,720 - aiogram.event - INFO - Update id=104181555 is handled. Duration 375 ms by bot id=7439911780
+2024-09-07 00:26:48,123 - aiogram.event - INFO - Update id=104181556 is handled. Duration 281 ms by bot id=7439911780
+2024-09-07 00:26:51,393 - logger_config - INFO - cscgaming
+2024-09-07 00:26:51,886 - logger_config - INFO - По каким-то причинам бот не может сформировать отчет. CODE ERROR : 400 Client Error: Bad Request for url: https://api-seller.ozon.ru/v2/finance/realization
+2024-09-07 00:26:51,888 - aiogram.event - INFO - Update id=104181557 is handled. Duration 500 ms by bot id=7439911780
+2024-09-07 00:26:57,145 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-09-07 00:26:57,146 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-09-07 00:26:57,147 - sqlalchemy.engine.Engine - INFO - [cached since 15.46s ago] ('@Andreyanov_A_A',)
+2024-09-07 00:26:57,473 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-09-07 00:26:57,474 - aiogram.event - INFO - Update id=104181558 is handled. Duration 327 ms by bot id=7439911780
+2024-09-07 00:26:59,264 - aiogram.event - INFO - Update id=104181559 is handled. Duration 250 ms by bot id=7439911780
+2024-09-07 00:27:01,566 - aiogram.event - INFO - Update id=104181560 is handled. Duration 422 ms by bot id=7439911780
+2024-09-07 00:27:04,188 - aiogram.event - INFO - Update id=104181561 is handled. Duration 250 ms by bot id=7439911780
+2024-09-07 00:27:05,927 - logger_config - INFO - sec_of_chameleon
+2024-09-07 00:27:06,249 - logger_config - INFO - По каким-то причинам бот не может сформировать отчет. CODE ERROR : report() got an unexpected keyword argument 'date'
+2024-09-07 00:27:06,250 - aiogram.event - INFO - Update id=104181562 is handled. Duration 327 ms by bot id=7439911780
+2024-09-07 00:28:22,098 - aiogram.dispatcher - INFO - Polling stopped for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-09-07 00:28:22,098 - aiogram.dispatcher - INFO - Polling stopped
+2024-09-07 00:28:27,403 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-09-07 00:28:27,403 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-09-07 00:28:27,404 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-09-07 00:28:27,404 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-09-07 00:28:27,405 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-09-07 00:28:27,405 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-09-07 00:28:27,407 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-09-07 00:28:27,408 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-09-07 00:28:27,408 - aiogram.dispatcher - INFO - Start polling
+2024-09-07 00:28:27,742 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-09-07 00:28:36,041 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-09-07 00:28:36,044 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-09-07 00:28:36,045 - sqlalchemy.engine.Engine - INFO - [generated in 0.00090s] ('@Andreyanov_A_A',)
+2024-09-07 00:28:36,729 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-09-07 00:28:36,730 - aiogram.event - INFO - Update id=104181563 is handled. Duration 687 ms by bot id=7439911780
+2024-09-07 00:28:39,019 - aiogram.event - INFO - Update id=104181564 is handled. Duration 327 ms by bot id=7439911780
+2024-09-07 00:28:40,953 - aiogram.event - INFO - Update id=104181565 is handled. Duration 469 ms by bot id=7439911780
+2024-09-07 00:28:42,112 - aiogram.event - INFO - Update id=104181566 is handled. Duration 280 ms by bot id=7439911780
+2024-09-07 00:28:43,874 - logger_config - INFO - sec_of_chameleon
+2024-09-07 00:28:44,376 - logger_config - INFO - По каким-то причинам бот не может сформировать отчет. CODE ERROR : 400 Client Error: Bad Request for url: https://api-seller.ozon.ru/v2/finance/realization
+2024-09-07 00:28:44,378 - aiogram.event - INFO - Update id=104181567 is handled. Duration 500 ms by bot id=7439911780
+2024-09-07 00:29:59,577 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-09-07 00:29:59,578 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-09-07 00:29:59,579 - sqlalchemy.engine.Engine - INFO - [cached since 83.54s ago] ('@Andreyanov_A_A',)
+2024-09-07 00:30:00,186 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-09-07 00:30:00,187 - aiogram.event - INFO - Update id=104181568 is handled. Duration 608 ms by bot id=7439911780
+2024-09-07 00:30:02,666 - aiogram.event - INFO - Update id=104181569 is handled. Duration 547 ms by bot id=7439911780
+2024-09-07 00:30:04,487 - aiogram.event - INFO - Update id=104181570 is handled. Duration 391 ms by bot id=7439911780
+2024-09-07 00:30:06,091 - aiogram.event - INFO - Update id=104181571 is handled. Duration 500 ms by bot id=7439911780
+2024-09-07 00:30:07,541 - logger_config - INFO - sec_of_chameleon
+2024-09-07 00:30:08,061 - logger_config - INFO - По каким-то причинам бот не может сформировать отчет. CODE ERROR : 400 Client Error: Bad Request for url: https://api-seller.ozon.ru/v2/finance/realization
+2024-09-07 00:30:08,063 - aiogram.event - INFO - Update id=104181572 is handled. Duration 515 ms by bot id=7439911780
+2024-09-07 00:31:28,257 - aiogram.dispatcher - INFO - Polling stopped for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-09-07 00:31:28,257 - aiogram.dispatcher - INFO - Polling stopped
+2024-09-07 00:31:33,396 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-09-07 00:31:33,396 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-09-07 00:31:33,398 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-09-07 00:31:33,398 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-09-07 00:31:33,399 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-09-07 00:31:33,400 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-09-07 00:31:33,402 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-09-07 00:31:33,402 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-09-07 00:31:33,403 - aiogram.dispatcher - INFO - Start polling
+2024-09-07 00:31:33,726 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-09-07 00:31:59,186 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-09-07 00:31:59,189 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-09-07 00:31:59,190 - sqlalchemy.engine.Engine - INFO - [generated in 0.00094s] ('@Andreyanov_A_A',)
+2024-09-07 00:31:59,826 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-09-07 00:31:59,826 - aiogram.event - INFO - Update id=104181573 is handled. Duration 641 ms by bot id=7439911780
+2024-09-07 00:32:02,026 - aiogram.event - INFO - Update id=104181574 is handled. Duration 452 ms by bot id=7439911780
+2024-09-07 00:32:04,152 - aiogram.event - INFO - Update id=104181575 is handled. Duration 484 ms by bot id=7439911780
+2024-09-07 00:32:05,680 - aiogram.event - INFO - Update id=104181576 is handled. Duration 469 ms by bot id=7439911780
+2024-09-07 00:32:06,888 - logger_config - INFO - sec_of_chameleon
+2024-09-07 00:32:07,430 - logger_config - INFO - По каким-то причинам бот не может сформировать отчет. CODE ERROR : 400 Client Error: Bad Request for url: https://api-seller.ozon.ru/v2/finance/realization
+2024-09-07 00:32:07,432 - aiogram.event - INFO - Update id=104181577 is handled. Duration 547 ms by bot id=7439911780
+2024-09-07 00:34:31,064 - aiogram.dispatcher - INFO - Polling stopped for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-09-07 00:34:31,064 - aiogram.dispatcher - INFO - Polling stopped
+2024-09-07 00:34:38,282 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-09-07 00:34:38,282 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-09-07 00:34:38,283 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-09-07 00:34:38,283 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-09-07 00:34:38,284 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-09-07 00:34:38,285 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-09-07 00:34:38,287 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-09-07 00:34:38,287 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-09-07 00:34:38,287 - aiogram.dispatcher - INFO - Start polling
+2024-09-07 00:34:38,615 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-09-07 00:34:56,286 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-09-07 00:34:56,289 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-09-07 00:34:56,290 - sqlalchemy.engine.Engine - INFO - [generated in 0.00076s] ('@Andreyanov_A_A',)
+2024-09-07 00:34:56,794 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-09-07 00:34:56,795 - aiogram.event - INFO - Update id=104181578 is handled. Duration 515 ms by bot id=7439911780
+2024-09-07 00:34:58,327 - aiogram.event - INFO - Update id=104181579 is handled. Duration 250 ms by bot id=7439911780
+2024-09-07 00:34:59,642 - aiogram.event - INFO - Update id=104181580 is handled. Duration 280 ms by bot id=7439911780
+2024-09-07 00:35:01,299 - aiogram.event - INFO - Update id=104181581 is handled. Duration 343 ms by bot id=7439911780
+2024-09-07 00:35:02,385 - logger_config - INFO - sec_of_chameleon
+2024-09-07 00:35:03,470 - logger_config - INFO - По каким-то причинам бот не может сформировать отчет. CODE ERROR : 400 Client Error: Bad Request for url: https://api-seller.ozon.ru/v2/finance/realization
+2024-09-07 00:35:03,472 - aiogram.event - INFO - Update id=104181582 is handled. Duration 1077 ms by bot id=7439911780
+2024-09-07 00:36:57,261 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-09-07 00:36:57,261 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-09-07 00:36:57,262 - sqlalchemy.engine.Engine - INFO - [cached since 121s ago] ('@Andreyanov_A_A',)
+2024-09-07 00:36:57,881 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-09-07 00:36:57,883 - aiogram.event - INFO - Update id=104181583 is handled. Duration 609 ms by bot id=7439911780
+2024-09-07 00:36:59,794 - aiogram.event - INFO - Update id=104181584 is handled. Duration 265 ms by bot id=7439911780
+2024-09-07 00:37:01,401 - aiogram.event - INFO - Update id=104181585 is handled. Duration 422 ms by bot id=7439911780
+2024-09-07 00:37:02,586 - aiogram.event - INFO - Update id=104181586 is handled. Duration 375 ms by bot id=7439911780
+2024-09-07 00:37:03,509 - logger_config - INFO - sec_of_chameleon
+2024-09-07 00:37:04,045 - logger_config - INFO - По каким-то причинам бот не может сформировать отчет. CODE ERROR : 400 Client Error: Bad Request for url: https://api-seller.ozon.ru/v2/finance/realization
+2024-09-07 00:37:04,047 - aiogram.event - INFO - Update id=104181587 is handled. Duration 547 ms by bot id=7439911780
+2024-09-07 00:38:44,725 - aiogram.dispatcher - INFO - Polling stopped for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-09-07 00:38:44,727 - aiogram.dispatcher - INFO - Polling stopped

@@ -1,20 +1,28 @@
 from aiogram import Router
 from aiogram.types import Message
 from aiogram.filters import Command
-# from db import create_user
-from keyboards.default import kb_report
+from sqlalchemy.future import select
+from Data.models import Profile
+from Data.db import get_session
+   
 
 router = Router()
 
-# Инициализация подключения к БД
-# db_pool = None
 
 @router.message(Command(commands=["start"]))
 async def cmd_start(message: Message):
-    # await create_user(
-    #     message.from_user.id,
-    #     message.from_user.username,
-    #     message.from_user.first_name,
-    #     message.from_user.last_name
-    # )
-    await message.answer("Для получения отчета введите /report")
+    session = get_session()
+    try:
+        # Выполнение запроса к базе данных
+        tg_user = f'@{message.from_user.username}'
+        result = await session.execute(select(Profile).where(Profile.tg_username == tg_user))
+        profile = result.scalars().first()
+
+        if profile:
+            await message.answer(f"Ваш email: {profile.email}")
+        else:
+            await message.answer("Профиль не найден.")
+    except Exception as e:
+        await message.answer(f"Произошла ошибка: {str(e)}")
+    finally:
+        await session.close()
