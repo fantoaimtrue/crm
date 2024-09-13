@@ -7,7 +7,7 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 load_dotenv()
 
 # Получаем параметры подключения из переменных окружения
-ip = os.getenv('IP')
+ip = '127.0.0.1'
 PGUSER = str(os.getenv('PGUSER'))
 PGPASSWORD = str(os.getenv('PGPASSWORD'))
 DATABASE = str(os.getenv('DATABASE'))

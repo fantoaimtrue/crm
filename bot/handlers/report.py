@@ -2,14 +2,22 @@ from cProfile import label
 import os
 from logger_config import logger
 from aiogram import Router, flags, F
+from aiogram.types import InputFile
 from aiogram.types import ChatMember, Message, CallbackQuery, BufferedInputFile
 from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
+from aiogram.types import FSInputFile
 from pprint import pprint
 from parser.ozon import report
 from parser.wb import all_sales
 from main import bot
 from config.set import admins
+import asyncio
+
+
+from sqlalchemy.future import select
+from Data.models import Profile
+from Data.db import get_session
 
 from keyboards.inline import kb_change_market_place, brand_inline, years_inline, month_inline
 
@@ -24,12 +32,17 @@ async def is_group_admin(chat_id: int, user_id: int) -> bool:
     member = await bot.get_chat_member(chat_id, user_id)
     return member.status in [ChatMember.ADMINISTRATOR, ChatMember.CREATOR]
 
+
 @router.message(Command(commands=["report"]))
-async def cmd_start(message: Message):
-    if not await is_admin(message.from_user.id):
-        await message.answer("У вас нет доступа к этой команде.")
-        return
-    await message.answer("Выберите маркетплейс 🛍", reply_markup=kb_change_market_place().as_markup())
+async def cmd_report(message: Message):
+            await message.answer("Профиль не найден.")
+            if not await is_admin(message.from_user.id):
+                await message.answer("У вас нет доступа к этой команде.")
+                return
+            await message.answer("Выберите маркетплейс 🛍", reply_markup=kb_change_market_place().as_markup())
+
+    
+
 
 @router.callback_query(F.data.startswith('mp_'))
 async def change_brand(callback: CallbackQuery, state: FSMContext):
@@ -96,9 +109,9 @@ async def change_finish(callback: CallbackQuery, state: FSMContext):
     
     await state.update_data(month=callback.data)
     dt = await state.get_data()
-    pprint(dt)
     years = dt['years'].split('_')[1]
     month = dt['month'].split('_')[1]
+    pprint(month)
     mp = dt['mp']
     brand = dt['brand'].split('brand_')[1]
     logger.info(f'{brand}')
@@ -107,35 +120,29 @@ async def change_finish(callback: CallbackQuery, state: FSMContext):
     if mp == 'mp_ozon':
         if brand == 'sec_of_chameleon':
             try:
-                report(date=date, config=brand)
-                file_path = f'parser/reports/ozon/aqua/ozon_{brand}_{date}.xlsx'
-                if os.path.exists(file_path):
-                    with open(file_path, 'rb') as file:
-                        document = BufferedInputFile(file.read(), filename=f'ozon_{brand}_{date}.xlsx')
-                        await bot.send_document(chat_id=callback.from_user.id, document=document)
-                else:
-                    await callback.message.answer('Файл отчета не найден.')
-                    logger.info('Файл не найден')
+                report(month=int(month), year=int(years), config=brand)
+                await asyncio.sleep(2)
+                file_path = os.path.join('parser', 'reports', 'ozon', 'aqua', f'ozon_{brand}_{month}_{years}.xlsx')
+                document = FSInputFile(file_path)
+                # Отправляем файл пользователю
+                await bot.send_document(callback.message.chat.id, document)
             except Exception as ex:
+                await callback.message.answer(f'Ошибка: {ex}')
                 pprint(ex)
-                await callback.message.answer('По каким-то причинам бот не может сформировать отчет.')
-                logger.info(f'По каким-то причинам бот не может сформировать отчет. CODE ERROR : {ex}')
-
+        
         elif brand == 'cscgaming':
             try:
-                report(date=date, config=brand)
-                file_path = f'parser/reports/ozon/csc/ozon_{brand}_{date}.xlsx'
-                if os.path.exists(file_path):
-                    with open(file_path, 'rb') as file:
-                        document = BufferedInputFile(file.read(), filename=f'ozon_{brand}_{date}.xlsx')
-                        await bot.send_document(chat_id=callback.from_user.id, document=document)
-                else:
-                    await callback.message.answer('Файл отчета не найден.')
-                    logger.info('Файл не найден')
+                report(month=int(month), year=int(years), config=brand)
+                await asyncio.sleep(2)
+                file_path = os.path.join('parser', 'reports', 'ozon', 'csc', f'ozon_{brand}_{month}_{years}.xlsx')
+                document = FSInputFile(file_path)
+                # Отправляем файл пользователю
+                await bot.send_document(callback.message.chat.id, document)
             except Exception as ex:
+                await callback.message.answer(f'Ошибка: {ex}')
                 pprint(ex)
-                await callback.message.answer('По каким-то причинам бот не может сформировать отчет.')
-                logger.info(f'По каким-то причинам бот не может сформировать отчет. CODE ERROR : {ex}')
+        
+        
 
     if mp == 'mp_wildberries':
         pprint('Скоро будет')
@@ -146,10 +153,10 @@ async def change_finish(callback: CallbackQuery, state: FSMContext):
                 all_sales(sales_year=years, sales_month=month, label=label, brand=brand, date=date)
                 file_path = f'parser/reports/wb/aqua/wb_{brand}_{date}.xlsx'
                 if os.path.exists(file_path):
+                    pprint('GOOD')
                     with open(file_path, 'rb') as file:
                         document = BufferedInputFile(file.read(), filename=f'wb_{brand}_{date}.xlsx')
                         await bot.send_document(chat_id=callback.from_user.id, document=document)
-                        await callback.answer()
             except Exception as ex:
                 logger.error(f'Ошибка: {ex}')
                 await callback.message.answer('По каким-то причинам бот не может сформировать отчет.')

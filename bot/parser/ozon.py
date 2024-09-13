@@ -61,47 +61,49 @@ def get_data_ozon(client_id, api_key):
 
 
 
-def report(date, config):
+def report(month, year, config):
     cf = cfg(config)
     if not cf:
         return
 
     arr = dict()
-    res = ozon(config, 'v1/finance/realization', {"date": date})
+    res = ozon(config, 'v2/finance/realization', {"month": month,
+                                                  "year": year})
+    
     if res.get('message'):
         print(res['message'])
         return
 
     for r in res['result']['rows']:
-        if r['offer_id']:
-            if r['offer_id'] not in arr:
-                prices = [{'price': r['price'], 'qty': r['sale_qty']}]
-                arr[r['offer_id']] = {
-                    'qty': r['sale_qty'],
-                    'sale_sum': r['sale_qty'] * r['price'],
-                    'commission_sum': (r['sale_qty'] * r['price']) * r['commission_percent'] / 100,
-                    'prices': prices,
-                    'fbo_commission_sum': 0  # Инициализация поля для комиссии ФБО
+        item_name = r['item']['offer_id']
+        item_price = r['seller_price_per_instance']
+        commission_ratio = r['commission_ratio'] 
+        if r['delivery_commission'] is not None:
+            item_qty = r['delivery_commission']['quantity']
+
+        if item_name:
+            if item_name not in arr:
+                # даем имя товару
+                arr[item_name] = {
+                    'Количество товара': item_qty,
+                    'Средняя цена продажи': item_price,
+                    'Общая сумма продажи': item_price * item_qty,  # Первоначальное значение - цена первой продажи
+                    'Комиссия за продажу': commission_ratio * item_price
                 }
             else:
-                arr[r['offer_id']]['qty'] += r['sale_qty']
-                arr[r['offer_id']]['sale_sum'] += (r['sale_qty'] * r['price'])
-                arr[r['offer_id']]['commission_sum'] += (r['sale_qty'] * r['price']) * r['commission_percent'] / 100
-                arr[r['offer_id']]['prices'].append({'price': r['price'], 'qty': r['sale_qty']})
-
-    for a in arr.values():
-        total_price = sum(p['price'] * p['qty'] for p in a['prices'])
-        total_qty = sum(p['qty'] for p in a['prices'])
-        a['mid_price'] = round(total_price / total_qty, 2) if total_qty != 0 else 0
-
+                arr[item_name]['Количество товара'] += item_qty
+                # Обновляем среднюю цену
+                arr[item_name]['Средняя цена продажи'] = (
+                    arr[item_name]['Средняя цена продажи'] * arr[item_name]['Количество товара'] + item_price * item_qty
+                ) / (arr[item_name]['Количество товара'] + item_qty)
+                # Обновляем общую сумму
+                arr[item_name]['Общая сумма продажи'] = arr[item_name]['Количество товара'] * arr[item_name]['Средняя цена продажи']
+                
+            
+        
     ostatok = get_data_ozon(client_id=cf[1], api_key=cf[0])
     end_arr = []
     profit = 0
-
-    current_year, month = map(int, date.split('-'))
-    days = str(monthrange(current_year, month)[1])
-    page = 1
-
     # Получение данных о комиссиях FBO
     fbo_commissions = {}
 
@@ -122,8 +124,8 @@ def report(date, config):
 
     for a in arr.keys():
         item_ostatok = ostatok.get(a, 'None')
-        if item_ostatok != 'None' and isinstance(item_ostatok, (int, float)) and arr[a]['qty'] != 0:
-            turnover = item_ostatok / arr[a]['qty']
+        if item_ostatok != 'None' and isinstance(item_ostatok, (int, float)) and arr[a]['Количество товара'] != 0:
+            turnover = item_ostatok / arr[a]['Количество товара']
         else:
             turnover = None
 
@@ -131,15 +133,15 @@ def report(date, config):
         fbo_commission_sum = fbo_commissions.get(a, 0)
         arr[a]['fbo_commission_sum'] = fbo_commission_sum
 
-        profit += arr[a]['sale_sum'] - arr[a]['commission_sum'] - fbo_commission_sum
+        profit += arr[a]['Общая сумма продажи'] - arr[a]['Комиссия за продажу'] - fbo_commission_sum
         end_arr.append({
             'Товар': a,
-            'Средняя цена': arr[a]['mid_price'],
-            'Количество': arr[a]['qty'],
-            'Продано на': arr[a]['sale_sum'],
-            'Сумма комиссий ОЗОН': arr[a]['commission_sum'] * arr[a]['qty'],
-            'Сумма комиссий ФБО': fbo_commission_sum * arr[a]['qty'],
-            'Прибыль с учетом комиссии ОЗОН и ФБО': arr[a]['sale_sum'] - arr[a]['commission_sum'] * arr[a]['qty'] - fbo_commission_sum * arr[a]['qty'],
+            'Средняя цена': arr[a]['Средняя цена продажи'],
+            'Количество': arr[a]['Количество товара'],
+            'Продано на': arr[a]['Общая сумма продажи'],
+            'Сумма комиссий ОЗОН': arr[a]['Комиссия за продажу'] * arr[a]['Количество товара'],
+            'Сумма комиссий ФБО': fbo_commission_sum * arr[a]['Количество товара'],
+            'Прибыль с учетом комиссии ОЗОН и ФБО': arr[a]['Общая сумма продажи'] - arr[a]['Комиссия за продажу'] * arr[a]['Количество товара'] - fbo_commission_sum * arr[a]['Количество товара'],
             'Остаток': item_ostatok,
             'Оборачиваемость': round(turnover, 2) if turnover else None
         })
@@ -147,7 +149,7 @@ def report(date, config):
     df = pd.DataFrame(data=end_arr)
     report_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", "ozon",
                                "aqua" if config == 'sec_of_chameleon' else "csc",
-                               f"ozon_{config}_{date}.xlsx")
+                               f"ozon_{config}_0{month}_{year}.xlsx")
     os.makedirs(os.path.dirname(report_path), exist_ok=True)
     df.to_excel(report_path, index=False)
     print("Готово! Файл отчета с ОЗОН создан.")
@@ -169,12 +171,11 @@ def report_v2(month, year, config):
 
 def get_full(date, config):
     res = ozon(config, 'v1/finance/realization', {"date": date})
-    pprint(res)
 
 
 def main():
-    report(date='2024-05', config='sec_of_chameleon')
-    # report_v2(month=5, year=2024, config='sec_of_chameleon')
+    report(month=8, year=2024, config='sec_of_chameleon')
+    # report_v2(month=8, year=2024, config='sec_of_chameleon')
 
 
 if __name__ == '__main__':
