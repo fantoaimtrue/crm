@@ -2,6 +2,7 @@ import json
 import os
 from calendar import monthrange
 from pprint import pp, pprint
+from urllib import response
 
 import pandas as pd
 import requests
@@ -61,18 +62,22 @@ def get_data_ozon(client_id, api_key):
 
 
 
-def report(month, year, config):
-    cf = cfg(config)
-    if not cf:
-        return
+def report(api_key, client_id, month, year):
+    # cf = cfg(config)
+    # if not cf:
+    #     return
 
     arr = dict()
-    res = ozon(config, 'v2/finance/realization', {"month": month,
+    headers = {'Api-Key': str(api_key), 'Client-Id': str(client_id), 'Content-Type': 'application/json'}
+    response = requests.post("https://api-seller.ozon.ru/" + 'v2/finance/realization', headers=headers, json={"month": month,
                                                   "year": year})
+    response.raise_for_status()  # Raises an error for bad responses
+    res = response.json()
+    # res = ozon(config, 'v2/finance/realization', {"month": month,
+    #                                               "year": year})
     
-    if res.get('message'):
-        print(res['message'])
-        return
+    # if res.get('message'):
+    #     return
 
     for r in res['result']['rows']:
         item_name = r['item']['offer_id']
@@ -101,20 +106,26 @@ def report(month, year, config):
                 
             
         
-    ostatok = get_data_ozon(client_id=cf[1], api_key=cf[0])
+    ostatok = get_data_ozon(client_id=client_id, api_key=api_key)
     end_arr = []
     profit = 0
     # Получение данных о комиссиях FBO
     fbo_commissions = {}
 
     for item in arr.keys():
-        res = ozon(config, 'v4/product/info/prices', {
+        
+        headers = {'Api-Key': str(api_key), 'Client-Id': str(client_id), 'Content-Type': 'application/json'}
+        res = requests.post("https://api-seller.ozon.ru/" + 'v4/product/info/prices', headers=headers, json={
             "filter": {
                 "offer_id": [item],
                 "visibility": "ALL"
             },
             "limit": 100
         })
+        res.raise_for_status()  # Raises an error for bad responses
+        res.json()
+        
+
 
         if 'result' in res and 'items' in res['result'] and res['result']['items']:
             item_commissions = res['result']['items'][0]['commissions']
@@ -147,9 +158,12 @@ def report(month, year, config):
         })
 
     df = pd.DataFrame(data=end_arr)
-    report_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", "ozon",
-                               "aqua" if config == 'sec_of_chameleon' else "csc",
-                               f"ozon_{config}_0{month}_{year}.xlsx")
+    if len(str(month)) < 2:
+        report_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", "ozon",
+                                "aqua", f"ozon_0{month}_{year}.xlsx")
+    else:
+        report_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", "ozon",
+                                "aqua", f"ozon_{month}_{year}.xlsx")
     os.makedirs(os.path.dirname(report_path), exist_ok=True)
     df.to_excel(report_path, index=False)
     print("Готово! Файл отчета с ОЗОН создан.")
@@ -174,7 +188,7 @@ def get_full(date, config):
 
 
 def main():
-    report(month=8, year=2024, config='sec_of_chameleon')
+    report(api_key='2c7c749c-caa3-4f41-b06c-e0b0b7b51ab8' , client_id='469127' , month=8, year=2024)
     # report_v2(month=8, year=2024, config='sec_of_chameleon')
 
 

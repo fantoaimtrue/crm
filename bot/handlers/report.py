@@ -1,4 +1,5 @@
 from cProfile import label
+from http import client
 import os
 from logger_config import logger
 from aiogram import Router, flags, F
@@ -34,12 +35,22 @@ async def is_group_admin(chat_id: int, user_id: int) -> bool:
 
 
 @router.message(Command(commands=["report"]))
-async def cmd_report(message: Message):
-            await message.answer("Профиль не найден.")
-            if not await is_admin(message.from_user.id):
-                await message.answer("У вас нет доступа к этой команде.")
-                return
-            await message.answer("Выберите маркетплейс 🛍", reply_markup=kb_change_market_place().as_markup())
+async def cmd_start(message: Message):
+    async with get_session() as session:  # Используем async with для асинхронной сессии
+        try:
+            tg_user = f'@{message.from_user.username}'
+            result = await session.execute(select(Profile).where(Profile.tg_username == tg_user))
+            profile = result.scalars().first()
+
+            if profile:
+                await message.answer("Выберите маркетплейс 🛍", reply_markup=kb_change_market_place().as_markup())
+            else:
+                await message.answer("Профиль не найден.")
+                if not await is_admin(message.from_user.id):
+                    await message.answer("У вас нет доступа к этой команде.")
+                    return
+        except Exception as e:
+            await message.answer(f"Произошла ошибка: {str(e)}")
 
     
 
@@ -51,27 +62,9 @@ async def change_brand(callback: CallbackQuery, state: FSMContext):
         return
 
     await state.update_data(mp=callback.data)
-    await callback.message.edit_text(text='Выберите бренд 💼', reply_markup=brand_inline().as_markup())
-    await callback.answer()
-
-@router.callback_query(F.data.startswith('back_brand'))
-async def back_brand(callback: CallbackQuery):
-    if not await is_admin(callback.from_user.id):
-        await callback.answer("У вас нет доступа к этой функции.")
-        return
-
-    await callback.message.edit_text('Выберите маркетплейс 🛍', reply_markup=kb_change_market_place().as_markup())
-    await callback.answer()
-
-@router.callback_query(F.data.startswith('brand_'))
-async def change_year(callback: CallbackQuery, state: FSMContext):
-    if not await is_admin(callback.from_user.id):
-        await callback.answer("У вас нет доступа к этой функции.")
-        return
-
-    await state.update_data(brand=callback.data)
     await callback.message.edit_text(text='Выберите дату отчета', reply_markup=years_inline().as_markup())
     await callback.answer()
+
 
 @router.callback_query(F.data.startswith('back_years'))
 async def back_years(callback: CallbackQuery):
@@ -79,7 +72,7 @@ async def back_years(callback: CallbackQuery):
         await callback.answer("У вас нет доступа к этой функции.")
         return
 
-    await callback.message.edit_text(text='Выберите бренд 💼', reply_markup=brand_inline().as_markup())
+    await callback.message.edit_text("Выберите маркетплейс 🛍", reply_markup=kb_change_market_place().as_markup())
     await callback.answer()
 
 @router.callback_query(F.data.startswith('years_'))
@@ -111,36 +104,33 @@ async def change_finish(callback: CallbackQuery, state: FSMContext):
     dt = await state.get_data()
     years = dt['years'].split('_')[1]
     month = dt['month'].split('_')[1]
-    pprint(month)
     mp = dt['mp']
-    brand = dt['brand'].split('brand_')[1]
-    logger.info(f'{brand}')
     date = f'{years}-{month}'
     await callback.message.answer('Ожидайте ⌛️')
+    
     if mp == 'mp_ozon':
-        if brand == 'sec_of_chameleon':
+        async with get_session() as session:  # Используем async with для асинхронной сессии
             try:
-                report(month=int(month), year=int(years), config=brand)
+                tg_user = f'@{callback.from_user.username}'
+                print(tg_user)
+                res1 = await session.execute(select(Profile.ozon_token).where(Profile.tg_username == tg_user))
+                res2 = await session.execute(select(Profile.ozon_client_id).where(Profile.tg_username == tg_user))
+                api_key = res1.scalar()
+                client_id = res2.scalar()
+                
+                try:
+                    report(api_key=str(api_key), client_id=str(client_id), month=int(month), year=int(years))
+                except Exception as ex:
+                    print(ex)
                 await asyncio.sleep(2)
-                file_path = os.path.join('parser', 'reports', 'ozon', 'aqua', f'ozon_{brand}_{month}_{years}.xlsx')
+                file_path = os.path.join('bot', 'parser', 'reports', 'ozon', 'aqua', f'ozon_{month}_{years}.xlsx')
+                print(file_path)
                 document = FSInputFile(file_path)
                 # Отправляем файл пользователю
                 await bot.send_document(callback.message.chat.id, document)
-            except Exception as ex:
-                await callback.message.answer(f'Ошибка: {ex}')
-                pprint(ex)
-        
-        elif brand == 'cscgaming':
-            try:
-                report(month=int(month), year=int(years), config=brand)
-                await asyncio.sleep(2)
-                file_path = os.path.join('parser', 'reports', 'ozon', 'csc', f'ozon_{brand}_{month}_{years}.xlsx')
-                document = FSInputFile(file_path)
-                # Отправляем файл пользователю
-                await bot.send_document(callback.message.chat.id, document)
-            except Exception as ex:
-                await callback.message.answer(f'Ошибка: {ex}')
-                pprint(ex)
+            except Exception as e:
+                await callback.message.answer(f"Произошла ошибка: {str(e)}")
+ 
         
         
 

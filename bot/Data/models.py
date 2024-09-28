@@ -12,6 +12,7 @@ class Profile(Base):
     email = Column(String, nullable=True)
     wb_token = Column(String, nullable=True)
     ozon_token = Column(String, nullable=True)
+    ozon_client_id = Column(Integer, nullable=True, default=0)
     tg_username = Column(String, nullable=True)
 
     def __repr__(self):

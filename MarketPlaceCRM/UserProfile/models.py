@@ -7,7 +7,8 @@ class Profile(models.Model):
     email = models.TextField(null=True)
     wb_token = models.TextField(null=True)
     ozon_token = models.TextField(null=True)
-    telegram_id = models.IntegerField(null=True)
+    ozon_client_id = models.IntegerField(null=True, default=0)
+    tg_username = models.TextField(null=True)
 
     def __str__(self):
         return self.user.username
