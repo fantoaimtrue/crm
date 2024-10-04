@@ -8,6 +8,7 @@ RUN pip install -r requirements.txt
 
 COPY ./MarketPlaceCRM /app
 
+
 WORKDIR /app
 
 COPY ./entrypoint.sh /

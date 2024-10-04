@@ -160,10 +160,10 @@ def report(api_key, client_id, month, year):
     df = pd.DataFrame(data=end_arr)
     if len(str(month)) < 2:
         report_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", "ozon",
-                                "aqua", f"ozon_0{month}_{year}.xlsx")
+                                f"ozon_0{month}_{year}.xlsx")
     else:
         report_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", "ozon",
-                                "aqua", f"ozon_{month}_{year}.xlsx")
+                                f"ozon_{month}_{year}.xlsx")
     os.makedirs(os.path.dirname(report_path), exist_ok=True)
     df.to_excel(report_path, index=False)
     print("Готово! Файл отчета с ОЗОН создан.")
@@ -188,8 +188,9 @@ def get_full(date, config):
 
 
 def main():
-    report(api_key='2c7c749c-caa3-4f41-b06c-e0b0b7b51ab8' , client_id='469127' , month=8, year=2024)
+    # report(api_key='2c7c749c-caa3-4f41-b06c-e0b0b7b51ab8' , client_id='469127' , month=8, year=2024)
     # report_v2(month=8, year=2024, config='sec_of_chameleon')
+    pass
 
 
 if __name__ == '__main__':

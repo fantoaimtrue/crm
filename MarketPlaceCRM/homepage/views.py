@@ -7,7 +7,6 @@ from django.http import HttpResponseRedirect
 from django import forms
 from django.contrib.auth.decorators import login_required
 from UserProfile.models import Profile
-
 from django.shortcuts import render
 
 
@@ -20,7 +19,6 @@ class CustomAuthenticationForm(AuthenticationForm):
 
 
 ## Вход в систему
-
 def login_request(request):
     if request.method == "POST":
         form = CustomAuthenticationForm(request, data=request.POST)

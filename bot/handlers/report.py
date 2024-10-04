@@ -123,8 +123,12 @@ async def change_finish(callback: CallbackQuery, state: FSMContext):
                 except Exception as ex:
                     print(ex)
                 await asyncio.sleep(2)
-                file_path = os.path.join('bot', 'parser', 'reports', 'ozon', 'aqua', f'ozon_{month}_{years}.xlsx')
+                file_path = os.path.join('parser', 'reports', 'ozon', f'ozon_{month}_{years}.xlsx')
                 print(file_path)
+                if os.path.exists(file_path):
+                    print(f"Файл найден: {file_path}")
+                else:
+                    print(f"Файл НЕ найден: {file_path}")
                 document = FSInputFile(file_path)
                 # Отправляем файл пользователю
                 await bot.send_document(callback.message.chat.id, document)

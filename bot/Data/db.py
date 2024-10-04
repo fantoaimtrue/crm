@@ -7,11 +7,13 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 load_dotenv()
 
 # Получаем параметры подключения из переменных окружения
-ip = '127.0.0.1'
+ip = str(os.getenv('IP'))
 PGUSER = str(os.getenv('PGUSER'))
 PGPASSWORD = str(os.getenv('PGPASSWORD'))
 DATABASE = str(os.getenv('DATABASE'))
-DATABASE_URL = f'postgresql+asyncpg://{PGUSER}:{PGPASSWORD}@{ip}/{DATABASE}'
+DB_PORT = os.getenv('DB_PORT')  # Добавьте получение порта из переменной окружения
+
+DATABASE_URL = f'postgresql+asyncpg://{PGUSER}:{PGPASSWORD}@{ip}:{DB_PORT}/{DATABASE}'
 
 # Создаем движок базы данных
 engine = create_async_engine(DATABASE_URL, echo=True)

@@ -31,9 +31,10 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['crmmarketplacehelper.ru']
+
 
 
 # Application definition
@@ -96,7 +97,7 @@ DATABASES = {
         'USER': str(os.getenv('PGUSER')),
         'PASSWORD': str(os.getenv('PGPASSWORD')),
         'HOST': str(os.getenv('IP')),  # or your server's ip address
-        'PORT': '5432',
+        'PORT': os.getenv('DB_PORT'),
     }
 }
 
@@ -143,23 +144,25 @@ LOGOUT_REDIRECT_URL = 'main:login'
 
 
 
+
+
 STATIC_URL = '/static/'
-MEDIA_URL = '/images/'
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Для собранных файлов
 STATICFILES_DIRS = [
-    BASE_DIR / 'static',
+    os.path.join(BASE_DIR, 'static'),  # Для исходных
 ]
+   
 
 
-STATIC_ROOT = BASE_DIR / 'staticfiles'
-
-
-MEDIA_ROOT = BASE_DIR / 'images'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+CSRF_USE_SESSIONS = False
+CSRF_TRUSTED_ORIGINS = ['https://crmmarketplacehelper.ru']
 # # Отключение доступа через HTTP
 # SECURE_SSL_REDIRECT = True
 
