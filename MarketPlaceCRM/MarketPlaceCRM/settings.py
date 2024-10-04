@@ -12,10 +12,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 from pathlib import Path
-from dotenv import load_dotenv
 
-
-load_dotenv()
+from decouple import config, Csv
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,13 +25,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 #SECRET_KEY = 'c_r-e8v1divj8y+hu@-w=n#$xj#ciuejybd3_(k2h789(mcv8$'
 
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = False
+DEBUG = config('DEBUG')
 
-ALLOWED_HOSTS = ['crmmarketplacehelper.ru']
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 
 
@@ -93,11 +91,11 @@ WSGI_APPLICATION = 'MarketPlaceCRM.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': str(os.getenv('DATABASE')),
-        'USER': str(os.getenv('PGUSER')),
-        'PASSWORD': str(os.getenv('PGPASSWORD')),
-        'HOST': str(os.getenv('IP')),  # or your server's ip address
-        'PORT': os.getenv('DB_PORT'),
+        'NAME': str(config('DATABASE')),
+        'USER': str(config('PGUSER')),
+        'PASSWORD': str(config('PGPASSWORD')),
+        'HOST': str(config('IP')),  # or your server's ip address
+        'PORT': config('DB_PORT'),
     }
 }
 
@@ -162,7 +160,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 CSRF_USE_SESSIONS = False
-CSRF_TRUSTED_ORIGINS = ['https://crmmarketplacehelper.ru']
+CSRF_TRUSTED_ORIGINS = config('CSRF_TRUSTED', cast=Csv())
 # # Отключение доступа через HTTP
 # SECURE_SSL_REDIRECT = True
 
