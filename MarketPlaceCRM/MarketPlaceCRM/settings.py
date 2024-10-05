@@ -31,7 +31,8 @@ SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = config('DEBUG')
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
+# ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
+ALLOWED_HOSTS = ['*']
 
 
 
@@ -48,6 +49,7 @@ INSTALLED_APPS = [
     'homepage',
     'products',
     'reports',
+    'auth_app',
   
     'UserProfile.apps.UserProfileConfig',
 
@@ -161,6 +163,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CSRF_USE_SESSIONS = False
 CSRF_TRUSTED_ORIGINS = config('CSRF_TRUSTED', cast=Csv())
+
+TELEGRAM_BOT_TOKEN = config('BOT_TOKEN')
 # # Отключение доступа через HTTP
 # SECURE_SSL_REDIRECT = True
 
