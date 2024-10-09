@@ -14,9 +14,9 @@ wb_aqua_api_key = str(os.getenv('WB_AQUA_API_KEY'))
 #test branch
 
 
-headers = {
-    'Authorization': wb_aqua_api_key,
-}
+# headers = {
+#     'Authorization': wb_aqua_api_key,
+# }
 
 current_datetime = datetime.now()
 formatted_datetime = current_datetime.strftime("%Y-%m-%d")
@@ -30,7 +30,7 @@ def get_all_statics(date):
     }
     data = {}
     for url_key, link in urls.items():
-        response = requests.get(url=link, headers=headers, params={
+        response = requests.get(url=link, headers={'Authorization': wb_aqua_api_key}, params={
             'dateFrom': date,
         })
         if response.status_code == 200:

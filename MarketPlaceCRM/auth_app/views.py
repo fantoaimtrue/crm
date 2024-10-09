@@ -29,6 +29,7 @@ def check_telegram_auth(data):
 
     return True
 
+
 def telegram_login(request):
     """Обработка данных из виджета Telegram"""
     print(request.GET)  # Выводим данные для отладки
