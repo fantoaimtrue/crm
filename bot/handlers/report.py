@@ -141,31 +141,27 @@ async def change_finish(callback: CallbackQuery, state: FSMContext):
     if mp == 'mp_wildberries':
         pprint('Скоро будет')
         # await bot.send_document(chat_id=callback.from_user.id, document=open(f"parser/reports/wb/sales_report.xlsx", 'rb'))
-        if brand == 'sec_of_chameleon':
-            label = 'Секреты Хамелеона'
-            try:
-                all_sales(sales_year=years, sales_month=month, label=label, brand=brand, date=date)
-                file_path = f'parser/reports/wb/aqua/wb_{brand}_{date}.xlsx'
-                if os.path.exists(file_path):
-                    pprint('GOOD')
-                    with open(file_path, 'rb') as file:
-                        document = BufferedInputFile(file.read(), filename=f'wb_{brand}_{date}.xlsx')
-                        await bot.send_document(chat_id=callback.from_user.id, document=document)
-            except Exception as ex:
-                logger.error(f'Ошибка: {ex}')
-                await callback.message.answer('По каким-то причинам бот не может сформировать отчет.')
-                await callback.answer()
-        elif brand == 'cscgaming':
-            label = 'CSC Gaming'
-            try:
-                all_sales(label=label, sales_year=years, sales_month=month, brand=brand, date=date)
-                file_path = f'parser/reports/wb/csc/wb_{brand}_{date}.xlsx'
-                if os.path.exists(file_path):
-                    with open(file_path, 'rb') as file:
-                        document = BufferedInputFile(file.read(), filename=f'wb_{brand}_{date}.xlsx')
-                        await bot.send_document(chat_id=callback.from_user.id, document=document)
-                        await callback.answer()
-            except Exception as ex:
-                logger.error(f'Ошибка: {ex}')
-                await callback.message.answer('По каким-то причинам бот не может сформировать отчет.')
-                await callback.answer()
+        try:
+            all_sales(sales_year=years, sales_month=month, date=date)
+            file_path = f'parser/reports/wb/aqua/wb_{date}.xlsx'
+            if os.path.exists(file_path):
+                pprint('GOOD')
+                with open(file_path, 'rb') as file:
+                    document = BufferedInputFile(file.read(), filename=f'wb_{date}.xlsx')
+                    await bot.send_document(chat_id=callback.from_user.id, document=document)
+        except Exception as ex:
+            logger.error(f'Ошибка: {ex}')
+            await callback.message.answer('По каким-то причинам бот не может сформировать отчет.')
+            await callback.answer()
+        try:
+            all_sales(sales_year=years, sales_month=month, date=date)
+            file_path = f'parser/reports/wb/csc/wb_{date}.xlsx'
+            if os.path.exists(file_path):
+                with open(file_path, 'rb') as file:
+                    document = BufferedInputFile(file.read(), filename=f'wb_{date}.xlsx')
+                    await bot.send_document(chat_id=callback.from_user.id, document=document)
+                    await callback.answer()
+        except Exception as ex:
+            logger.error(f'Ошибка: {ex}')
+            await callback.message.answer('По каким-то причинам бот не может сформировать отчет.')
+            await callback.answer()
