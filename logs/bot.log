@@ -1520,3 +1520,22 @@ WHERE "UserProfile_profile".tg_username = $1::VARCHAR
 2024-10-11 22:22:52,502 - aiogram.event - INFO - Update id=104182026 is handled. Duration 420 ms by bot id=7439911780
 2024-10-11 22:22:53,594 - logger_config - ERROR - Ошибка: local variable 'session' referenced before assignment
 2024-10-11 22:22:53,856 - aiogram.event - INFO - Update id=104182027 is handled. Duration 390 ms by bot id=7439911780
+2024-10-11 22:23:52,930 - aiogram.dispatcher - INFO - Start polling
+2024-10-11 22:23:53,279 - aiogram.dispatcher - INFO - Run polling for bot @aiotestfan_bot id=7439911780 - 'aiotestfanbot'
+2024-10-11 22:23:53,567 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-10-11 22:23:53,568 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-10-11 22:23:53,574 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-10-11 22:23:53,574 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-10-11 22:23:53,577 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-10-11 22:23:53,577 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-10-11 22:23:53,581 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-10-11 22:23:53,591 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-10-11 22:23:53,597 - sqlalchemy.engine.Engine - INFO - [generated in 0.00592s] ('@Andreyanov_A_A',)
+2024-10-11 22:23:54,139 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-10-11 22:23:54,142 - aiogram.event - INFO - Update id=104182028 is handled. Duration 687 ms by bot id=7439911780
+2024-10-11 22:23:56,545 - aiogram.event - INFO - Update id=104182029 is handled. Duration 375 ms by bot id=7439911780
+2024-10-11 22:23:58,399 - aiogram.event - INFO - Update id=104182030 is handled. Duration 469 ms by bot id=7439911780
+2024-10-11 22:23:59,479 - logger_config - ERROR - Ошибка: local variable 'tg_user' referenced before assignment
+2024-10-11 22:23:59,829 - aiogram.event - INFO - Update id=104182031 is handled. Duration 547 ms by bot id=7439911780
