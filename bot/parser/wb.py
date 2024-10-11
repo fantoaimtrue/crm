@@ -41,10 +41,10 @@ def get_all_statics(date):
     return data
 
 # Функция для сбора всех продаж за указанный месяц и год
-def all_sales(sales_year, sales_month, date):
+def all_sales(api_key, sales_year, sales_month, date):
     url = 'https://statistics-api.wildberries.ru/api/v1/supplier/sales'
     headers = {
-        'Authorization': wb_aqua_api_key
+        'Authorization': api_key
     }
     params = {
         'dateFrom': date
@@ -55,7 +55,6 @@ def all_sales(sales_year, sales_month, date):
         data = response.json()  # Преобразуем ответ в JSON
     else:
         print(f"Error: {response.status_code}")
-    print(response)
     if not data:
         print("No data found")
         return
@@ -65,12 +64,9 @@ def all_sales(sales_year, sales_month, date):
         try:
             
             if c['forPay'] > 0:
-                print(f"ForPay > 0: {c['forPay']}")
                 date_str = c['date'][:10]
                 current_year, month = date_str.split('-')[:2]
-                print(f"Year: {current_year}, Month: {month}")
                 if current_year == sales_year and month == sales_month:
-                    print(f"Year and month match: {current_year}-{month}")
                     if 'supplierArticle' in c:
                         key = c['supplierArticle']
                         if key not in all_items:
@@ -80,13 +76,11 @@ def all_sales(sales_year, sales_month, date):
                             }
                         all_items[key]['mid_price'].append(c['forPay'])
                         all_items[key]['qty'] += 1
-                        print(f"Updated all_items: {all_items}")
                     else:
                         print("Missing supplierArticle in item.")
         except Exception as ex:
             pprint(f'ОШИБКА: {ex}')
 
-    print(f"All items collected: {all_items}")
 
     end_arr = []
     for key, value in all_items.items():
@@ -103,7 +97,8 @@ def all_sales(sales_year, sales_month, date):
         print("End array is empty.")
     else:
         df = pd.DataFrame(data=end_arr)
-        report_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), f"reports/wb_{date}.xlsx")
+        report_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", "wb",
+                                f"wb_{date}.xlsx")
         df.to_excel(report_path, index=False)
         print(f"Готово! Файл отчета с WB создан. End array length: {len(end_arr)}")
 
