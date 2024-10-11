@@ -38,7 +38,7 @@ async def is_group_admin(chat_id: int, user_id: int) -> bool:
 async def cmd_start(message: Message):
     async with get_session() as session:  # Используем async with для асинхронной сессии
         try:
-            tg_user = f'@{message.from_user.username}'
+            tg_user = message.from_user.username
             result = await session.execute(select(Profile).where(Profile.tg_username == tg_user))
             profile = result.scalars().first()
 
@@ -111,7 +111,7 @@ async def change_finish(callback: CallbackQuery, state: FSMContext):
     if mp == 'mp_ozon':
         async with get_session() as session:  # Используем async with для асинхронной сессии
             try:
-                tg_user = f'@{callback.from_user.username}'
+                tg_user = {callback.from_user.username}
                 print(tg_user)
                 res1 = await session.execute(select(Profile.ozon_token).where(Profile.tg_username == tg_user))
                 res2 = await session.execute(select(Profile.ozon_client_id).where(Profile.tg_username == tg_user))

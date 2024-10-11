@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'corsheaders',
     'homepage',
     'products',
     'reports',
@@ -64,6 +65,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware'
 ]
 
 ROOT_URLCONF = 'MarketPlaceCRM.urls'
@@ -144,6 +146,9 @@ LOGOUT_REDIRECT_URL = 'main:login'
 
 
 
+CORS_ALLOWED_ORIGINS = [
+    'https://crmmarketplacehelper.ru/'
+]
 
 
 STATIC_URL = '/static/'
@@ -165,12 +170,25 @@ CSRF_USE_SESSIONS = False
 CSRF_TRUSTED_ORIGINS = config('CSRF_TRUSTED', cast=Csv())
 
 TELEGRAM_BOT_TOKEN = config('BOT_TOKEN')
+
+# Сессия будет сохраняться в течение 2 недель
+SESSION_COOKIE_AGE = 1209600  # 2 недели в секундах
+
+# Сессия не истечет при закрытии браузера
+SESSION_EXPIRE_AT_BROWSER_CLOSE = False
+
+# Включение использования сессий
+SESSION_ENGINE = 'django.contrib.sessions.backends.db'
 # # Отключение доступа через HTTP
 # SECURE_SSL_REDIRECT = True
 
-# # Использование только безопасных куки
-# SESSION_COOKIE_SECURE = True
-# CSRF_COOKIE_SECURE = True
+# Использование только безопасных куки
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+
+SESSION_COOKIE_SAMESITE = 'None'
+ # Должен быть включен для работы SameSite=None
+
 
 # # Отметка заголовков безопасности
 # SECURE_BROWSER_XSS_FILTER = True
