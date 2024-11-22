@@ -6,6 +6,7 @@ import requests
 from datetime import datetime
 from pprint import pp, pprint
 from dotenv import load_dotenv
+from decouple import config, Csv
 
 load_dotenv()
 wb_aqua_api_key = str(os.getenv('WB_AQUA_API_KEY'))
@@ -54,7 +55,7 @@ def all_sales(api_key, sales_year, sales_month, date):
     if response.status_code == 200:
         data = response.json()  # Преобразуем ответ в JSON
     else:
-        print(f"Error: {response.status_code}")
+        print(f"Error: {response}")
     if not data:
         print("No data found")
         return
@@ -106,7 +107,8 @@ def all_sales(api_key, sales_year, sales_month, date):
    
 # Основная функция
 def main():
-    all_sales(sales_year='2024', sales_month='08', date='2024-08')
+    api_key = config('WB_AQUA_API_KEY')
+    all_sales(api_key=api_key, sales_year='2024', sales_month='08', date='2024-08')
     # test_wb(date='2024-2', brand='sec_of_chameleon', label='Секреты Хамелеона')
     # get_all_statics(date='2024-08')
 if __name__ == '__main__':

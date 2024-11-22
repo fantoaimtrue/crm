@@ -25,20 +25,19 @@
     <div class="card-body mb-3">
       <p class="login-box-msg">Введите логин и пароль для дальнейшей аутентификации</p>
 
+      <!-- Стандартная форма авторизации -->
       <form action="{% url 'main:login' %}" method="post">
         {% csrf_token %}
         <div class="input-group mb-3">
-          {{ login_form.username }}
-          <!-- <input type="login" class="form-control" placeholder="Login"> -->
+          {{ login_form.username.as_widget }}
           <div class="input-group-append">
             <div class="input-group-text">
-              <span class="fas fa-envelope"></span>
+              <span class="fas fa-user"></span>
             </div>
           </div>
         </div>
         <div class="input-group mb-3">
-          {{ login_form.password }}
-          <!-- <input type="password" class="form-control" placeholder="Password"> -->
+          {{ login_form.password.as_widget }}
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -46,20 +45,24 @@
           </div>
         </div>
         <div class="row">
-          <!-- /.col -->
           <div class="col-12 mb-3">
             <button type="submit" class="btn btn-primary btn-block">Войти</button>
           </div>
-          <div class="col-12 text-center">
-            <script async src="https://telegram.org/js/telegram-widget.js?7" data-telegram-login="helper_ozon_wb_bot"
-            data-size="large" data-auth-url="{% url 'auth_app:telegram_login' %}" data-request-access="write"></script>
-          </div>
-          <!-- /.col -->
         </div>
-        
       </form>
 
-
+      <!-- Кнопка Telegram Login -->
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="login-box-msg">Или войдите через Telegram</p>
+          <script async src="https://telegram.org/js/telegram-widget.js?22"
+                  data-telegram-login="helper_ozon_wb_bot"
+                  data-size="large"
+                  data-auth-url="{% url 'main:telegram_login' %}"
+                  data-request-access="write">
+          </script>
+        </div>
+      </div>
 
     </div>
     <!-- /.card-body -->
@@ -74,8 +77,6 @@
 <script src="{% static 'assets/plugins/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 <!-- AdminLTE App -->
 <script src="{% static 'assets/dist/js/adminlte.min.js' %}"></script>
-
-
 
 </body>
 </html>

@@ -50,7 +50,6 @@ INSTALLED_APPS = [
     'homepage',
     'products',
     'reports',
-    'auth_app',
   
     'UserProfile.apps.UserProfileConfig',
 
@@ -146,9 +145,14 @@ LOGOUT_REDIRECT_URL = 'main:login'
 
 
 
+
+
 CORS_ALLOWED_ORIGINS = [
-    'https://crmmarketplacehelper.ru/'
+    'https://crmmarketplacehelper.ru',
 ]
+
+
+
 
 
 STATIC_URL = '/static/'
@@ -167,9 +171,16 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 CSRF_USE_SESSIONS = False
-CSRF_TRUSTED_ORIGINS = config('CSRF_TRUSTED', cast=Csv())
+CSRF_TRUSTED_ORIGINS = ['https://crmmarketplacehelper.ru']
+
 
 TELEGRAM_BOT_TOKEN = config('BOT_TOKEN')
+# URL для аутентификации через Telegram
+TELEGRAM_AUTH_URL = config('TELEGRAM_AUTH_URL', default="https://crmmarketplacehelper.ru/telegram/login/")
+SECURE_CROSS_ORIGIN_OPENER_POLICY = None
+
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
 
 # Сессия будет сохраняться в течение 2 недель
 SESSION_COOKIE_AGE = 1209600  # 2 недели в секундах
@@ -177,19 +188,7 @@ SESSION_COOKIE_AGE = 1209600  # 2 недели в секундах
 # Сессия не истечет при закрытии браузера
 SESSION_EXPIRE_AT_BROWSER_CLOSE = False
 
-# Включение использования сессий
-SESSION_ENGINE = 'django.contrib.sessions.backends.db'
-# # Отключение доступа через HTTP
-# SECURE_SSL_REDIRECT = True
-
-# Использование только безопасных куки
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
-
-SESSION_COOKIE_SAMESITE = 'None'
- # Должен быть включен для работы SameSite=None
 
 
-# # Отметка заголовков безопасности
-# SECURE_BROWSER_XSS_FILTER = True
-# SECURE_CONTENT_TYPE_NOSNIFF = True
+
+

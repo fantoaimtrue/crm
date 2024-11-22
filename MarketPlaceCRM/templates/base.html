@@ -54,12 +54,14 @@
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex" style="flex-direction: column; align-items: center; justify-content: center;">
-        <div class="image">
-          <img src="{% static 'assets/dist/img/user2-160x160.jpg' %}" class="img-circle elevation-2" alt="User Image">
-        </div>
-        <div class="info">
-          <a href="{% url 'profile:view_profile' %}" class="d-block">{{ request.user.username }}</a>
-        </div>
+        <a href="{% url 'profile:view_profile' %}">
+            <div class="image" style="display: block;">
+                <img src="{% static 'assets/dist/img/user2-160x160.jpg' %}" class="img-circle elevation-2" alt="User Image">
+            </div>
+            <div class="info" style="display: block;">
+                <span class="d-block">{{ request.user.username }}</span>
+            </div>
+        </a>
         <div class="logout">
           <a href="{% url 'main:logout' %}" class="btn btn-primary btn-block"><b>Выйти</b></a>
         </div>

@@ -99,19 +99,29 @@ async def change_finish(callback: CallbackQuery, state: FSMContext):
     if not await is_admin(callback.from_user.id):
         await callback.answer("У вас нет доступа к этой функции.")
         return
-    
+
     await state.update_data(month=callback.data)
     dt = await state.get_data()
-    years = dt['years'].split('_')[1]
-    month = dt['month'].split('_')[1]
-    mp = dt['mp']
+
+    # Проверяем, что 'years', 'month' и 'mp' существуют в состоянии
+    years = dt.get('years', None)
+    month = dt.get('month', None)
+    mp = dt.get('mp', None)
+
+    if not (years and month and mp):
+        await callback.message.answer("Ошибка: данные отчета неполные.")
+        return
+
+    years = years.split('_')[1]
+    month = month.split('_')[1]
     date = f'{years}-{month}'
+
     await callback.message.answer('Ожидайте ⌛️')
     
     if mp == 'mp_ozon':
         async with get_session() as session:  # Используем async with для асинхронной сессии
             try:
-                tg_user = {callback.from_user.username}
+                tg_user = callback.from_user.username
                 print(tg_user)
                 res1 = await session.execute(select(Profile.ozon_token).where(Profile.tg_username == tg_user))
                 res2 = await session.execute(select(Profile.ozon_client_id).where(Profile.tg_username == tg_user))
@@ -123,7 +133,7 @@ async def change_finish(callback: CallbackQuery, state: FSMContext):
                 except Exception as ex:
                     print(ex)
                 await asyncio.sleep(2)
-                file_path = os.path.join('bot', 'parser', 'reports', 'ozon', f'ozon_{month}_{years}.xlsx')
+                file_path = os.path.join('parser', 'reports', 'ozon', f'ozon_{month}_{years}.xlsx')
                 print(file_path)
                 if os.path.exists(file_path):
                     print(f"Файл найден: {file_path}")
@@ -141,18 +151,22 @@ async def change_finish(callback: CallbackQuery, state: FSMContext):
     if mp == 'mp_wildberries':
         async with get_session() as session:
             try:
-                res1 = await session.execute(select(Profile.wb_token).where(Profile.tg_username == tg_user))
-                wb_api = res1.scalar()
-                all_sales(api_key=wb_api, sales_year=years, sales_month=month, date=date)
-                file_path = os.path.join('bot', 'parser', 'reports', 'wb', f'wb_{date}.xlsx')
+                tg_user = callback.from_user.username
+                res3 = await session.execute(select(Profile.wb_token).where(Profile.tg_username == tg_user))
+                wb_api = res3.scalar()
+                if not wb_api:
+                    await callback.message.answer("Ошибка: токен Wildberries не найден.")
+                    return
+                all_sales(api_key=str(wb_api), sales_year=years, sales_month=month, date=date)
+                file_path = os.path.join('parser', 'reports', 'wb', f'wb_{date}.xlsx')
                 print(file_path)
                 if os.path.exists(file_path):
-                    pprint('GOOD')
-                    with open(file_path, 'rb') as file:
-                        document = BufferedInputFile(file.read(), filename=f'wb_{date}.xlsx')
-                        await bot.send_document(chat_id=callback.from_user.id, document=document)
-            except Exception as ex:
-                logger.error(f'Ошибка: {ex}')
-                await callback.message.answer('По каким-то причинам бот не может сформировать отчет.')
-                await callback.answer()
+                    print(f"Файл найден: {file_path}")
+                else:
+                    print(f"Файл НЕ найден: {file_path}")
+                document = FSInputFile(file_path)
+                # Отправляем файл пользователю
+                await bot.send_document(callback.message.chat.id, document)
+            except Exception as e:
+                await callback.message.answer(f"Произошла ошибка: {str(e)}")
         
