@@ -1,5 +1,8 @@
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, KeyboardButton
 from aiogram.utils.keyboard import InlineKeyboardBuilder
+from Data.models import Shops, Profile
+from Data.db import get_session
+from sqlalchemy.future import select
 
 
 def kb_builder():
@@ -27,12 +30,24 @@ def kb_change_market_place():
     return builder
 
 
-def kb_change_brand(mp):
-    builder = InlineKeyboardBuilder()
-    builder.add(InlineKeyboardButton(text='Секреты хамелеона', callback_data=f'{mp}_secret_hameleon'))
-    builder.add(InlineKeyboardButton(text='CSC gaming', callback_data=f'{mp}_csc_gaming'))
-    builder.adjust(2)
-    return builder
+async def kb_change_brand(tg_user):
+    async with get_session() as session:
+        result_1 = await session.execute(
+            select(Profile).filter(Profile.tg_username == tg_user)
+        )
+        username = result_1.scalar_one_or_none()
+        user_id = username.user_id
+        
+        result_2 = await session.execute(
+            select(Shops).filter(Shops.user_id == user_id)
+        )
+        shops = result_2.scalars().all()
+        builder = InlineKeyboardBuilder()
+        for shop in shops:
+            shop_name = shop.shop_name
+            builder.add(InlineKeyboardButton(text=f'{shop_name}', callback_data=f'brand_{shop_name}'))
+        builder.adjust(2)
+        return builder.as_markup()
 
 
 def brand_inline():

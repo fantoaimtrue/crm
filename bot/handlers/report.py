@@ -1,6 +1,7 @@
 from cProfile import label
 from http import client
 import os
+from tkinter import NO
 from logger_config import logger
 from aiogram import Router, flags, F
 from aiogram.types import InputFile
@@ -18,9 +19,10 @@ import asyncio
 
 from sqlalchemy.future import select
 from Data.models import Profile
+from Data.models import Shops
 from Data.db import get_session
 
-from keyboards.inline import kb_change_market_place, brand_inline, years_inline, month_inline
+from keyboards.inline import kb_change_brand, kb_change_market_place, brand_inline, years_inline, month_inline
 
 router = Router()
 
@@ -54,16 +56,27 @@ async def cmd_start(message: Message):
 
     
 
-
 @router.callback_query(F.data.startswith('mp_'))
+async def change_shop(callback: CallbackQuery, state: FSMContext):
+    if not await is_admin(callback.from_user.id):
+        await callback.answer("У вас нет доступа к этой функции.")
+        return
+    user = callback.from_user.username
+    await state.update_data(mp=callback.data)
+    await callback.message.answer('Выбири магазин', reply_markup=await kb_change_brand(tg_user=user))
+    await callback.answer()
+
+
+@router.callback_query(F.data.startswith('brand_'))
 async def change_brand(callback: CallbackQuery, state: FSMContext):
     if not await is_admin(callback.from_user.id):
         await callback.answer("У вас нет доступа к этой функции.")
         return
 
-    await state.update_data(mp=callback.data)
+    await state.update_data(brand=callback.data)
     await callback.message.edit_text(text='Выберите дату отчета', reply_markup=years_inline().as_markup())
     await callback.answer()
+    
 
 
 @router.callback_query(F.data.startswith('back_years'))
@@ -107,15 +120,17 @@ async def change_finish(callback: CallbackQuery, state: FSMContext):
     years = dt.get('years', None)
     month = dt.get('month', None)
     mp = dt.get('mp', None)
+    brand = dt.get('brand', None)
 
-    if not (years and month and mp):
+    if not (years and month and mp and brand):
         await callback.message.answer("Ошибка: данные отчета неполные.")
         return
 
     years = years.split('_')[1]
     month = month.split('_')[1]
     date = f'{years}-{month}'
-
+    br = brand[brand.index("_") + 1:]
+    print(mp)
     await callback.message.answer('Ожидайте ⌛️')
     
     if mp == 'mp_ozon':
@@ -123,8 +138,18 @@ async def change_finish(callback: CallbackQuery, state: FSMContext):
             try:
                 tg_user = callback.from_user.username
                 print(tg_user)
-                res1 = await session.execute(select(Profile.ozon_token).where(Profile.tg_username == tg_user))
-                res2 = await session.execute(select(Profile.ozon_client_id).where(Profile.tg_username == tg_user))
+                
+                
+                
+                result_1 = await session.execute(
+                    select(Profile).filter(Profile.tg_username == tg_user)
+                )
+                username = result_1.scalar_one_or_none()
+                user_id = username.user_id
+                                
+                
+                res1 = await session.execute(select(Shops.shop_ozon_token).where(Shops.shop_name == br, Shops.user_id == user_id))
+                res2 = await session.execute(select(Shops.shop_ozon_client_id).where(Shops.shop_name == br, Shops.user_id == user_id))
                 api_key = res1.scalar()
                 client_id = res2.scalar()
                 
@@ -133,7 +158,7 @@ async def change_finish(callback: CallbackQuery, state: FSMContext):
                 except Exception as ex:
                     print(ex)
                 await asyncio.sleep(2)
-                file_path = os.path.join('parser', 'reports', 'ozon', f'ozon_{month}_{years}.xlsx')
+                file_path = os.path.join('bot', 'parser', 'reports', 'ozon', f'ozon_{month}_{years}.xlsx')
                 print(file_path)
                 if os.path.exists(file_path):
                     print(f"Файл найден: {file_path}")
@@ -158,7 +183,7 @@ async def change_finish(callback: CallbackQuery, state: FSMContext):
                     await callback.message.answer("Ошибка: токен Wildberries не найден.")
                     return
                 all_sales(api_key=str(wb_api), sales_year=years, sales_month=month, date=date)
-                file_path = os.path.join('parser', 'reports', 'wb', f'wb_{date}.xlsx')
+                file_path = os.path.join('bot', 'parser', 'reports', 'wb', f'wb_{date}.xlsx')
                 print(file_path)
                 if os.path.exists(file_path):
                     print(f"Файл найден: {file_path}")

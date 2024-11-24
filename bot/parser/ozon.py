@@ -115,25 +115,31 @@ def report(api_key, client_id, month, year):
     for item in arr.keys():
         
         headers = {'Api-Key': str(api_key), 'Client-Id': str(client_id), 'Content-Type': 'application/json'}
-        res = requests.post("https://api-seller.ozon.ru/" + 'v4/product/info/prices', headers=headers, json={
+        response = requests.post("https://api-seller.ozon.ru/" + 'v4/product/info/prices', headers=headers, json={
             "filter": {
                 "offer_id": [item],
                 "visibility": "ALL"
             },
             "limit": 100
         })
-        res.raise_for_status()  # Raises an error for bad responses
-        res.json()
+          # Raises an error for bad responses
+        res = response.json()
+        res.raise_for_status()
         
 
-
+        
         if 'result' in res and 'items' in res['result'] and res['result']['items']:
             item_commissions = res['result']['items'][0]['commissions']
             fbo_deliv_to_customer_amount = item_commissions['fbo_deliv_to_customer_amount']
             fbo_return_flow_trans_max_amount = item_commissions['fbo_return_flow_trans_max_amount']
             fbo_commissions[item] = fbo_deliv_to_customer_amount + fbo_return_flow_trans_max_amount
+            print(fbo_commissions[item])
+        else:
+            print('ОШИБКА!')
 
     for a in arr.keys():
+        
+        
         item_ostatok = ostatok.get(a, 'None')
         if item_ostatok != 'None' and isinstance(item_ostatok, (int, float)) and arr[a]['Количество товара'] != 0:
             turnover = item_ostatok / arr[a]['Количество товара']

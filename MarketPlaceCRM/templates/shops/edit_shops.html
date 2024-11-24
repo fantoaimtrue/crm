@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+
+  {% block content %}
+    <div class="content-wrapper" style="min-height: 1302.12px;">
+    <!-- Content Header (Page header) -->
+
+    
+
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        
+        <!-- /.row -->
+        <div class="col-md-12">
+            <!-- general form elements -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Изменить ваш магазин</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form action="" method="post">
+                {% csrf_token %}
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="exampleInputText">Магазин</label>
+                    {{ form.shop_name }}
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputText">WB токен</label>
+                    {{ form.shop_wb_token }}
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputText">OZON токен</label>
+                    {{ form.shop_ozon_token }}
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputText">OZON client-id</label>
+                    {{ form.shop_ozon_client_id }}
+                  </div>
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Внести изменения</button>
+                  {% comment %} <a href="{% url 'products:delete_product' id=data.id %}" class="btn btn-danger">Удалить</a> {% endcomment %}
+                </div>
+              </form>
+            <!-- /.card -->
+
+
+          </div>
+      </div><!-- /.container-fluid -->
+      
+    </section>
+    <!-- /.content -->
+    </div>
+  {% endblock content %}
+
+

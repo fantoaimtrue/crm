@@ -17,3 +17,17 @@ class Profile(Base):
 
     def __repr__(self):
         return f"<Profile(email={self.email})>"
+
+
+class Shops(Base):
+    __tablename__ = 'shop_card'
+
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey('users.id'))
+    shop_name = Column(String, nullable=True)
+    shop_wb_token = Column(String, nullable=True)
+    shop_ozon_token = Column(String, nullable=True)
+    shop_ozon_client_id = Column(String, nullable=True, default=0)
+
+    def __repr__(self):
+        return f"<Shops(email={self.shop_name})>"

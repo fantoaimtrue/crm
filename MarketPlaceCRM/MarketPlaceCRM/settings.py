@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'homepage',
     'products',
     'reports',
+    'shops',
   
     'UserProfile.apps.UserProfileConfig',
 
