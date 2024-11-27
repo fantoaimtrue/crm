@@ -156,7 +156,11 @@ async def change_finish(callback: CallbackQuery, state: FSMContext):
                     await callback.message.answer(f"Ошибка при генерации отчета Ozon: {str(ex)}")
                     return
 
+<<<<<<< HEAD
                 file_path = os.path.join('parser', 'reports', 'ozon', f'ozon_{month}_{years}.xlsx')
+=======
+                file_path = os.path.join('bot', 'parser', 'reports', 'ozon', f'ozon_{month}_{years}.xlsx')
+>>>>>>> 8792f0a8650c8e4af713ed61e06e632a3406ea43
 
                 if os.path.exists(file_path):
                     document = FSInputFile(file_path)
@@ -187,7 +191,11 @@ async def change_finish(callback: CallbackQuery, state: FSMContext):
                     await callback.message.answer(f"Ошибка при генерации отчета Wildberries: {str(ex)}")
                     return
 
+<<<<<<< HEAD
                 file_path = os.path.join('parser', 'reports', 'wb', f'wb_{date}.xlsx')
+=======
+                file_path = os.path.join('bot', 'parser', 'reports', 'wb', f'wb_{date}.xlsx')
+>>>>>>> 8792f0a8650c8e4af713ed61e06e632a3406ea43
 
                 if os.path.exists(file_path):
                     document = FSInputFile(file_path)

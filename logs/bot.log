@@ -3100,3 +3100,1165 @@ WHERE "UserProfile_profile".tg_username = $1::VARCHAR
 2024-11-25 02:56:40,102 - sqlalchemy.engine.Engine - INFO - [cached since 5.057s ago] ('Andreyanov_A_A',)
 2024-11-25 02:56:40,185 - sqlalchemy.engine.Engine - INFO - ROLLBACK
 2024-11-25 02:56:40,188 - aiogram.event - INFO - Update id=272268183 is handled. Duration 187 ms by bot id=6704516654
+2024-11-25 02:57:26,463 - aiogram.dispatcher - INFO - Start polling
+2024-11-25 02:57:26,662 - aiogram.dispatcher - INFO - Run polling for bot @helper_ozon_wb_bot id=6704516654 - 'bot_help_ozon_wb'
+2024-11-25 02:57:30,329 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-11-25 02:57:30,329 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-25 02:57:30,333 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-11-25 02:57:30,334 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-25 02:57:30,336 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-11-25 02:57:30,336 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-25 02:57:30,338 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-25 02:57:30,346 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-25 02:57:30,347 - sqlalchemy.engine.Engine - INFO - [generated in 0.00147s] ('Andreyanov_A_A',)
+2024-11-25 02:57:30,577 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-25 02:57:30,578 - aiogram.event - INFO - Update id=272268184 is handled. Duration 343 ms by bot id=6704516654
+2024-11-25 02:57:32,116 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-25 02:57:32,117 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-25 02:57:32,119 - sqlalchemy.engine.Engine - INFO - [cached since 1.773s ago] ('Andreyanov_A_A',)
+2024-11-25 02:57:32,123 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-25 02:57:32,123 - sqlalchemy.engine.Engine - INFO - [generated in 0.00115s] (1,)
+2024-11-25 02:57:32,129 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-25 02:57:32,278 - aiogram.event - INFO - Update id=272268185 is handled. Duration 155 ms by bot id=6704516654
+2024-11-25 02:57:33,590 - aiogram.event - INFO - Update id=272268186 is handled. Duration 172 ms by bot id=6704516654
+2024-11-25 02:57:34,810 - aiogram.event - INFO - Update id=272268187 is handled. Duration 155 ms by bot id=6704516654
+2024-11-25 02:57:35,829 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-25 02:57:35,829 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-25 02:57:35,831 - sqlalchemy.engine.Engine - INFO - [cached since 5.485s ago] ('Andreyanov_A_A',)
+2024-11-25 02:57:35,836 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_token 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-25 02:57:35,836 - sqlalchemy.engine.Engine - INFO - [generated in 0.00092s] ('sec_of_chameleon', 1)
+2024-11-25 02:57:35,840 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-25 02:57:35,840 - sqlalchemy.engine.Engine - INFO - [generated in 0.00079s] ('sec_of_chameleon', 1)
+2024-11-25 02:57:38,443 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-25 02:57:38,445 - aiogram.event - INFO - Update id=272268188 is handled. Duration 2702 ms by bot id=6704516654
+2024-11-25 02:59:10,919 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-25 02:59:10,920 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-25 02:59:10,921 - sqlalchemy.engine.Engine - INFO - [cached since 100.6s ago] ('Andreyanov_A_A',)
+2024-11-25 02:59:11,192 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-25 02:59:11,193 - aiogram.event - INFO - Update id=272268189 is handled. Duration 281 ms by bot id=6704516654
+2024-11-25 02:59:12,515 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-25 02:59:12,516 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-25 02:59:12,517 - sqlalchemy.engine.Engine - INFO - [cached since 102.2s ago] ('Andreyanov_A_A',)
+2024-11-25 02:59:12,519 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-25 02:59:12,520 - sqlalchemy.engine.Engine - INFO - [cached since 100.4s ago] (1,)
+2024-11-25 02:59:12,523 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-25 02:59:12,679 - aiogram.event - INFO - Update id=272268190 is handled. Duration 170 ms by bot id=6704516654
+2024-11-25 02:59:14,392 - aiogram.event - INFO - Update id=272268191 is handled. Duration 359 ms by bot id=6704516654
+2024-11-25 02:59:15,604 - aiogram.event - INFO - Update id=272268192 is handled. Duration 155 ms by bot id=6704516654
+2024-11-25 02:59:16,718 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-25 02:59:16,719 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-25 02:59:16,720 - sqlalchemy.engine.Engine - INFO - [cached since 106.4s ago] ('Andreyanov_A_A',)
+2024-11-25 02:59:16,722 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_token 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-25 02:59:16,723 - sqlalchemy.engine.Engine - INFO - [cached since 100.9s ago] ('cscgaming', 1)
+2024-11-25 02:59:16,725 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-25 02:59:16,725 - sqlalchemy.engine.Engine - INFO - [cached since 100.9s ago] ('cscgaming', 1)
+2024-11-25 02:59:19,285 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-25 02:59:19,287 - aiogram.event - INFO - Update id=272268193 is handled. Duration 2655 ms by bot id=6704516654
+2024-11-25 03:13:36,642 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-25 03:13:36,643 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-25 03:13:36,644 - sqlalchemy.engine.Engine - INFO - [cached since 966.3s ago] ('Andreyanov_A_A',)
+2024-11-25 03:13:36,857 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-25 03:13:36,858 - aiogram.event - INFO - Update id=272268194 is handled. Duration 219 ms by bot id=6704516654
+2024-11-25 03:13:37,774 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-25 03:13:37,776 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-25 03:13:37,776 - sqlalchemy.engine.Engine - INFO - [cached since 967.4s ago] ('Andreyanov_A_A',)
+2024-11-25 03:13:37,780 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-25 03:13:37,780 - sqlalchemy.engine.Engine - INFO - [cached since 965.7s ago] (1,)
+2024-11-25 03:13:37,783 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-25 03:13:37,930 - aiogram.event - INFO - Update id=272268195 is handled. Duration 155 ms by bot id=6704516654
+2024-11-25 03:13:42,791 - aiogram.event - INFO - Update id=272268196 is handled. Duration 140 ms by bot id=6704516654
+2024-11-25 03:13:44,028 - aiogram.event - INFO - Update id=272268197 is handled. Duration 155 ms by bot id=6704516654
+2024-11-25 03:13:45,192 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-25 03:13:45,193 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-25 03:13:45,195 - sqlalchemy.engine.Engine - INFO - [cached since 974.8s ago] ('Andreyanov_A_A',)
+2024-11-25 03:13:45,197 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_token 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-25 03:13:45,198 - sqlalchemy.engine.Engine - INFO - [cached since 969.4s ago] ('sec_of_chameleon', 1)
+2024-11-25 03:13:45,200 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-25 03:13:45,201 - sqlalchemy.engine.Engine - INFO - [cached since 969.4s ago] ('sec_of_chameleon', 1)
+2024-11-25 03:13:47,748 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-25 03:13:47,750 - aiogram.event - INFO - Update id=272268198 is handled. Duration 2657 ms by bot id=6704516654
+2024-11-25 03:13:56,316 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-25 03:13:56,317 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-25 03:13:56,318 - sqlalchemy.engine.Engine - INFO - [cached since 986s ago] ('Andreyanov_A_A',)
+2024-11-25 03:13:56,404 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-25 03:13:56,405 - aiogram.event - INFO - Update id=272268199 is handled. Duration 93 ms by bot id=6704516654
+2024-11-25 03:13:57,334 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-25 03:13:57,335 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-25 03:13:57,336 - sqlalchemy.engine.Engine - INFO - [cached since 987s ago] ('Andreyanov_A_A',)
+2024-11-25 03:13:57,338 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-25 03:13:57,339 - sqlalchemy.engine.Engine - INFO - [cached since 985.2s ago] (1,)
+2024-11-25 03:13:57,341 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-25 03:13:57,501 - aiogram.event - INFO - Update id=272268200 is handled. Duration 172 ms by bot id=6704516654
+2024-11-25 03:14:03,112 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-25 03:14:03,113 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-25 03:14:03,114 - sqlalchemy.engine.Engine - INFO - [cached since 992.8s ago] ('Andreyanov_A_A',)
+2024-11-25 03:14:03,253 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-25 03:14:03,255 - aiogram.event - INFO - Update id=272268201 is handled. Duration 140 ms by bot id=6704516654
+2024-11-25 03:14:04,314 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-25 03:14:04,315 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-25 03:14:04,316 - sqlalchemy.engine.Engine - INFO - [cached since 994s ago] ('Andreyanov_A_A',)
+2024-11-25 03:14:04,318 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-25 03:14:04,319 - sqlalchemy.engine.Engine - INFO - [cached since 992.2s ago] (1,)
+2024-11-25 03:14:04,321 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-25 03:14:04,590 - aiogram.event - INFO - Update id=272268202 is handled. Duration 265 ms by bot id=6704516654
+2024-11-25 03:14:06,100 - aiogram.event - INFO - Update id=272268203 is handled. Duration 172 ms by bot id=6704516654
+2024-11-25 03:14:07,224 - aiogram.event - INFO - Update id=272268204 is handled. Duration 155 ms by bot id=6704516654
+2024-11-25 03:14:08,161 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-25 03:14:08,162 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-25 03:14:08,163 - sqlalchemy.engine.Engine - INFO - [cached since 997.8s ago] ('Andreyanov_A_A',)
+2024-11-25 03:14:08,165 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_token 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-25 03:14:08,166 - sqlalchemy.engine.Engine - INFO - [cached since 992.3s ago] ('cscgaming', 1)
+2024-11-25 03:14:08,168 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-25 03:14:08,169 - sqlalchemy.engine.Engine - INFO - [cached since 992.3s ago] ('cscgaming', 1)
+2024-11-25 03:14:10,710 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-25 03:14:10,712 - aiogram.event - INFO - Update id=272268205 is handled. Duration 2640 ms by bot id=6704516654
+2024-11-28 00:02:12,824 - aiogram.dispatcher - INFO - Start polling
+2024-11-28 00:02:13,036 - aiogram.dispatcher - INFO - Run polling for bot @helper_ozon_wb_bot id=6704516654 - 'bot_help_ozon_wb'
+2024-11-28 00:02:32,600 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-11-28 00:02:32,601 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:02:32,609 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-11-28 00:02:32,610 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:02:32,614 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-11-28 00:02:32,615 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:02:32,620 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:02:32,636 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:02:32,639 - sqlalchemy.engine.Engine - INFO - [generated in 0.00239s] ('Andreyanov_A_A',)
+2024-11-28 00:02:32,957 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:02:32,960 - aiogram.event - INFO - Update id=272268235 is handled. Duration 515 ms by bot id=6704516654
+2024-11-28 00:02:35,114 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:02:35,115 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:02:35,117 - sqlalchemy.engine.Engine - INFO - [cached since 2.481s ago] ('Andreyanov_A_A',)
+2024-11-28 00:02:35,123 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-28 00:02:35,126 - sqlalchemy.engine.Engine - INFO - [generated in 0.00203s] (1,)
+2024-11-28 00:02:35,143 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:02:35,332 - aiogram.event - INFO - Update id=272268236 is handled. Duration 219 ms by bot id=6704516654
+2024-11-28 00:02:37,245 - aiogram.event - INFO - Update id=272268237 is handled. Duration 250 ms by bot id=6704516654
+2024-11-28 00:02:38,878 - aiogram.event - INFO - Update id=272268238 is handled. Duration 202 ms by bot id=6704516654
+2024-11-28 00:02:40,284 - aiogram.event - INFO - Update id=272268239 is handled. Duration 172 ms by bot id=6704516654
+2024-11-28 00:04:19,961 - aiogram.dispatcher - INFO - Start polling
+2024-11-28 00:04:20,174 - aiogram.dispatcher - INFO - Run polling for bot @helper_ozon_wb_bot id=6704516654 - 'bot_help_ozon_wb'
+2024-11-28 00:04:20,400 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-11-28 00:04:20,401 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:04:20,406 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-11-28 00:04:20,406 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:04:20,409 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-11-28 00:04:20,410 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:04:20,413 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:04:20,423 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:04:20,424 - sqlalchemy.engine.Engine - INFO - [generated in 0.00159s] ('Andreyanov_A_A',)
+2024-11-28 00:04:20,743 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:04:20,745 - aiogram.event - INFO - Update id=272268240 is handled. Duration 452 ms by bot id=6704516654
+2024-11-28 00:04:22,734 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:04:22,735 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:04:22,737 - sqlalchemy.engine.Engine - INFO - [cached since 2.314s ago] ('Andreyanov_A_A',)
+2024-11-28 00:04:22,744 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-28 00:04:22,747 - sqlalchemy.engine.Engine - INFO - [generated in 0.00239s] (1,)
+2024-11-28 00:04:22,758 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:04:23,018 - aiogram.event - INFO - Update id=272268241 is handled. Duration 297 ms by bot id=6704516654
+2024-11-28 00:04:24,590 - aiogram.event - INFO - Update id=272268242 is handled. Duration 329 ms by bot id=6704516654
+2024-11-28 00:04:25,846 - aiogram.event - INFO - Update id=272268243 is handled. Duration 234 ms by bot id=6704516654
+2024-11-28 00:04:26,863 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:04:26,865 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:04:26,867 - sqlalchemy.engine.Engine - INFO - [cached since 6.444s ago] ('Andreyanov_A_A',)
+2024-11-28 00:04:26,877 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_token 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:04:26,881 - sqlalchemy.engine.Engine - INFO - [generated in 0.00356s] ('sec_of_chameleon', 1)
+2024-11-28 00:04:26,886 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:04:26,888 - sqlalchemy.engine.Engine - INFO - [generated in 0.00172s] ('sec_of_chameleon', 1)
+2024-11-28 00:04:29,525 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:04:29,529 - aiogram.event - INFO - Update id=272268244 is handled. Duration 2812 ms by bot id=6704516654
+2024-11-28 00:05:10,823 - aiogram.dispatcher - INFO - Start polling
+2024-11-28 00:05:11,024 - aiogram.dispatcher - INFO - Run polling for bot @helper_ozon_wb_bot id=6704516654 - 'bot_help_ozon_wb'
+2024-11-28 00:05:13,915 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-11-28 00:05:13,916 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:05:13,920 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-11-28 00:05:13,922 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:05:13,924 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-11-28 00:05:13,925 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:05:13,928 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:05:13,940 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:05:13,940 - sqlalchemy.engine.Engine - INFO - [generated in 0.00185s] ('Andreyanov_A_A',)
+2024-11-28 00:05:14,234 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:05:14,238 - aiogram.event - INFO - Update id=272268245 is handled. Duration 484 ms by bot id=6704516654
+2024-11-28 00:05:19,056 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:05:19,058 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:05:19,059 - sqlalchemy.engine.Engine - INFO - [cached since 5.12s ago] ('Andreyanov_A_A',)
+2024-11-28 00:05:19,066 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-28 00:05:19,068 - sqlalchemy.engine.Engine - INFO - [generated in 0.00259s] (1,)
+2024-11-28 00:05:19,077 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:05:19,460 - aiogram.event - INFO - Update id=272268246 is handled. Duration 407 ms by bot id=6704516654
+2024-11-28 00:05:20,872 - aiogram.event - INFO - Update id=272268247 is handled. Duration 250 ms by bot id=6704516654
+2024-11-28 00:05:21,976 - aiogram.event - INFO - Update id=272268248 is handled. Duration 155 ms by bot id=6704516654
+2024-11-28 00:05:23,006 - aiogram.event - INFO - Update id=272268249 is handled. Duration 170 ms by bot id=6704516654
+2024-11-28 00:06:38,002 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:06:38,004 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:06:38,006 - sqlalchemy.engine.Engine - INFO - [cached since 84.07s ago] ('Andreyanov_A_A',)
+2024-11-28 00:06:38,216 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:06:38,218 - aiogram.event - INFO - Update id=272268250 is handled. Duration 219 ms by bot id=6704516654
+2024-11-28 00:06:39,344 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:06:39,345 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:06:39,347 - sqlalchemy.engine.Engine - INFO - [cached since 85.41s ago] ('Andreyanov_A_A',)
+2024-11-28 00:06:39,349 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-28 00:06:39,352 - sqlalchemy.engine.Engine - INFO - [cached since 80.29s ago] (1,)
+2024-11-28 00:06:39,356 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:06:39,529 - aiogram.event - INFO - Update id=272268251 is handled. Duration 187 ms by bot id=6704516654
+2024-11-28 00:06:40,839 - aiogram.event - INFO - Update id=272268252 is handled. Duration 234 ms by bot id=6704516654
+2024-11-28 00:06:42,271 - aiogram.event - INFO - Update id=272268253 is handled. Duration 469 ms by bot id=6704516654
+2024-11-28 00:06:43,731 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:06:43,734 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:06:43,735 - sqlalchemy.engine.Engine - INFO - [cached since 89.8s ago] ('Andreyanov_A_A',)
+2024-11-28 00:06:43,741 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_token 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:06:43,744 - sqlalchemy.engine.Engine - INFO - [generated in 0.00175s] ('sec_of_chameleon', 1)
+2024-11-28 00:06:43,752 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:06:43,753 - sqlalchemy.engine.Engine - INFO - [generated in 0.00200s] ('sec_of_chameleon', 1)
+2024-11-28 00:06:46,360 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:06:46,362 - aiogram.event - INFO - Update id=272268254 is handled. Duration 2718 ms by bot id=6704516654
+2024-11-28 00:06:51,325 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:06:51,328 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:06:51,329 - sqlalchemy.engine.Engine - INFO - [cached since 97.39s ago] ('Andreyanov_A_A',)
+2024-11-28 00:06:51,433 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:06:51,435 - aiogram.event - INFO - Update id=272268255 is handled. Duration 108 ms by bot id=6704516654
+2024-11-28 00:06:52,553 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:06:52,554 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:06:52,556 - sqlalchemy.engine.Engine - INFO - [cached since 98.62s ago] ('Andreyanov_A_A',)
+2024-11-28 00:06:52,559 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-28 00:06:52,561 - sqlalchemy.engine.Engine - INFO - [cached since 93.5s ago] (1,)
+2024-11-28 00:06:52,565 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:06:52,803 - aiogram.event - INFO - Update id=272268256 is handled. Duration 250 ms by bot id=6704516654
+2024-11-28 00:06:54,711 - aiogram.event - INFO - Update id=272268257 is handled. Duration 219 ms by bot id=6704516654
+2024-11-28 00:06:55,906 - aiogram.event - INFO - Update id=272268258 is handled. Duration 187 ms by bot id=6704516654
+2024-11-28 00:06:57,227 - aiogram.event - INFO - Update id=272268259 is handled. Duration 375 ms by bot id=6704516654
+2024-11-28 00:09:19,961 - aiogram.dispatcher - INFO - Start polling
+2024-11-28 00:09:20,218 - aiogram.dispatcher - INFO - Run polling for bot @helper_ozon_wb_bot id=6704516654 - 'bot_help_ozon_wb'
+2024-11-28 00:09:32,345 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-11-28 00:09:32,346 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:09:32,354 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-11-28 00:09:32,354 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:09:32,358 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-11-28 00:09:32,358 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:09:32,364 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:09:32,385 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:09:32,388 - sqlalchemy.engine.Engine - INFO - [generated in 0.00481s] ('Andreyanov_A_A',)
+2024-11-28 00:09:32,698 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:09:32,701 - aiogram.event - INFO - Update id=272268260 is handled. Duration 500 ms by bot id=6704516654
+2024-11-28 00:09:33,642 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:09:33,644 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:09:33,645 - sqlalchemy.engine.Engine - INFO - [cached since 1.262s ago] ('Andreyanov_A_A',)
+2024-11-28 00:09:33,654 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-28 00:09:33,656 - sqlalchemy.engine.Engine - INFO - [generated in 0.00256s] (1,)
+2024-11-28 00:09:33,666 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:09:33,836 - aiogram.event - INFO - Update id=272268261 is handled. Duration 204 ms by bot id=6704516654
+2024-11-28 00:09:35,120 - aiogram.event - INFO - Update id=272268262 is handled. Duration 296 ms by bot id=6704516654
+2024-11-28 00:09:36,316 - aiogram.event - INFO - Update id=272268263 is handled. Duration 172 ms by bot id=6704516654
+2024-11-28 00:09:37,321 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:09:37,322 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:09:37,324 - sqlalchemy.engine.Engine - INFO - [cached since 4.941s ago] ('Andreyanov_A_A',)
+2024-11-28 00:09:37,331 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:09:37,335 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:09:37,338 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_wb_token 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:09:37,341 - sqlalchemy.engine.Engine - INFO - [generated in 0.00284s] ('cscgaming', 1)
+2024-11-28 00:09:38,113 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:09:38,117 - aiogram.event - INFO - Update id=272268264 is handled. Duration 905 ms by bot id=6704516654
+2024-11-28 00:09:44,272 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:09:44,274 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:09:44,275 - sqlalchemy.engine.Engine - INFO - [cached since 11.89s ago] ('Andreyanov_A_A',)
+2024-11-28 00:09:44,355 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:09:44,357 - aiogram.event - INFO - Update id=272268265 is handled. Duration 77 ms by bot id=6704516654
+2024-11-28 00:09:45,194 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:09:45,198 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:09:45,198 - sqlalchemy.engine.Engine - INFO - [cached since 12.82s ago] ('Andreyanov_A_A',)
+2024-11-28 00:09:45,204 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-28 00:09:45,205 - sqlalchemy.engine.Engine - INFO - [cached since 11.55s ago] (1,)
+2024-11-28 00:09:45,205 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:09:45,525 - aiogram.event - INFO - Update id=272268266 is handled. Duration 327 ms by bot id=6704516654
+2024-11-28 00:09:46,575 - aiogram.event - INFO - Update id=272268267 is handled. Duration 172 ms by bot id=6704516654
+2024-11-28 00:09:47,655 - aiogram.event - INFO - Update id=272268268 is handled. Duration 202 ms by bot id=6704516654
+2024-11-28 00:09:48,557 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:09:48,558 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:09:48,560 - sqlalchemy.engine.Engine - INFO - [cached since 16.18s ago] ('Andreyanov_A_A',)
+2024-11-28 00:09:48,564 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:09:48,567 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:09:48,571 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_token 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:09:48,573 - sqlalchemy.engine.Engine - INFO - [generated in 0.00199s] ('sec_of_chameleon', 1)
+2024-11-28 00:09:48,580 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:09:48,581 - sqlalchemy.engine.Engine - INFO - [generated in 0.00166s] ('sec_of_chameleon', 1)
+2024-11-28 00:09:48,996 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:09:48,999 - aiogram.event - INFO - Update id=272268269 is handled. Duration 515 ms by bot id=6704516654
+2024-11-28 00:11:13,719 - aiogram.dispatcher - INFO - Start polling
+2024-11-28 00:11:13,974 - aiogram.dispatcher - INFO - Run polling for bot @helper_ozon_wb_bot id=6704516654 - 'bot_help_ozon_wb'
+2024-11-28 00:11:33,834 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-11-28 00:11:33,835 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:11:33,842 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-11-28 00:11:33,842 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:11:33,846 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-11-28 00:11:33,847 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:11:33,853 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:11:33,869 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:11:33,871 - sqlalchemy.engine.Engine - INFO - [generated in 0.00291s] ('Andreyanov_A_A',)
+2024-11-28 00:11:34,165 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:11:34,168 - aiogram.event - INFO - Update id=272268270 is handled. Duration 484 ms by bot id=6704516654
+2024-11-28 00:11:35,736 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:11:35,738 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:11:35,739 - sqlalchemy.engine.Engine - INFO - [cached since 1.871s ago] ('Andreyanov_A_A',)
+2024-11-28 00:11:35,745 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-28 00:11:35,747 - sqlalchemy.engine.Engine - INFO - [generated in 0.00158s] (1,)
+2024-11-28 00:11:35,758 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:11:35,984 - aiogram.event - INFO - Update id=272268271 is handled. Duration 250 ms by bot id=6704516654
+2024-11-28 00:11:37,397 - aiogram.event - INFO - Update id=272268272 is handled. Duration 266 ms by bot id=6704516654
+2024-11-28 00:11:38,554 - aiogram.event - INFO - Update id=272268273 is handled. Duration 202 ms by bot id=6704516654
+2024-11-28 00:11:40,252 - aiogram.event - INFO - Update id=272268274 is handled. Duration 155 ms by bot id=6704516654
+2024-11-28 00:12:09,676 - aiogram.dispatcher - INFO - Start polling
+2024-11-28 00:12:09,870 - aiogram.dispatcher - INFO - Run polling for bot @helper_ozon_wb_bot id=6704516654 - 'bot_help_ozon_wb'
+2024-11-28 00:12:16,299 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-11-28 00:12:16,301 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:12:16,312 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-11-28 00:12:16,314 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:12:16,319 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-11-28 00:12:16,320 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:12:16,327 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:12:16,348 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:12:16,350 - sqlalchemy.engine.Engine - INFO - [generated in 0.00296s] ('Andreyanov_A_A',)
+2024-11-28 00:12:16,688 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:12:16,692 - aiogram.event - INFO - Update id=272268275 is handled. Duration 563 ms by bot id=6704516654
+2024-11-28 00:12:17,886 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:12:17,888 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:12:17,890 - sqlalchemy.engine.Engine - INFO - [cached since 1.542s ago] ('Andreyanov_A_A',)
+2024-11-28 00:12:17,896 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-28 00:12:17,898 - sqlalchemy.engine.Engine - INFO - [generated in 0.00183s] (1,)
+2024-11-28 00:12:17,909 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:12:18,084 - aiogram.event - INFO - Update id=272268276 is handled. Duration 204 ms by bot id=6704516654
+2024-11-28 00:12:19,489 - aiogram.event - INFO - Update id=272268277 is handled. Duration 265 ms by bot id=6704516654
+2024-11-28 00:12:20,830 - aiogram.event - INFO - Update id=272268278 is handled. Duration 297 ms by bot id=6704516654
+2024-11-28 00:12:22,376 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:12:22,378 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:12:22,379 - sqlalchemy.engine.Engine - INFO - [cached since 6.032s ago] ('Andreyanov_A_A',)
+2024-11-28 00:12:22,386 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:12:22,390 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:12:22,394 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_wb_token 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:12:22,395 - sqlalchemy.engine.Engine - INFO - [generated in 0.00152s] ('sec_of_chameleon', 1)
+2024-11-28 00:12:23,221 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:12:23,223 - aiogram.event - INFO - Update id=272268279 is handled. Duration 952 ms by bot id=6704516654
+2024-11-28 00:12:40,393 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:12:40,395 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:12:40,397 - sqlalchemy.engine.Engine - INFO - [cached since 24.05s ago] ('Andreyanov_A_A',)
+2024-11-28 00:12:40,602 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:12:40,604 - aiogram.event - INFO - Update id=272268280 is handled. Duration 202 ms by bot id=6704516654
+2024-11-28 00:12:41,724 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:12:41,725 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:12:41,727 - sqlalchemy.engine.Engine - INFO - [cached since 25.38s ago] ('Andreyanov_A_A',)
+2024-11-28 00:12:41,732 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-28 00:12:41,734 - sqlalchemy.engine.Engine - INFO - [cached since 23.84s ago] (1,)
+2024-11-28 00:12:41,739 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:12:41,894 - aiogram.event - INFO - Update id=272268281 is handled. Duration 172 ms by bot id=6704516654
+2024-11-28 00:12:43,065 - aiogram.event - INFO - Update id=272268282 is handled. Duration 219 ms by bot id=6704516654
+2024-11-28 00:12:44,495 - aiogram.event - INFO - Update id=272268283 is handled. Duration 187 ms by bot id=6704516654
+2024-11-28 00:12:46,120 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:12:46,122 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:12:46,124 - sqlalchemy.engine.Engine - INFO - [cached since 29.78s ago] ('Andreyanov_A_A',)
+2024-11-28 00:12:46,127 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:12:46,131 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:12:46,134 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_token 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:12:46,140 - sqlalchemy.engine.Engine - INFO - [generated in 0.00610s] ('sec_of_chameleon', 1)
+2024-11-28 00:12:46,153 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:12:46,157 - sqlalchemy.engine.Engine - INFO - [generated in 0.00443s] ('sec_of_chameleon', 1)
+2024-11-28 00:12:46,589 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:12:46,592 - aiogram.event - INFO - Update id=272268284 is handled. Duration 547 ms by bot id=6704516654
+2024-11-28 00:17:53,584 - aiogram.dispatcher - INFO - Start polling
+2024-11-28 00:17:53,903 - aiogram.dispatcher - INFO - Run polling for bot @helper_ozon_wb_bot id=6704516654 - 'bot_help_ozon_wb'
+2024-11-28 00:17:55,407 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-11-28 00:17:55,407 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:17:55,414 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-11-28 00:17:55,415 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:17:55,419 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-11-28 00:17:55,420 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:17:55,425 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:17:55,441 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:17:55,443 - sqlalchemy.engine.Engine - INFO - [generated in 0.00229s] ('Andreyanov_A_A',)
+2024-11-28 00:17:55,740 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:17:55,743 - aiogram.event - INFO - Update id=272268285 is handled. Duration 484 ms by bot id=6704516654
+2024-11-28 00:17:56,583 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:17:56,585 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:17:56,586 - sqlalchemy.engine.Engine - INFO - [cached since 1.146s ago] ('Andreyanov_A_A',)
+2024-11-28 00:17:56,594 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-28 00:17:56,596 - sqlalchemy.engine.Engine - INFO - [generated in 0.00216s] (1,)
+2024-11-28 00:17:56,604 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:17:56,829 - aiogram.event - INFO - Update id=272268286 is handled. Duration 250 ms by bot id=6704516654
+2024-11-28 00:17:58,220 - aiogram.event - INFO - Update id=272268287 is handled. Duration 562 ms by bot id=6704516654
+2024-11-28 00:17:59,248 - aiogram.event - INFO - Update id=272268288 is handled. Duration 140 ms by bot id=6704516654
+2024-11-28 00:18:00,385 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:18:00,387 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:18:00,388 - sqlalchemy.engine.Engine - INFO - [cached since 4.948s ago] ('Andreyanov_A_A',)
+2024-11-28 00:18:00,397 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:18:00,400 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:18:00,403 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_token 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:18:00,405 - sqlalchemy.engine.Engine - INFO - [generated in 0.00168s] ('sec_of_chameleon', 1)
+2024-11-28 00:18:00,412 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:18:00,414 - sqlalchemy.engine.Engine - INFO - [generated in 0.00176s] ('sec_of_chameleon', 1)
+2024-11-28 00:18:02,354 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:18:02,356 - aiogram.event - INFO - Update id=272268289 is handled. Duration 2047 ms by bot id=6704516654
+2024-11-28 00:18:33,378 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:18:33,379 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:18:33,381 - sqlalchemy.engine.Engine - INFO - [cached since 37.94s ago] ('Andreyanov_A_A',)
+2024-11-28 00:18:33,586 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:18:33,589 - aiogram.event - INFO - Update id=272268290 is handled. Duration 219 ms by bot id=6704516654
+2024-11-28 00:18:34,843 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:18:34,844 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:18:34,846 - sqlalchemy.engine.Engine - INFO - [cached since 39.41s ago] ('Andreyanov_A_A',)
+2024-11-28 00:18:34,850 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-28 00:18:34,852 - sqlalchemy.engine.Engine - INFO - [cached since 38.26s ago] (1,)
+2024-11-28 00:18:34,856 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:18:35,023 - aiogram.event - INFO - Update id=272268291 is handled. Duration 187 ms by bot id=6704516654
+2024-11-28 00:18:37,020 - aiogram.event - INFO - Update id=272268292 is handled. Duration 234 ms by bot id=6704516654
+2024-11-28 00:18:38,199 - aiogram.event - INFO - Update id=272268293 is handled. Duration 188 ms by bot id=6704516654
+2024-11-28 00:18:39,731 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:18:39,733 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:18:39,735 - sqlalchemy.engine.Engine - INFO - [cached since 44.29s ago] ('Andreyanov_A_A',)
+2024-11-28 00:18:39,738 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:18:39,742 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:18:39,746 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_wb_token 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:18:39,748 - sqlalchemy.engine.Engine - INFO - [generated in 0.00152s] ('sec_of_chameleon', 1)
+2024-11-28 00:18:40,495 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:18:40,497 - aiogram.event - INFO - Update id=272268294 is handled. Duration 843 ms by bot id=6704516654
+2024-11-28 00:22:22,178 - aiogram.dispatcher - INFO - Start polling
+2024-11-28 00:22:22,499 - aiogram.dispatcher - INFO - Run polling for bot @helper_ozon_wb_bot id=6704516654 - 'bot_help_ozon_wb'
+2024-11-28 00:22:31,027 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-11-28 00:22:31,028 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:22:31,038 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-11-28 00:22:31,039 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:22:31,042 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-11-28 00:22:31,043 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:22:31,049 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:22:31,063 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:22:31,065 - sqlalchemy.engine.Engine - INFO - [generated in 0.00220s] ('Andreyanov_A_A',)
+2024-11-28 00:22:31,442 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:22:31,450 - aiogram.event - INFO - Update id=272268295 is handled. Duration 578 ms by bot id=6704516654
+2024-11-28 00:22:32,810 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:22:32,812 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:22:32,813 - sqlalchemy.engine.Engine - INFO - [cached since 1.751s ago] ('Andreyanov_A_A',)
+2024-11-28 00:22:32,821 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-28 00:22:32,823 - sqlalchemy.engine.Engine - INFO - [generated in 0.00195s] (1,)
+2024-11-28 00:22:32,833 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:22:33,006 - aiogram.event - INFO - Update id=272268296 is handled. Duration 202 ms by bot id=6704516654
+2024-11-28 00:22:34,813 - aiogram.event - INFO - Update id=272268297 is handled. Duration 250 ms by bot id=6704516654
+2024-11-28 00:22:35,720 - aiogram.event - INFO - Update id=272268298 is handled. Duration 202 ms by bot id=6704516654
+2024-11-28 00:22:37,280 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:22:37,282 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:22:37,283 - sqlalchemy.engine.Engine - INFO - [cached since 6.22s ago] ('Andreyanov_A_A',)
+2024-11-28 00:22:37,289 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:22:37,292 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:22:37,297 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_wb_token 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:22:37,298 - sqlalchemy.engine.Engine - INFO - [generated in 0.00173s] ('cscgaming', 1)
+2024-11-28 00:22:38,106 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:22:38,108 - aiogram.event - INFO - Update id=272268299 is handled. Duration 984 ms by bot id=6704516654
+2024-11-28 00:22:55,450 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:22:55,452 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:22:55,453 - sqlalchemy.engine.Engine - INFO - [cached since 24.39s ago] ('Andreyanov_A_A',)
+2024-11-28 00:22:55,728 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:22:55,731 - aiogram.event - INFO - Update id=272268300 is handled. Duration 280 ms by bot id=6704516654
+2024-11-28 00:22:56,734 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:22:56,735 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:22:56,737 - sqlalchemy.engine.Engine - INFO - [cached since 25.67s ago] ('Andreyanov_A_A',)
+2024-11-28 00:22:56,740 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-28 00:22:56,742 - sqlalchemy.engine.Engine - INFO - [cached since 23.92s ago] (1,)
+2024-11-28 00:22:56,746 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:22:56,903 - aiogram.event - INFO - Update id=272268301 is handled. Duration 172 ms by bot id=6704516654
+2024-11-28 00:23:02,475 - aiogram.event - INFO - Update id=272268302 is handled. Duration 172 ms by bot id=6704516654
+2024-11-28 00:23:05,095 - aiogram.event - INFO - Update id=272268303 is handled. Duration 172 ms by bot id=6704516654
+2024-11-28 00:23:06,808 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:23:06,809 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:23:06,810 - sqlalchemy.engine.Engine - INFO - [cached since 35.75s ago] ('Andreyanov_A_A',)
+2024-11-28 00:23:06,813 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:23:06,816 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:23:06,818 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_wb_token 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:23:06,819 - sqlalchemy.engine.Engine - INFO - [cached since 29.52s ago] ('sec_of_chameleon', 1)
+2024-11-28 00:23:07,605 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:23:07,608 - aiogram.event - INFO - Update id=272268304 is handled. Duration 875 ms by bot id=6704516654
+2024-11-28 00:26:41,966 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:26:41,967 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:26:41,969 - sqlalchemy.engine.Engine - INFO - [cached since 250.9s ago] ('Andreyanov_A_A',)
+2024-11-28 00:26:42,184 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:26:42,187 - aiogram.event - INFO - Update id=272268305 is handled. Duration 217 ms by bot id=6704516654
+2024-11-28 00:26:44,116 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:26:44,117 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:26:44,118 - sqlalchemy.engine.Engine - INFO - [cached since 253.1s ago] ('Andreyanov_A_A',)
+2024-11-28 00:26:44,123 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-28 00:26:44,124 - sqlalchemy.engine.Engine - INFO - [cached since 251.3s ago] (1,)
+2024-11-28 00:26:44,129 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:26:44,414 - aiogram.event - INFO - Update id=272268306 is handled. Duration 297 ms by bot id=6704516654
+2024-11-28 00:26:55,407 - aiogram.event - INFO - Update id=272268307 is handled. Duration 327 ms by bot id=6704516654
+2024-11-28 00:26:57,282 - aiogram.event - INFO - Update id=272268308 is handled. Duration 141 ms by bot id=6704516654
+2024-11-28 00:27:00,791 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:27:00,793 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:27:00,794 - sqlalchemy.engine.Engine - INFO - [cached since 269.7s ago] ('Andreyanov_A_A',)
+2024-11-28 00:27:00,879 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:27:00,882 - aiogram.event - INFO - Update id=272268309 is handled. Duration 92 ms by bot id=6704516654
+2024-11-28 00:27:02,241 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:27:02,243 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:27:02,245 - sqlalchemy.engine.Engine - INFO - [cached since 271.2s ago] ('Andreyanov_A_A',)
+2024-11-28 00:27:02,248 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-28 00:27:02,249 - sqlalchemy.engine.Engine - INFO - [cached since 269.4s ago] (1,)
+2024-11-28 00:27:02,253 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:27:02,422 - aiogram.event - INFO - Update id=272268310 is handled. Duration 172 ms by bot id=6704516654
+2024-11-28 00:27:09,463 - aiogram.event - INFO - Update id=272268311 is handled. Duration 157 ms by bot id=6704516654
+2024-11-28 00:27:10,942 - aiogram.event - INFO - Update id=272268312 is handled. Duration 156 ms by bot id=6704516654
+2024-11-28 00:27:12,482 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:27:12,484 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:27:12,485 - sqlalchemy.engine.Engine - INFO - [cached since 281.4s ago] ('Andreyanov_A_A',)
+2024-11-28 00:27:12,491 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:27:12,493 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:27:12,494 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_wb_token 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:27:12,496 - sqlalchemy.engine.Engine - INFO - [cached since 275.2s ago] ('sec_of_chameleon', 1)
+2024-11-28 00:27:13,282 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:27:13,284 - aiogram.event - INFO - Update id=272268313 is handled. Duration 907 ms by bot id=6704516654
+2024-11-28 00:27:18,321 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:27:18,323 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:27:18,323 - sqlalchemy.engine.Engine - INFO - [cached since 287.3s ago] ('Andreyanov_A_A',)
+2024-11-28 00:27:18,591 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:27:18,594 - aiogram.event - INFO - Update id=272268314 is handled. Duration 265 ms by bot id=6704516654
+2024-11-28 00:27:19,869 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:27:19,871 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:27:19,872 - sqlalchemy.engine.Engine - INFO - [cached since 288.8s ago] ('Andreyanov_A_A',)
+2024-11-28 00:27:19,876 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-28 00:27:19,876 - sqlalchemy.engine.Engine - INFO - [cached since 287.1s ago] (1,)
+2024-11-28 00:27:19,881 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:27:20,039 - aiogram.event - INFO - Update id=272268315 is handled. Duration 172 ms by bot id=6704516654
+2024-11-28 00:27:21,310 - aiogram.event - INFO - Update id=272268316 is handled. Duration 140 ms by bot id=6704516654
+2024-11-28 00:27:22,709 - aiogram.event - INFO - Update id=272268317 is handled. Duration 187 ms by bot id=6704516654
+2024-11-28 00:27:24,259 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:27:24,262 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:27:24,263 - sqlalchemy.engine.Engine - INFO - [cached since 293.2s ago] ('Andreyanov_A_A',)
+2024-11-28 00:27:24,267 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:27:24,269 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:27:24,272 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_wb_token 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:27:24,275 - sqlalchemy.engine.Engine - INFO - [cached since 287s ago] ('cscgaming', 1)
+2024-11-28 00:27:24,935 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:27:24,938 - aiogram.event - INFO - Update id=272268318 is handled. Duration 1000 ms by bot id=6704516654
+2024-11-28 00:28:24,731 - aiogram.dispatcher - INFO - Start polling
+2024-11-28 00:28:24,965 - aiogram.dispatcher - INFO - Run polling for bot @helper_ozon_wb_bot id=6704516654 - 'bot_help_ozon_wb'
+2024-11-28 00:28:27,223 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-11-28 00:28:27,224 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:28:27,236 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-11-28 00:28:27,237 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:28:27,242 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-11-28 00:28:27,244 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:28:27,250 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:28:27,275 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:28:27,278 - sqlalchemy.engine.Engine - INFO - [generated in 0.00301s] ('Andreyanov_A_A',)
+2024-11-28 00:28:27,683 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:28:27,686 - aiogram.event - INFO - Update id=272268319 is handled. Duration 655 ms by bot id=6704516654
+2024-11-28 00:28:32,264 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:28:32,265 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:28:32,267 - sqlalchemy.engine.Engine - INFO - [cached since 4.993s ago] ('Andreyanov_A_A',)
+2024-11-28 00:28:32,273 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-28 00:28:32,276 - sqlalchemy.engine.Engine - INFO - [generated in 0.00234s] (1,)
+2024-11-28 00:28:32,286 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:28:32,435 - aiogram.event - INFO - Update id=272268320 is handled. Duration 172 ms by bot id=6704516654
+2024-11-28 00:28:33,937 - aiogram.event - INFO - Update id=272268321 is handled. Duration 233 ms by bot id=6704516654
+2024-11-28 00:28:36,294 - aiogram.event - INFO - Update id=272268322 is handled. Duration 140 ms by bot id=6704516654
+2024-11-28 00:28:37,664 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:28:37,665 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:28:37,667 - sqlalchemy.engine.Engine - INFO - [cached since 10.39s ago] ('Andreyanov_A_A',)
+2024-11-28 00:28:37,673 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:28:37,677 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:28:37,680 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_wb_token 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:28:37,682 - sqlalchemy.engine.Engine - INFO - [generated in 0.00184s] ('cscgaming', 1)
+2024-11-28 00:28:38,382 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:28:38,384 - aiogram.event - INFO - Update id=272268323 is handled. Duration 795 ms by bot id=6704516654
+2024-11-28 00:30:29,332 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:30:29,333 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:30:29,335 - sqlalchemy.engine.Engine - INFO - [cached since 122.1s ago] ('Andreyanov_A_A',)
+2024-11-28 00:30:29,537 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:30:29,539 - aiogram.event - INFO - Update id=272268324 is handled. Duration 202 ms by bot id=6704516654
+2024-11-28 00:30:30,535 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:30:30,536 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:30:30,538 - sqlalchemy.engine.Engine - INFO - [cached since 123.3s ago] ('Andreyanov_A_A',)
+2024-11-28 00:30:30,542 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-28 00:30:30,543 - sqlalchemy.engine.Engine - INFO - [cached since 118.3s ago] (1,)
+2024-11-28 00:30:30,547 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:30:30,728 - aiogram.event - INFO - Update id=272268325 is handled. Duration 187 ms by bot id=6704516654
+2024-11-28 00:30:32,000 - aiogram.event - INFO - Update id=272268326 is handled. Duration 250 ms by bot id=6704516654
+2024-11-28 00:30:33,857 - aiogram.event - INFO - Update id=272268327 is handled. Duration 234 ms by bot id=6704516654
+2024-11-28 00:30:34,835 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:30:34,838 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:30:34,839 - sqlalchemy.engine.Engine - INFO - [cached since 127.6s ago] ('Andreyanov_A_A',)
+2024-11-28 00:30:34,842 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:30:34,846 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:30:34,848 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_token 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:30:34,849 - sqlalchemy.engine.Engine - INFO - [generated in 0.00154s] ('sec_of_chameleon', 1)
+2024-11-28 00:30:34,857 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:30:34,860 - sqlalchemy.engine.Engine - INFO - [generated in 0.00283s] ('sec_of_chameleon', 1)
+2024-11-28 00:30:35,018 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:30:35,022 - aiogram.event - INFO - Update id=272268328 is handled. Duration 281 ms by bot id=6704516654
+2024-11-28 00:31:21,735 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:31:21,736 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:31:21,737 - sqlalchemy.engine.Engine - INFO - [cached since 174.5s ago] ('Andreyanov_A_A',)
+2024-11-28 00:31:21,922 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:31:21,924 - aiogram.event - INFO - Update id=272268329 is handled. Duration 202 ms by bot id=6704516654
+2024-11-28 00:31:23,377 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:31:23,378 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:31:23,379 - sqlalchemy.engine.Engine - INFO - [cached since 176.1s ago] ('Andreyanov_A_A',)
+2024-11-28 00:31:23,383 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-28 00:31:23,385 - sqlalchemy.engine.Engine - INFO - [cached since 171.1s ago] (1,)
+2024-11-28 00:31:23,388 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:31:23,655 - aiogram.event - INFO - Update id=272268330 is handled. Duration 281 ms by bot id=6704516654
+2024-11-28 00:31:25,355 - aiogram.event - INFO - Update id=272268331 is handled. Duration 234 ms by bot id=6704516654
+2024-11-28 00:31:26,827 - aiogram.event - INFO - Update id=272268332 is handled. Duration 266 ms by bot id=6704516654
+2024-11-28 00:31:27,860 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:31:27,861 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:31:27,864 - sqlalchemy.engine.Engine - INFO - [cached since 180.6s ago] ('Andreyanov_A_A',)
+2024-11-28 00:31:27,866 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:31:27,870 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:31:27,871 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_token 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:31:27,872 - sqlalchemy.engine.Engine - INFO - [cached since 53.02s ago] ('cscgaming', 1)
+2024-11-28 00:31:27,878 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:31:27,879 - sqlalchemy.engine.Engine - INFO - [cached since 53.02s ago] ('cscgaming', 1)
+2024-11-28 00:31:28,018 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:31:28,020 - aiogram.event - INFO - Update id=272268333 is handled. Duration 234 ms by bot id=6704516654
+2024-11-28 00:31:31,452 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:31:31,454 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:31:31,455 - sqlalchemy.engine.Engine - INFO - [cached since 184.2s ago] ('Andreyanov_A_A',)
+2024-11-28 00:31:31,552 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:31:31,556 - aiogram.event - INFO - Update id=272268334 is handled. Duration 108 ms by bot id=6704516654
+2024-11-28 00:31:32,791 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:31:32,793 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:31:32,794 - sqlalchemy.engine.Engine - INFO - [cached since 185.5s ago] ('Andreyanov_A_A',)
+2024-11-28 00:31:32,798 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-28 00:31:32,799 - sqlalchemy.engine.Engine - INFO - [cached since 180.5s ago] (1,)
+2024-11-28 00:31:32,804 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:31:32,943 - aiogram.event - INFO - Update id=272268335 is handled. Duration 156 ms by bot id=6704516654
+2024-11-28 00:31:34,209 - aiogram.event - INFO - Update id=272268336 is handled. Duration 187 ms by bot id=6704516654
+2024-11-28 00:31:35,434 - aiogram.event - INFO - Update id=272268337 is handled. Duration 187 ms by bot id=6704516654
+2024-11-28 00:31:36,372 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:31:36,374 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:31:36,375 - sqlalchemy.engine.Engine - INFO - [cached since 189.1s ago] ('Andreyanov_A_A',)
+2024-11-28 00:31:36,379 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:31:36,382 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:31:36,383 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_token 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:31:36,385 - sqlalchemy.engine.Engine - INFO - [cached since 61.54s ago] ('sec_of_chameleon', 1)
+2024-11-28 00:31:36,389 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:31:36,390 - sqlalchemy.engine.Engine - INFO - [cached since 61.53s ago] ('sec_of_chameleon', 1)
+2024-11-28 00:31:36,551 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:31:36,555 - aiogram.event - INFO - Update id=272268338 is handled. Duration 265 ms by bot id=6704516654
+2024-11-28 00:36:07,643 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:36:07,645 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:36:07,647 - sqlalchemy.engine.Engine - INFO - [cached since 460.4s ago] ('Andreyanov_A_A',)
+2024-11-28 00:36:07,839 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:36:07,842 - aiogram.event - INFO - Update id=272268339 is handled. Duration 204 ms by bot id=6704516654
+2024-11-28 00:36:09,277 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:36:09,278 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:36:09,279 - sqlalchemy.engine.Engine - INFO - [cached since 462s ago] ('Andreyanov_A_A',)
+2024-11-28 00:36:09,284 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-28 00:36:09,284 - sqlalchemy.engine.Engine - INFO - [cached since 457s ago] (1,)
+2024-11-28 00:36:09,288 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:36:09,531 - aiogram.event - INFO - Update id=272268340 is handled. Duration 250 ms by bot id=6704516654
+2024-11-28 00:36:11,563 - aiogram.event - INFO - Update id=272268341 is handled. Duration 438 ms by bot id=6704516654
+2024-11-28 00:36:12,948 - aiogram.event - INFO - Update id=272268342 is handled. Duration 188 ms by bot id=6704516654
+2024-11-28 00:36:13,981 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:36:13,982 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:36:13,984 - sqlalchemy.engine.Engine - INFO - [cached since 466.7s ago] ('Andreyanov_A_A',)
+2024-11-28 00:36:13,986 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:36:13,989 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:36:13,991 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_token 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:36:13,991 - sqlalchemy.engine.Engine - INFO - [cached since 339.1s ago] ('sec_of_chameleon', 1)
+2024-11-28 00:36:13,996 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:36:13,998 - sqlalchemy.engine.Engine - INFO - [cached since 339.1s ago] ('sec_of_chameleon', 1)
+2024-11-28 00:36:14,144 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:36:14,146 - aiogram.event - INFO - Update id=272268343 is handled. Duration 250 ms by bot id=6704516654
+2024-11-28 00:37:35,274 - aiogram.dispatcher - INFO - Start polling
+2024-11-28 00:37:35,567 - aiogram.dispatcher - INFO - Run polling for bot @helper_ozon_wb_bot id=6704516654 - 'bot_help_ozon_wb'
+2024-11-28 00:37:40,406 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-11-28 00:37:40,407 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:37:40,415 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-11-28 00:37:40,416 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:37:40,420 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-11-28 00:37:40,421 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:37:40,429 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:37:40,449 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:37:40,451 - sqlalchemy.engine.Engine - INFO - [generated in 0.00286s] ('Andreyanov_A_A',)
+2024-11-28 00:37:40,884 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:37:40,886 - aiogram.event - INFO - Update id=272268344 is handled. Duration 625 ms by bot id=6704516654
+2024-11-28 00:37:42,780 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:37:42,782 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:37:42,783 - sqlalchemy.engine.Engine - INFO - [cached since 2.335s ago] ('Andreyanov_A_A',)
+2024-11-28 00:37:42,789 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-28 00:37:42,791 - sqlalchemy.engine.Engine - INFO - [generated in 0.00156s] (1,)
+2024-11-28 00:37:42,800 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:37:42,970 - aiogram.event - INFO - Update id=272268345 is handled. Duration 202 ms by bot id=6704516654
+2024-11-28 00:37:44,690 - aiogram.event - INFO - Update id=272268346 is handled. Duration 391 ms by bot id=6704516654
+2024-11-28 00:37:46,454 - aiogram.event - INFO - Update id=272268347 is handled. Duration 187 ms by bot id=6704516654
+2024-11-28 00:37:47,584 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:37:47,587 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:37:47,588 - sqlalchemy.engine.Engine - INFO - [cached since 7.14s ago] ('Andreyanov_A_A',)
+2024-11-28 00:37:47,601 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:37:47,608 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:37:47,613 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_token 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:37:47,615 - sqlalchemy.engine.Engine - INFO - [generated in 0.00276s] ('sec_of_chameleon', 1)
+2024-11-28 00:37:47,626 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:37:47,628 - sqlalchemy.engine.Engine - INFO - [generated in 0.00245s] ('sec_of_chameleon', 1)
+2024-11-28 00:37:47,823 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:37:47,826 - aiogram.event - INFO - Update id=272268348 is handled. Duration 328 ms by bot id=6704516654
+2024-11-28 00:38:59,356 - aiogram.dispatcher - INFO - Start polling
+2024-11-28 00:38:59,587 - aiogram.dispatcher - INFO - Run polling for bot @helper_ozon_wb_bot id=6704516654 - 'bot_help_ozon_wb'
+2024-11-28 00:39:04,165 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-11-28 00:39:04,166 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:39:04,173 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-11-28 00:39:04,173 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:39:04,178 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-11-28 00:39:04,179 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:39:04,184 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:39:04,197 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:39:04,199 - sqlalchemy.engine.Engine - INFO - [generated in 0.00201s] ('Andreyanov_A_A',)
+2024-11-28 00:39:04,469 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:39:04,471 - aiogram.event - INFO - Update id=272268349 is handled. Duration 452 ms by bot id=6704516654
+2024-11-28 00:39:05,465 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:39:05,468 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:39:05,470 - sqlalchemy.engine.Engine - INFO - [cached since 1.273s ago] ('Andreyanov_A_A',)
+2024-11-28 00:39:05,478 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-28 00:39:05,480 - sqlalchemy.engine.Engine - INFO - [generated in 0.00170s] (1,)
+2024-11-28 00:39:05,493 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:39:05,702 - aiogram.event - INFO - Update id=272268350 is handled. Duration 234 ms by bot id=6704516654
+2024-11-28 00:39:07,052 - aiogram.event - INFO - Update id=272268351 is handled. Duration 405 ms by bot id=6704516654
+2024-11-28 00:39:08,585 - aiogram.event - INFO - Update id=272268352 is handled. Duration 204 ms by bot id=6704516654
+2024-11-28 00:39:09,699 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:39:09,699 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:39:09,702 - sqlalchemy.engine.Engine - INFO - [cached since 5.505s ago] ('Andreyanov_A_A',)
+2024-11-28 00:39:09,708 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:39:09,712 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:39:09,717 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_token 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:39:09,721 - sqlalchemy.engine.Engine - INFO - [generated in 0.00483s] ('sec_of_chameleon', 1)
+2024-11-28 00:39:09,727 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:39:09,730 - sqlalchemy.engine.Engine - INFO - [generated in 0.00177s] ('sec_of_chameleon', 1)
+2024-11-28 00:39:09,895 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:39:09,898 - aiogram.event - INFO - Update id=272268353 is handled. Duration 281 ms by bot id=6704516654
+2024-11-28 00:45:46,735 - aiogram.dispatcher - INFO - Start polling
+2024-11-28 00:45:46,949 - aiogram.dispatcher - INFO - Run polling for bot @helper_ozon_wb_bot id=6704516654 - 'bot_help_ozon_wb'
+2024-11-28 00:51:59,735 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-11-28 00:51:59,736 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:51:59,743 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-11-28 00:51:59,744 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:51:59,748 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-11-28 00:51:59,749 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:51:59,752 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:51:59,768 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:51:59,770 - sqlalchemy.engine.Engine - INFO - [generated in 0.00254s] ('Andreyanov_A_A',)
+2024-11-28 00:52:00,074 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:52:00,077 - aiogram.event - INFO - Update id=272268354 is handled. Duration 484 ms by bot id=6704516654
+2024-11-28 00:52:01,052 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:52:01,053 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:52:01,054 - sqlalchemy.engine.Engine - INFO - [cached since 1.288s ago] ('Andreyanov_A_A',)
+2024-11-28 00:52:01,064 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-28 00:52:01,066 - sqlalchemy.engine.Engine - INFO - [generated in 0.00221s] (1,)
+2024-11-28 00:52:01,077 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:52:01,252 - aiogram.event - INFO - Update id=272268355 is handled. Duration 202 ms by bot id=6704516654
+2024-11-28 00:52:02,387 - aiogram.event - INFO - Update id=272268356 is handled. Duration 233 ms by bot id=6704516654
+2024-11-28 00:52:03,529 - aiogram.event - INFO - Update id=272268357 is handled. Duration 234 ms by bot id=6704516654
+2024-11-28 00:52:04,610 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:52:04,612 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:52:04,613 - sqlalchemy.engine.Engine - INFO - [cached since 4.847s ago] ('Andreyanov_A_A',)
+2024-11-28 00:52:04,622 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:52:04,625 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:52:04,628 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_token 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:52:04,629 - sqlalchemy.engine.Engine - INFO - [generated in 0.00154s] ('sec_of_chameleon', 1)
+2024-11-28 00:52:04,635 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:52:04,637 - sqlalchemy.engine.Engine - INFO - [generated in 0.00136s] ('sec_of_chameleon', 1)
+2024-11-28 00:52:04,799 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:52:04,802 - aiogram.event - INFO - Update id=272268358 is handled. Duration 280 ms by bot id=6704516654
+2024-11-28 00:57:45,928 - aiogram.dispatcher - INFO - Start polling
+2024-11-28 00:57:46,133 - aiogram.dispatcher - INFO - Run polling for bot @helper_ozon_wb_bot id=6704516654 - 'bot_help_ozon_wb'
+2024-11-28 00:57:53,238 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-11-28 00:57:53,240 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:57:53,247 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-11-28 00:57:53,248 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:57:53,251 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-11-28 00:57:53,252 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 00:57:53,258 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:57:53,273 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:57:53,275 - sqlalchemy.engine.Engine - INFO - [generated in 0.00256s] ('Andreyanov_A_A',)
+2024-11-28 00:57:53,558 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:57:53,561 - aiogram.event - INFO - Update id=272268359 is handled. Duration 467 ms by bot id=6704516654
+2024-11-28 00:57:54,540 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:57:54,542 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:57:54,543 - sqlalchemy.engine.Engine - INFO - [cached since 1.27s ago] ('Andreyanov_A_A',)
+2024-11-28 00:57:54,550 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-28 00:57:54,553 - sqlalchemy.engine.Engine - INFO - [generated in 0.00255s] (1,)
+2024-11-28 00:57:54,562 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:57:54,928 - aiogram.event - INFO - Update id=272268360 is handled. Duration 390 ms by bot id=6704516654
+2024-11-28 00:57:56,177 - aiogram.event - INFO - Update id=272268361 is handled. Duration 233 ms by bot id=6704516654
+2024-11-28 00:57:57,186 - aiogram.event - INFO - Update id=272268362 is handled. Duration 140 ms by bot id=6704516654
+2024-11-28 00:57:58,396 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:57:58,399 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 00:57:58,400 - sqlalchemy.engine.Engine - INFO - [cached since 5.128s ago] ('Andreyanov_A_A',)
+2024-11-28 00:57:58,409 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:57:58,412 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 00:57:58,415 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_token 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:57:58,416 - sqlalchemy.engine.Engine - INFO - [generated in 0.00142s] ('sec_of_chameleon', 1)
+2024-11-28 00:57:58,423 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 00:57:58,424 - sqlalchemy.engine.Engine - INFO - [generated in 0.00188s] ('sec_of_chameleon', 1)
+2024-11-28 00:57:58,565 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 00:57:58,568 - aiogram.event - INFO - Update id=272268363 is handled. Duration 250 ms by bot id=6704516654
+2024-11-28 00:58:07,079 - aiogram.dispatcher - INFO - Polling stopped for bot @helper_ozon_wb_bot id=6704516654 - 'bot_help_ozon_wb'
+2024-11-28 00:58:07,080 - aiogram.dispatcher - INFO - Polling stopped
+2024-11-28 01:01:50,828 - aiogram.dispatcher - INFO - Start polling
+2024-11-28 01:01:51,057 - aiogram.dispatcher - INFO - Run polling for bot @helper_ozon_wb_bot id=6704516654 - 'bot_help_ozon_wb'
+2024-11-28 01:01:55,875 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2024-11-28 01:01:55,877 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 01:01:55,884 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2024-11-28 01:01:55,885 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 01:01:55,889 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2024-11-28 01:01:55,889 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-28 01:01:55,894 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 01:01:55,905 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 01:01:55,909 - sqlalchemy.engine.Engine - INFO - [generated in 0.00401s] ('Andreyanov_A_A',)
+2024-11-28 01:01:56,176 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 01:01:56,178 - aiogram.event - INFO - Update id=272268364 is handled. Duration 467 ms by bot id=6704516654
+2024-11-28 01:01:57,021 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 01:01:57,023 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 01:01:57,024 - sqlalchemy.engine.Engine - INFO - [cached since 1.119s ago] ('Andreyanov_A_A',)
+2024-11-28 01:01:57,033 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.id, shop_card.user_id, shop_card.shop_name, shop_card.shop_wb_token, shop_card.shop_ozon_token, shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.user_id = $1::INTEGER
+2024-11-28 01:01:57,035 - sqlalchemy.engine.Engine - INFO - [generated in 0.00188s] (1,)
+2024-11-28 01:01:57,044 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 01:01:57,198 - aiogram.event - INFO - Update id=272268365 is handled. Duration 172 ms by bot id=6704516654
+2024-11-28 01:01:58,254 - aiogram.event - INFO - Update id=272268366 is handled. Duration 217 ms by bot id=6704516654
+2024-11-28 01:01:59,425 - aiogram.event - INFO - Update id=272268367 is handled. Duration 172 ms by bot id=6704516654
+2024-11-28 01:02:00,360 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 01:02:00,361 - sqlalchemy.engine.Engine - INFO - SELECT "UserProfile_profile".id, "UserProfile_profile".user_id, "UserProfile_profile".email, "UserProfile_profile".wb_token, "UserProfile_profile".ozon_token, "UserProfile_profile".ozon_client_id, "UserProfile_profile".tg_username 
+FROM "UserProfile_profile" 
+WHERE "UserProfile_profile".tg_username = $1::VARCHAR
+2024-11-28 01:02:00,363 - sqlalchemy.engine.Engine - INFO - [cached since 4.458s ago] ('Andreyanov_A_A',)
+2024-11-28 01:02:00,371 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 01:02:00,376 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-28 01:02:00,379 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_token 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 01:02:00,380 - sqlalchemy.engine.Engine - INFO - [generated in 0.00153s] ('sec_of_chameleon', 1)
+2024-11-28 01:02:00,385 - sqlalchemy.engine.Engine - INFO - SELECT shop_card.shop_ozon_client_id 
+FROM shop_card 
+WHERE shop_card.shop_name = $1::VARCHAR AND shop_card.user_id = $2::INTEGER
+2024-11-28 01:02:00,388 - sqlalchemy.engine.Engine - INFO - [generated in 0.00169s] ('sec_of_chameleon', 1)
+2024-11-28 01:02:00,580 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-28 01:02:00,582 - aiogram.event - INFO - Update id=272268368 is handled. Duration 344 ms by bot id=6704516654
