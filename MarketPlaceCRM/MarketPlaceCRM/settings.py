@@ -15,6 +15,7 @@ from pathlib import Path
 
 from decouple import config, Csv
 
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -188,6 +189,8 @@ SESSION_COOKIE_AGE = 1209600  # 2 недели в секундах
 
 # Сессия не истечет при закрытии браузера
 SESSION_EXPIRE_AT_BROWSER_CLOSE = False
+
+FIELD_ENCRYPTION_KEY = config('FIELD_ENCRYPTION_KEY')
 
 
 

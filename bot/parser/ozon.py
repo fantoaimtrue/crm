@@ -123,8 +123,8 @@ def report(api_key, client_id, month, year):
             "limit": 100
         })
           # Raises an error for bad responses
-        res = response.json()
-        res.raise_for_status()
+        response.raise_for_status()  # Проверка успешности ответа
+        res = response.json()  # Преобразование ответа в JSON
         
 
         

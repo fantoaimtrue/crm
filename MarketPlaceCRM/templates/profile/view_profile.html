@@ -1,4 +1,5 @@
 {% extends "base.html" %} {% load static %} {% block content %}
+{% load custom_filters %}
 <div class="content-wrapper" style="min-height: 2646.62px">
   <section class="content-header">
     <div class="container-fluid">
@@ -36,35 +37,6 @@
                         </div>
                       </div>
                     
-                      <div class="form-group row">
-                        <label for="inputName" class="col-sm-2 col-form-label"
-                          >WB токен</label>
-                        <div class="col-sm-10">
-                          <p>
-                              {{ user.profile.wb_token }}
-                          </p>
-                        </div>
-                      </div>
-
-                      <div class="form-group row">
-                        <label for="inputName" class="col-sm-2 col-form-label"
-                          >Ozon токен</label>
-                        <div class="col-sm-10">
-                          <p>
-                              {{ user.profile.ozon_token }}
-                          </p>
-                        </div>
-                      </div>
-
-                      <div class="form-group row">
-                        <label for="inputName" class="col-sm-2 col-form-label"
-                          >Ozon client id</label>
-                        <div class="col-sm-10">
-                          <p>
-                              {{ user.profile.ozon_client_id }}
-                          </p>
-                        </div>
-                      </div>
                       
                       <div class="form-group row">
                         <label for="inputName" class="col-sm-2 col-form-label"

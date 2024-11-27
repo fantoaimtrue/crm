@@ -12,22 +12,13 @@ class ProfileForm(forms.ModelForm):
 
     class Meta:
         model = Profile
-        fields = ["email", "wb_token", "ozon_token", "ozon_client_id", "tg_username"]
+        fields = ["email", "tg_username"]
         widgets = {
             "email": forms.EmailInput(
                 attrs={
                     "class": "form-control",
                     "placeholder": "Введите свой email адрес",
                 }
-            ),
-            "wb_token": forms.TextInput(
-                attrs={"class": "form-control", "placeholder": "Введите токен wb"}
-            ),
-            "ozon_token": forms.TextInput(
-                attrs={"class": "form-control", "placeholder": "Введите токен ozon"}
-            ),
-            "ozon_client_id": forms.TextInput(
-                attrs={"class": "form-control", "placeholder": "Введите ozon client id"}
             ),
             "tg_username": forms.TextInput(
                 attrs={"class": "form-control", "placeholder": "Введите имя в telegram"}

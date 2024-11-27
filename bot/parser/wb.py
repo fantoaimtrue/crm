@@ -50,15 +50,22 @@ def all_sales(api_key, sales_year, sales_month, date):
     params = {
         'dateFrom': date
     }
-    response = requests.get(url=url, headers=headers, params=params)
+    
+    data = None  # Инициализация переменной
 
-    if response.status_code == 200:
+    try:
+        print(api_key)
+        response = requests.get(url=url, headers=headers, params=params)
+        response.raise_for_status()  # Проверка на HTTP ошибки
         data = response.json()  # Преобразуем ответ в JSON
-    else:
-        print(f"Error: {response}")
+    except requests.exceptions.RequestException as e:
+        print(f"Ошибка при запросе: {e}")
+        return  # Прерываем выполнение функции
+
     if not data:
         print("No data found")
         return
+    
 
     all_items = {}
     for c in data:
