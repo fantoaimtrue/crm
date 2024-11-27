@@ -1,4 +1,5 @@
 {% extends "base.html" %} {% load static %} {% block content %}
+{% load custom_filters %}
 <div class="content-wrapper" style="min-height: 2646.62px">
   <section class="content-header">
     <div class="container-fluid">
@@ -41,7 +42,7 @@
                           >WB токен</label>
                         <div class="col-sm-10">
                           <p>
-                              {{ user.profile.wb_token }}
+                              {{ user.profile.wb_token|mask_token }}
                           </p>
                         </div>
                       </div>
@@ -51,7 +52,7 @@
                           >Ozon токен</label>
                         <div class="col-sm-10">
                           <p>
-                              {{ user.profile.ozon_token }}
+                              {{ user.profile.ozon_token|mask_token }}
                           </p>
                         </div>
                       </div>
@@ -61,7 +62,7 @@
                           >Ozon client id</label>
                         <div class="col-sm-10">
                           <p>
-                              {{ user.profile.ozon_client_id }}
+                              {{ user.profile.ozon_client_id|mask_token }}
                           </p>
                         </div>
                       </div>

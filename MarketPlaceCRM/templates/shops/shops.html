@@ -1,4 +1,5 @@
 {% extends "base.html" %} {% load static %} {% block content %}
+{% load custom_filters %}
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
 
@@ -33,9 +34,9 @@
                             <tr>
                     
                                 <td data-field="name">{{ shop.shop_name }}</td>
-                                <td data-field="price">{{ shop.shop_wb_token }}</td>
-                                <td data-field="weight">{{ shop.shop_ozon_token }}</td>
-                                <td data-field="weight">{{ shop.shop_ozon_client_id }}</td>
+                                <td data-field="price">{{ shop.shop_wb_token|mask_token }}</td>
+                                <td data-field="weight">{{ shop.shop_ozon_token|mask_token }}</td>
+                                <td data-field="weight">{{ shop.shop_ozon_client_id|mask_token }}</td>
                                 <td>
                                     <a class="btn btn-warning btn-xs" href="{% url 'shops:edit_shops' shop.id %}">
                                         <i class="fas fa-pencil-alt"></i> Изменить
