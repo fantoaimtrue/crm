@@ -30,7 +30,7 @@ SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = config('DEBUG')
+DEBUG = False
 
 # ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 ALLOWED_HOSTS = ['*']
@@ -185,10 +185,10 @@ SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 
 # Сессия будет сохраняться в течение 2 недель
-SESSION_COOKIE_AGE = 1209600  # 2 недели в секундах
+# SESSION_COOKIE_AGE = 1209600  # 2 недели в секундах
 
 # Сессия не истечет при закрытии браузера
-SESSION_EXPIRE_AT_BROWSER_CLOSE = False
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 FIELD_ENCRYPTION_KEY = config('FIELD_ENCRYPTION_KEY')
 

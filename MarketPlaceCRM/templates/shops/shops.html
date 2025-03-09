@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-{% extends "base.html" %} {% load static %} {% block content %}
-=======
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
->>>>>>> 8792f0a8650c8e4af713ed61e06e632a3406ea43
 {% load custom_filters %}
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -25,42 +21,12 @@
             </div>
             <div class="card-body p-0">
                 
-<<<<<<< HEAD
-                    {% csrf_token %}
-                    <table class="table table-striped projects">
-                        <thead>
-                            <tr>
-                                {% for column_name in column_names %}
-                                <th>{{ column_name }}</th>
-                                {% endfor %}
-                                <th>Действия</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {% for shop in shops %}
-                            <tr>
-                    
-                                <td data-field="name">{{ shop.shop_name }}</td>
-                                <td data-field="price">{{ shop.shop_wb_token|mask_token }}</td>
-                                <td data-field="weight">{{ shop.shop_ozon_token|mask_token }}</td>
-                                <td data-field="weight">{{ shop.shop_ozon_client_id|mask_token }}</td>
-                                <td>
-                                    <a class="btn btn-warning btn-xs" href="{% url 'shops:edit_shops' shop.id %}">
-                                        <i class="fas fa-pencil-alt"></i> Изменить
-                                    </a>
-                                    <a class="btn btn-danger btn-xs" href="{% url 'shops:delete_shop' shop.id %}">
-                                        <i class="fas fa-trash"></i> Удалить
-                                    </a>
-                                </td>
-                            </tr>
-=======
                 {% csrf_token %}
                 <table class="table table-striped projects">
                     <thead>
                         <tr>
                             {% for column_name in column_names %}
                             <th>{{ column_name }}</th>
->>>>>>> 8792f0a8650c8e4af713ed61e06e632a3406ea43
                             {% endfor %}
                             <th>Действия</th>
                         </tr>

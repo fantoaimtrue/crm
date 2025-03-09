@@ -10,7 +10,9 @@ services:
     depends_on:
       - db
     volumes:
-      - shared_reports:/app/parser/reports # Подключение общего тома
+      - shared_reports:/app/parser/reports
+    ports:
+      - "8443:8443"  # Пробрасываем порт для вебхука
 
   web:
     build:
@@ -24,7 +26,8 @@ services:
     depends_on:
       - db
     volumes:
-      - shared_reports:/app/bot/parser/reports # Подключение общего тома
+      - shared_reports:/app/bot/parser/reports
+      - static:/app/staticfiles
     command: sh -c "python manage.py migrate && python manage.py collectstatic --noinput && gunicorn MarketPlaceCRM.wsgi:application --bind 0.0.0.0:8000"
 
   db:
@@ -48,7 +51,7 @@ services:
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
       - ./certs:/etc/nginx/certs
-      - ./MarketPlaceCRM/static:/usr/share/nginx/html/static
+      - static:/usr/share/nginx/html/static
     depends_on:
       - web
     environment:
@@ -57,4 +60,5 @@ services:
 
 volumes:
   postgres_data:
-  shared_reports:  # Новый общий том для папки reports
+  shared_reports:
+  static:

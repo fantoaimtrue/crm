@@ -37,38 +37,6 @@
                         </div>
                       </div>
                     
-<<<<<<< HEAD
-                      <div class="form-group row">
-                        <label for="inputName" class="col-sm-2 col-form-label"
-                          >WB токен</label>
-                        <div class="col-sm-10">
-                          <p>
-                              {{ user.profile.wb_token|mask_token }}
-                          </p>
-                        </div>
-                      </div>
-
-                      <div class="form-group row">
-                        <label for="inputName" class="col-sm-2 col-form-label"
-                          >Ozon токен</label>
-                        <div class="col-sm-10">
-                          <p>
-                              {{ user.profile.ozon_token|mask_token }}
-                          </p>
-                        </div>
-                      </div>
-
-                      <div class="form-group row">
-                        <label for="inputName" class="col-sm-2 col-form-label"
-                          >Ozon client id</label>
-                        <div class="col-sm-10">
-                          <p>
-                              {{ user.profile.ozon_client_id|mask_token }}
-                          </p>
-                        </div>
-                      </div>
-=======
->>>>>>> 8792f0a8650c8e4af713ed61e06e632a3406ea43
                       
                       <div class="form-group row">
                         <label for="inputName" class="col-sm-2 col-form-label"
@@ -88,10 +56,15 @@
 
                     <div class="form-group row">
                       <div class="offset-sm-2 col-sm-10">
-                        <a href="{% url 'shops:add_shops' %}" class="btn btn-danger">Добавить новый магазин</a>
-                        <a href="{% url 'shops:view_shops' %}" class="btn btn-danger">Просмотреть мои магазины</a>
+                        <a href="{% url 'shops:add_shops' %}" class="btn btn-primary">Добавить новый магазин</a>
                       </div>
                     </div>
+                    <div class="form-group row">
+                      <div class="offset-sm-2 col-sm-10">
+                        <a href="{% url 'shops:view_shops' %}" class="btn btn-info">Просмотреть мои магазины</a>
+                      </div>
+                    </div>
+
                   
                 </div>
               </div>

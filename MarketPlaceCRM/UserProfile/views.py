@@ -22,3 +22,29 @@ def edit_profile(request):
 def view_profile(request):
     profile = request.user.profile  # Получение профиля пользователя
     return render(request, 'profile/view_profile.html', {'profile': profile})
+
+
+
+from django.contrib.auth.models import User
+from .models import Profile
+
+# Функция для создания или обновления профиля пользователя в Django
+async def create_user(user_data: dict):
+    try:
+        # Получаем или создаем пользователя в Django (если его нет)
+        user, created = User.objects.get_or_create(username=user_data['username'])
+
+        # Создаем или обновляем профиль пользователя
+        profile, created = Profile.objects.get_or_create(user=user)
+
+        # Обновляем или устанавливаем данные профиля
+        profile.tg_username = user_data['username']
+        profile.tg_first_name = user_data['first_name']
+        profile.tg_last_name = user_data['last_name']
+        profile.telegram_id = user_data['id']
+        profile.email = user_data.get('email', None)  # Если email есть, то обновим
+        profile.save()
+
+    except Exception as e:
+        print(f"Ошибка при создании/обновлении пользователя: {e}")
+        raise Exception("Ошибка при сохранении данных пользователя в базе данных.")

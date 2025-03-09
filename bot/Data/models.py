@@ -10,9 +10,6 @@ class Profile(Base):
     id = Column(Integer, primary_key=True, index=True)
     user_id = Column(Integer, ForeignKey('users.id'))
     email = Column(String, nullable=True)
-    wb_token = Column(String, nullable=True)
-    ozon_token = Column(String, nullable=True)
-    ozon_client_id = Column(Integer, nullable=True, default=0)
     tg_username = Column(String, nullable=True)
 
     def __repr__(self):

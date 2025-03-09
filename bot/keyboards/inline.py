@@ -1,8 +1,9 @@
-from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, KeyboardButton
+from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, KeyboardButton, WebAppInfo
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 from Data.models import Shops, Profile
 from Data.db import get_session
 from sqlalchemy.future import select
+from decouple import config
 
 
 def kb_builder():
@@ -93,4 +94,20 @@ def month_inline():
     return builder
 
 
+def instruction():
+    builder = InlineKeyboardBuilder()
+    builder.add(InlineKeyboardButton(text='Прочитать инструкцию', url='https://docs.google.com/document/d/1H5lK66Ex7cAaAWNBx5_R26Y9Gv-8EZxAYI3g0ukS8nE/edit?usp=sharing'))
+    builder.adjust(1)
+    return builder.as_markup()
+
+
+def webapp():
+    url = "https://t.me/helper_ozon_wb_bot/CRMMARKETPLACEHELPER"  # Убедитесь, что это правильный URL
+    print(f"Web App URL: {url}") 
+    
+
+    builder = InlineKeyboardBuilder()
+    builder.add(InlineKeyboardButton(text="Открыть web-панель", web_app=WebAppInfo(url=url)))
+    builder.adjust(1)
+    return builder.as_markup()
 
